@@ -3,21 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="66f89dc8-c486-4ea5-a7af-05bce69ff019" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javademo/src/main/java/lock/demo1/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/javademo/src/main/java/lock/demo1/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javademo/src/main/java/lock/demo1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/javademo/src/main/java/lock/demo1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javademo/src/main/java/lock/demo2/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/javademo/src/main/java/lock/demo2/Child.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javademo/src/main/java/lock/demo2/Farmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/javademo/src/main/java/lock/demo2/Farmer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javademo/target/classes/META-INF/javademo.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javademo/target/classes/lock/demo1/Doctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/javademo/target/classes/lock/demo1/Doctor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javademo/target/classes/lock/demo1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/javademo/target/classes/lock/demo1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javademo/target/classes/lock/demo2/Farmer.class" beforeDir="false" afterPath="$PROJECT_DIR$/javademo/target/classes/lock/demo2/Farmer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javademo/target/classes/lock/demo2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/javademo/target/classes/lock/demo2/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootdemo1/springbootdemo1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javademo/src/main/java/demo/demo20190223/HelloWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/javademo/src/main/java/demo/demo20190223/HelloWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javademo/target/classes/demo/demo20190223/HelloWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/javademo/target/classes/demo/demo20190223/HelloWord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/springbootdemo1/target/" />
     <ignored path="$PROJECT_DIR$/javademo/target/" />
+    <ignored path="$PROJECT_DIR$/myUtils/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,99 +23,75 @@
     <session id="881800288">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="java" value="13" />
+          <entry key="java" value="20" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="13" />
+          <entry key="JAVA" value="20" />
           <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="409" />
+          <entry key="java" value="682" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="409" />
+          <entry key="JAVA" value="682" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/javademo/src/main/java/lock/demo1/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/lang/Object.java">
+        <entry file="file://$PROJECT_DIR$/javademo/src/main/java/myCollection/myMap/MyHashMap/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="381" column="29" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javademo/src/main/java/lock/demo2/Farmer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javademo/src/main/java/lock/demo2/Kuang.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="41" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="41" />
+            <state relative-caret-position="469">
+              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
               <folding>
-                <element signature="e#155#163#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/util/HashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="640" column="48" selection-start-line="640" selection-start-column="48" selection-end-line="640" selection-end-column="48" />
+              <folding>
+                <element signature="e#19296#19297#0" expanded="true" />
+                <element signature="e#19379#19380#0" expanded="true" />
+                <element signature="e#24298#24299#0" expanded="true" />
+                <element signature="e#24363#24364#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javademo/src/main/java/lock/demo2/Child.java">
+        <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/util/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javademo/src/main/java/lock/demo2/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javademo/src/main/java/lock/demo1/Doctor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="344">
+              <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -155,6 +126,9 @@
         <option value="$PROJECT_DIR$/javademo/src/main/java/lock/demo1/Doctor.java" />
         <option value="$PROJECT_DIR$/javademo/src/main/java/lock/demo2/Child.java" />
         <option value="$PROJECT_DIR$/javademo/src/main/java/lock/demo1/Main.java" />
+        <option value="$PROJECT_DIR$/javademo/src/main/java/demo/demo20190223/HelloWord.java" />
+        <option value="$PROJECT_DIR$/javademo/src/main/java/myCollection/myMap/MyHashMap/Demo1.java" />
+        <option value="$PROJECT_DIR$/javademo/src/main/java/myCollection/myMap/MyHashMap/Main.java" />
       </list>
     </option>
   </component>
@@ -221,7 +195,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lock" type="462c0819:PsiDirectoryNode" />
+              <item name="myCollection" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
@@ -230,8 +204,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lock" type="462c0819:PsiDirectoryNode" />
-              <item name="demo1" type="462c0819:PsiDirectoryNode" />
+              <item name="myCollection" type="462c0819:PsiDirectoryNode" />
+              <item name="myMap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
@@ -240,8 +214,9 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lock" type="462c0819:PsiDirectoryNode" />
-              <item name="demo2" type="462c0819:PsiDirectoryNode" />
+              <item name="myCollection" type="462c0819:PsiDirectoryNode" />
+              <item name="myMap" type="462c0819:PsiDirectoryNode" />
+              <item name="MyHashMap" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -259,7 +234,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555482465153" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555579299630" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../oms-system" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -286,13 +261,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (2)">
+    <configuration name="HelloWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.demo20190223.HelloWord" />
+      <module name="javademo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.demo20190223.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lock.demo2.Main" />
       <module name="javademo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lock.demo2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="myCollection.myMap.MyHashMap.Main" />
+      <module name="javademo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="myCollection.myMap.MyHashMap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -330,9 +331,13 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Spring Boot.Springbootdemo1Application" />
+      <item itemvalue="Application.HelloWord" />
+      <item itemvalue="Application.Main (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.HelloWord" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Spring Boot.Springbootdemo1Application" />
@@ -356,18 +361,22 @@
       <workItem from="1555418926771" duration="1768000" />
       <workItem from="1555420759236" duration="723000" />
       <workItem from="1555463692668" duration="4390000" />
-      <workItem from="1555468342365" duration="6007000" />
+      <workItem from="1555468342365" duration="6974000" />
+      <workItem from="1555489217385" duration="1609000" />
+      <workItem from="1555552901980" duration="1210000" />
+      <workItem from="1555568169153" duration="923000" />
+      <workItem from="1555569492877" duration="2230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18727000" />
+    <option name="totallyTimeSpent" value="25666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27345416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -378,8 +387,8 @@
       <window_info id="JRebel" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2570499" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.21366595" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2570499" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.21366595" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -387,7 +396,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32956153" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286334" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -453,9 +462,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/javademo/src/main/java/lock/demo1/Main.java</url>
-          <line>58</line>
+          <line>60</line>
           <properties />
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/javademo/src/main/java/myCollection/myMap/MyHashMap/Main.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -498,9 +513,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/lang/Object.java">
+    <entry file="file://$PROJECT_DIR$/javademo/src/main/java/lock/demo1/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javademo/src/main/java/demo/demo20190223/HelloWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javademo/src/main/java/myCollection/myMap/MyHashMap/Demo1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7080">
           <caret line="381" column="29" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
         </state>
       </provider>
@@ -508,14 +551,7 @@
     <entry file="file://$PROJECT_DIR$/javademo/src/main/java/lock/demo2/Farmer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javademo/src/main/java/lock/demo1/Doctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="19" />
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -523,9 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="41" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="41" />
-          <folding>
-            <element signature="e#155#163#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -543,10 +576,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javademo/src/main/java/lock/demo1/Main.java">
+    <entry file="file://$PROJECT_DIR$/javademo/src/main/java/lock/demo1/Doctor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+        <state relative-caret-position="40">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javademo/src/main/java/myCollection/myMap/MyHashMap/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="640" column="48" selection-start-line="640" selection-start-column="48" selection-end-line="640" selection-end-column="48" />
+          <folding>
+            <element signature="e#19296#19297#0" expanded="true" />
+            <element signature="e#19379#19380#0" expanded="true" />
+            <element signature="e#24298#24299#0" expanded="true" />
+            <element signature="e#24363#24364#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

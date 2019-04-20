@@ -10,6 +10,7 @@
     <modules>
         <module>springbootdemo1</module>
         <module>myUtils</module>
+        <module>javademo</module>
     </modules>
     <packaging>pom</packaging>
 

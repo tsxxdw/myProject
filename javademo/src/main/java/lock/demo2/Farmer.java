@@ -1,6 +1,7 @@
 package lock.demo2;
 
 public class Farmer extends Thread {
+    @Override
     public void run() {
         while (true) {
             synchronized (Kuang.kuang) {

@@ -10,16 +10,16 @@ import java.util.Map;
  */
 public class Main {
     public static void main(String[] args) {
-         testKey();
-     //   testValue();
-       // constructor();
+       //  testKey();
+     //  testValue();
+        constructor();
     }
 
 
     public static void testKey() {
         Map<Integer, String> map = new HashMap();
         map.put(null, "a");
-       // map.put(null, "b");
+        map.put(null, "b");
         System.out.println(map.toString());
     }
 

@@ -10,15 +10,16 @@ import java.util.Map;
  */
 public class Main {
     public static void main(String[] args) {
-        // testKey();
-        testValue();
+         testKey();
+     //   testValue();
+       // constructor();
     }
 
 
     public static void testKey() {
         Map<Integer, String> map = new HashMap();
         map.put(null, "a");
-        map.put(null, "b");
+       // map.put(null, "b");
         System.out.println(map.toString());
     }
 
@@ -29,6 +30,14 @@ public class Main {
         map.put(3, null);
         map.put(null, "b");
         System.out.println(map.toString());
+    }
+
+    public static void constructor() {
+        Map<Integer, String> originMap = new HashMap<>();
+        originMap.put(1, "1");
+        originMap.put(2, "2");
+        Map<Integer, String> newMap = new HashMap<>(originMap);
+        System.out.println(newMap.toString());
     }
 }
 

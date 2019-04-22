@@ -10,9 +10,10 @@ import java.util.Map;
  */
 public class Main {
     public static void main(String[] args) {
-       //  testKey();
+        // testKey();
      //  testValue();
-        constructor();
+     // /  constructor();
+        hash("666");
     }
 
 
@@ -39,6 +40,16 @@ public class Main {
         Map<Integer, String> newMap = new HashMap<>(originMap);
         System.out.println(newMap.toString());
     }
+
+
+
+    static final int hash(Object key) {
+        int h;
+        int res= (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
+        System.out.println(res);
+        return res;
+    }
+
 }
 
 

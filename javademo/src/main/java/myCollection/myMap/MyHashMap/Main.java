@@ -11,9 +11,9 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
         // testKey();
-     //  testValue();
-     // /  constructor();
-        hash("666");
+       testValue();
+      //constructor();
+        //hash("666");
     }
 
 
@@ -28,6 +28,7 @@ public class Main {
         Map<Integer, String> map = new HashMap();
         map.put(1, "a");
         map.put(2, null);
+        map.put(3, null);
         map.put(3, null);
         map.put(null, "b");
         System.out.println(map.toString());

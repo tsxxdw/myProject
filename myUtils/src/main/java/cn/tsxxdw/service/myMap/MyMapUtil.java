@@ -2,6 +2,7 @@ package cn.tsxxdw.service.myMap;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.Hashtable;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -19,11 +20,11 @@ public class MyMapUtil {
      * @param errorInfoStr
      */
     public static void addErrorInfo(Map<Integer, String> errorInfoMap, Integer index, String errorInfoStr) {
-        if (errorInfoMap instanceof ConcurrentHashMap) {
-            throw new NullPointerException("Class must ConcurrentHashMap");
+        if (errorInfoMap instanceof Hashtable) {
+            throw new IllegalArgumentException  ("Class must ConcurrentHashMap");
         }
         if (StringUtils.isBlank(errorInfoStr) || errorInfoMap == null || index == null) {
-            throw new NullPointerException("errorInfoStr or errorInfoMap must not null");
+            throw new NullPointerException  ("errorInfoStr or errorInfoMap must not null");
         }
         StringBuilder sb = new StringBuilder();
         String sourceStr = errorInfoMap.get(index);

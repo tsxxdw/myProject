@@ -10,7 +10,7 @@ import java.util.concurrent.Future;
  * @Date 2019/4/24 17:01
  * @Description future公共服务
  */
-public class MyfutureUtil<T> {
+public class MyfutureUtil {
     /**
      * @param future
      * @param numberOfCycles

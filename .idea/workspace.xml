@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8907229c-d58a-4e92-b478-cda256d01f2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/MyExcelListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelEntityVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelEntityVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelReadVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelReadVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/excel/MyExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/MyExcelUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/excel/ExcelListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/excel/TestMyExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/TestMyExcelUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/Function3_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/Function3_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/MyExcelListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/MyExcelListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/MyExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/MyExcelUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myFuture/MyfutureUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myFuture/MyfutureUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myMap/MyMapUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myMap/MyMapUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/ExcelListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/ExcelListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/IExcelCheckService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/TestMyExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/TestMyExcelUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myList/TestMyListUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myList/TestMyListUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/springbootdemo1/target/" />
@@ -29,38 +35,40 @@
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.43" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="23" />
-          <entry key="java" value="78" />
+          <entry key="class" value="31" />
+          <entry key="java" value="122" />
           <entry key="xml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="23" />
-          <entry key="JAVA" value="78" />
+          <entry key="CLASS" value="31" />
+          <entry key="JAVA" value="122" />
           <entry key="XML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="34" />
-          <entry key="java" value="5339" />
+          <entry key="java" value="6994" />
           <entry key="xml" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5339" />
+          <entry key="JAVA" value="6994" />
           <entry key="PLAIN_TEXT" value="34" />
           <entry key="XML" value="56" />
         </counts>
@@ -72,41 +80,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/MyExcelListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+            <state relative-caret-position="246">
+              <caret line="109" column="13" lean-forward="true" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1206#1207#0" expanded="true" />
+                <element signature="e#1252#1253#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/CommonUtil.java">
+        <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelReadVo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="38" column="108" selection-start-line="38" selection-start-column="101" selection-end-line="38" selection-end-column="108" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/Consumer2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelReadConditionAndRuleVo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="467">
+              <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -114,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/Function3_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+            <state relative-caret-position="340">
+              <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,43 +113,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/Consumer3.java">
+        <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/IExcel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="30" column="26" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/util/function/Function.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="88" column="5" lean-forward="true" selection-start-line="85" selection-start-column="3" selection-end-line="88" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/util/function/BiConsumer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="55" column="50" lean-forward="true" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
+            <state relative-caret-position="-4">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
               <folding>
-                <element signature="e#0#1951#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/TestMyExcelUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
+            <state relative-caret-position="440">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/ProductEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -168,8 +148,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/MyExcelUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="200">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/ExcelListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <folding>
+                <element signature="e#300#301#0" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -188,9 +181,14 @@
       <find>CheckedException</find>
       <find>equals(</find>
       <find>hashCode</find>
-      <find>put(</find>
       <find>getServceFieldRuleFunction</find>
+      <find>put(</find>
+      <find>ResultVo</find>
+      <find>excelFieldRuleAndFillEntityFunction</find>
     </findStrings>
+    <replaceStrings>
+      <replace>excelReadVo</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -210,28 +208,33 @@
         <option value="$PROJECT_DIR$/myBean/src/main/java/cn/tsxxdw/vo/ResultVo.java" />
         <option value="$PROJECT_DIR$/myUtils/pom.xml" />
         <option value="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/excel/IExcelCheckService.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelReadVo.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myList/MyListUtil.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myDate/MytimerUtil.java" />
         <option value="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/excel/TestMyExcelUtil.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myDate/Mytimer.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myFuture/MyfutureService.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myFuture/MyfutureUtil.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myMap/MyMapUtil.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelEntityVo.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelReadTipVo.java" />
         <option value="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/excel/ExcelListener.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/ExcelListener.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/TestMyExcelUtil.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelReadConditionVo.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/BiConsumer.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/Bi3Consumer.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/Function3_1.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/Consumer3.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/Consumer2.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelReadConditionAndRuleVo.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/CommonUtil.java" />
+        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myFuture/MyfutureUtil.java" />
+        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/IExcel.java" />
+        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myMap/MyMapUtil.java" />
+        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/MyExcelUtil.java" />
+        <option value="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/ExcelListener.java" />
+        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelEntityVo.java" />
+        <option value="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myList/TestMyListUtil.java" />
+        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelFiledRuleVo.java" />
+        <option value="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/ProductEntity.java" />
+        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelReadVo.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/MyExcelListener.java" />
+        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/Function3_1.java" />
+        <option value="$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/TestMyExcelUtil.java" />
       </list>
     </option>
   </component>
@@ -252,8 +255,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="425" />
+    <option name="y" value="412" />
     <option name="width" value="1398" />
     <option name="height" value="725" />
   </component>
@@ -651,16 +654,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="x&#9;PSI&#9;JAVA://sun.net.www.content.audio.x_wav" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556110649803" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556184323695" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../easyexcel" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -670,22 +673,22 @@
     <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\duan\software\ideaMax\file\myProject\myUtils\src\main\resources\templates\demo" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="cn.tsxxdw.service.myExcel" />
       <recent name="cn.tsxxdw.service" />
       <recent name="cn.tsxxdw.excel" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\duan\software\ideaMax\file\myProject\myUtils\src\main\resources\templates\demo" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.tsxxdw.service.myExcel" />
       <recent name="cn.tsxxdw.myJava" />
       <recent name="cn.tsxxdw.service.myDate" />
       <recent name="cn.tsxxdw.bean.vo.excel" />
       <recent name="cn.tsxxdw.excel" />
-      <recent name="cn.tsxxdw.myList" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\duan\software\ideaMax\file\myProject\myUtils\src\main\resources\templates\demo" />
     </key>
   </component>
@@ -701,7 +704,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestMyExcelUtil.test">
+  <component name="RunManager" selected="JUnit.TestMyListUtil.test">
     <configuration name="Mytimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.tsxxdw.service.myDate.Mytimer" />
       <module name="myUtils" />
@@ -711,6 +714,20 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMyExcelUtil" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myUtils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tsxxdw.service.myExcel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.tsxxdw.service.myExcel" />
+      <option name="MAIN_CLASS_NAME" value="cn.tsxxdw.service.myExcel.TestMyExcelUtil" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -731,7 +748,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMyListUtil.testCheckIsContain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMyListUtil.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myUtils" />
       <extension name="coverage">
         <pattern>
@@ -739,24 +756,44 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.tsxxdw.myList" />
+      <option name="PACKAGE_NAME" value="cn.tsxxdw.service.myList" />
       <option name="MAIN_CLASS_NAME" value="cn.tsxxdw.service.myList.TestMyListUtil" />
-      <option name="METHOD_NAME" value="testCheckIsContain" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMyListUtil.test001" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myUtils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tsxxdw.service.myList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.tsxxdw.service.myList" />
+      <option name="MAIN_CLASS_NAME" value="cn.tsxxdw.service.myList.TestMyListUtil" />
+      <option name="METHOD_NAME" value="test001" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestMyListUtil.testCheckIsContain" />
       <item itemvalue="JUnit.TestMyExcelUtil.test" />
       <item itemvalue="Application.Mytimer" />
+      <item itemvalue="JUnit.TestMyListUtil.test001" />
+      <item itemvalue="JUnit.TestMyExcelUtil" />
+      <item itemvalue="JUnit.TestMyListUtil.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestMyListUtil.test" />
+        <item itemvalue="JUnit.TestMyExcelUtil" />
+        <item itemvalue="JUnit.TestMyListUtil.test001" />
         <item itemvalue="JUnit.TestMyExcelUtil.test" />
         <item itemvalue="Application.Mytimer" />
-        <item itemvalue="JUnit.TestMyListUtil.testCheckIsContain" />
       </list>
     </recent_temporary>
   </component>
@@ -776,49 +813,51 @@
       <workItem from="1555987007389" duration="6914000" />
       <workItem from="1556069123664" duration="104000" />
       <workItem from="1556072619318" duration="28062000" />
+      <workItem from="1556154635579" duration="1055000" />
+      <workItem from="1556156035627" duration="19589000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestMyExcelUtil_test - 2019.04.24 at 16h 25m 10s.xml">
-      <configuration name="TestMyExcelUtil.test" configurationId="JUnit" />
+    <history-entry file="TestMyListUtil_test001 - 2019.04.25 at 15h 01m 42s.xml">
+      <configuration name="TestMyListUtil.test001" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyExcelUtil_test - 2019.04.24 at 16h 28m 08s.xml">
-      <configuration name="TestMyExcelUtil.test" configurationId="JUnit" />
+    <history-entry file="TestMyListUtil_test001 - 2019.04.25 at 15h 02m 02s.xml">
+      <configuration name="TestMyListUtil.test001" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyExcelUtil_test - 2019.04.24 at 16h 50m 24s.xml">
-      <configuration name="TestMyExcelUtil.test" configurationId="JUnit" />
+    <history-entry file="TestMyListUtil_test001 - 2019.04.25 at 15h 24m 44s.xml">
+      <configuration name="TestMyListUtil.test001" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyExcelUtil_test - 2019.04.24 at 19h 05m 51s.xml">
-      <configuration name="TestMyExcelUtil.test" configurationId="JUnit" />
+    <history-entry file="TestMyExcelUtil - 2019.04.25 at 15h 25m 08s.xml">
+      <configuration name="TestMyExcelUtil" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyExcelUtil_test - 2019.04.24 at 19h 06m 40s.xml">
-      <configuration name="TestMyExcelUtil.test" configurationId="JUnit" />
+    <history-entry file="TestMyListUtil_test - 2019.04.25 at 16h 02m 29s.xml">
+      <configuration name="TestMyListUtil.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyExcelUtil_test - 2019.04.24 at 19h 07m 01s.xml">
-      <configuration name="TestMyExcelUtil.test" configurationId="JUnit" />
+    <history-entry file="TestMyListUtil_test - 2019.04.25 at 16h 04m 15s.xml">
+      <configuration name="TestMyListUtil.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyExcelUtil_test - 2019.04.24 at 19h 07m 40s.xml">
-      <configuration name="TestMyExcelUtil.test" configurationId="JUnit" />
+    <history-entry file="TestMyListUtil_test - 2019.04.25 at 16h 04m 41s.xml">
+      <configuration name="TestMyListUtil.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyExcelUtil_test - 2019.04.24 at 19h 07m 50s.xml">
-      <configuration name="TestMyExcelUtil.test" configurationId="JUnit" />
+    <history-entry file="TestMyListUtil_test - 2019.04.25 at 16h 05m 12s.xml">
+      <configuration name="TestMyListUtil.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyExcelUtil_test - 2019.04.24 at 19h 15m 02s.xml">
-      <configuration name="TestMyExcelUtil.test" configurationId="JUnit" />
+    <history-entry file="TestMyListUtil_test - 2019.04.25 at 16h 06m 59s.xml">
+      <configuration name="TestMyListUtil.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyExcelUtil_test - 2019.04.24 at 19h 16m 33s.xml">
-      <configuration name="TestMyExcelUtil.test" configurationId="JUnit" />
+    <history-entry file="TestMyListUtil_test - 2019.04.25 at 16h 07m 09s.xml">
+      <configuration name="TestMyListUtil.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48806000" />
+    <option name="totallyTimeSpent" value="69450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.33208954" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.25159913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" sideWeight="0.50180507" side_tool="true" weight="0.25" />
@@ -828,9 +867,9 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49520257" weight="0.35249457" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.75479746" weight="0.20498915" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8224947" weight="0.17895879" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49253732" weight="0.17895879" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.75319827" weight="0.3177874" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8214286" weight="0.37852496" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -843,8 +882,8 @@
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49946696" weight="0.329718" />
       <window_info anchor="bottom" id="JRebel Executor" order="15" />
-      <window_info anchor="bottom" id="JRebel Console" order="16" sideWeight="0.5042644" side_tool="true" visible="true" weight="0.0889371" />
-      <window_info anchor="bottom" id="Messages" order="17" sideWeight="0.49573562" weight="0.0889371" />
+      <window_info anchor="bottom" id="JRebel Console" order="16" sideWeight="0.5079957" side_tool="true" visible="true" weight="0.0889371" />
+      <window_info active="true" anchor="bottom" id="Messages" order="17" sideWeight="0.49200428" visible="true" weight="0.0889371" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -873,31 +912,25 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/TestMyExcelUtil.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/MyExcelUtil.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javademo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/excel/ExcelListener.java" />
-    <entry file="file://$PROJECT_DIR$/myBean/src/main/java/cn/tsxxdw/dto.java" />
-    <entry file="file://$PROJECT_DIR$/myBean/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myBean/src/main/java/cn/tsxxdw/vo/ExcelReadVo.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="509">
@@ -909,13 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myList/TestMyListUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -947,10 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="680" column="25" selection-start-line="680" selection-start-column="25" selection-end-line="680" selection-end-column="25" />
-          <folding>
-            <element signature="e#19296#19297#0" expanded="true" />
-            <element signature="e#19379#19380#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -958,16 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/IExcelCheckService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -982,30 +994,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/1.1.2-beta5/easyexcel-1.1.2-beta5.jar!/com/alibaba/excel/ExcelReader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#2002#2003#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#1657#1658#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelReadVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1020,13 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
           <caret line="41" column="51" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/1.1.2-beta5/easyexcel-1.1.2-beta5.jar!/com/alibaba/excel/event/AnalysisEventListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -1062,13 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="40" column="54" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1090,9 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="637">
           <caret line="165" column="1" lean-forward="true" selection-start-line="165" selection-start-column="1" selection-end-line="165" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#29576#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1103,40 +1078,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myMap/MyMapUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="266" column="30" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#262622#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myFuture/MyfutureUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/1.1.2-beta5/easyexcel-1.1.2-beta5.jar!/com/alibaba/excel/EasyExcelFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1147,69 +1092,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelReadTipVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelEntityVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/ExcelListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <element signature="e#191#192#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/TestMyExcelUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/MyExcelUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/java/jdk1.8.0_101/jre/lib/rt.jar!/sun/net/www/content/audio/x_wav.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/util/function/BiConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="55" column="50" lean-forward="true" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#1951#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="88" column="5" lean-forward="true" selection-start-line="85" selection-start-column="3" selection-end-line="88" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1220,6 +1106,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/Consumer2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelReadTipVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/1.1.2-beta5/easyexcel-1.1.2-beta5.jar!/com/alibaba/excel/ExcelReader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="37" column="15" lean-forward="true" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/Consumer3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1227,47 +1134,195 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/Function3_1.java">
+    <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/util/function/BiConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        <state relative-caret-position="640">
+          <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#1951#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelReadConditionAndRuleVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="44" />
+        <state relative-caret-position="144">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/1.1.2-beta5/easyexcel-1.1.2-beta5.jar!/com/alibaba/excel/metadata/Sheet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/IExcelCheckService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/1.1.2-beta5/easyexcel-1.1.2-beta5.jar!/com/alibaba/excel/event/AnalysisEventListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/CommonUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="38" column="108" selection-start-line="38" selection-start-column="101" selection-end-line="38" selection-end-column="108" />
+        <state relative-caret-position="320">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/MyExcelListener.java">
+    <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/util/function/Function.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+        <state relative-caret-position="704">
+          <caret line="90" column="7" lean-forward="true" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/util/Hashtable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="455" column="30" selection-start-line="455" selection-start-column="26" selection-end-line="455" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java/jdk1.8.0_101/src.zip!/java/lang/NullPointerException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="52" column="51" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="51" />
+          <folding>
+            <element signature="e#1616#1617#0" expanded="true" />
+            <element signature="e#1640#1641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myFuture/MyfutureUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myMap/MyMapUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/1.1.2-beta5/easyexcel-1.1.2-beta5.jar!/com/alibaba/excel/EasyExcelFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myList/TestMyListUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="20" column="83" selection-start-line="20" selection-start-column="83" selection-end-line="20" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/ExcelListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding>
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelEntityVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/IExcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/Consumer2.java">
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelFiledRuleVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        <state relative-caret-position="356">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/MyExcelUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/ProductEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myExcel/MyExcelListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="109" column="13" lean-forward="true" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1252#1253#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/Function3_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelReadVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/test/java/cn/tsxxdw/service/myExcel/TestMyExcelUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

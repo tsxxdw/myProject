@@ -1,9 +1,7 @@
 package cn.tsxxdw.service.myExcel;
 
-import cn.tsxxdw.bean.vo.excel.ExcelReadConditionAndRuleVo;
+import cn.tsxxdw.bean.vo.excel.ExcelReadVo;
 import cn.tsxxdw.service.myDate.MytimerUtil;
-import com.alibaba.excel.EasyExcelFactory;
-import com.alibaba.excel.metadata.Sheet;
 import org.junit.Test;
 
 import java.io.InputStream;
@@ -19,7 +17,13 @@ public class TestMyExcelUtil {
         MytimerUtil.get().add("导入0%");
         String fileName = "templates/demo/many.xlsx";
         InputStream inputStream = Thread.currentThread().getContextClassLoader().getResourceAsStream(fileName);
-        EasyExcelFactory.readBySax(inputStream, new Sheet(1, 1), new MyExcelListener(new ExcelReadConditionAndRuleVo().setMinNumberOfBars(1)));
+        ExcelReadVo<ProductEntity> excelReadVo = new ExcelReadVo();
+        excelReadVo.setInputStream(inputStream);
+        excelReadVo.setExcelFieldRuleAndFillEntityFunction((o1,o2,o3)->{
+
+            return null;
+        });
+        MyExcelUtil.read(excelReadVo);
         MytimerUtil.get().add("导入100%");
         MytimerUtil.get().getInfo();
     }

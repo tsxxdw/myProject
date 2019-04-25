@@ -1,10 +1,12 @@
 package cn.tsxxdw.myJava;
 
+import cn.tsxxdw.bean.vo.excel.ExcelEntityVo;
+
 import java.util.Objects;
 import java.util.function.Function;
 
 @FunctionalInterface
-public interface Function3_1<T1, T2, T3,R> {
+public interface Function3_1<T1, T2, T3, R> {
 
     /**
      * Performs this operation on the given arguments.

@@ -12,12 +12,7 @@ import java.io.IOException;
  * @Description 我的excel工具类
  */
 public class MyExcelUtil {
-    public void read(ExcelReadVo excelReadVo) {
-        EasyExcelFactory.readBySax(excelReadVo.getInputStream(), new Sheet(1, 1), excelReadVo.getAnalysisEventListener());
-        try {
-            excelReadVo.getInputStream().close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public static void read(ExcelReadVo excelReadVo) {
+        EasyExcelFactory.readBySax(excelReadVo.getInputStream(), new Sheet(excelReadVo.getSheetNo(), excelReadVo.getHeadLineMun()), new MyExcelListener(excelReadVo));
     }
 }

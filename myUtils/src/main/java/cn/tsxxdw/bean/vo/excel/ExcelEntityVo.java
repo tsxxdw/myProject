@@ -19,6 +19,7 @@ import java.util.List;
 @Getter
 public class ExcelEntityVo<T> {
     private int index;//位置
+    private boolean availableElements = true;//默认为可用元素,例如 实体是null ，或者 实体中的所有属性都为 空
     private T entity;
 
     public ExcelEntityVo(int index, T entity) {

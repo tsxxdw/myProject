@@ -1,5 +1,8 @@
 package lock.demo1;
 
+/**
+ * 结论： 1 当线程1 执行对象.wait方法之后，当前代码块不再执行，反之线程2开始执行，线程2 执行完毕之后，再接着执行线程1上次没有执行完的syso代码块
+ */
 public class Main {
     public static void main(String[] args) {
 
@@ -16,6 +19,7 @@ public class Main {
                     try {
                         doctor.cures("1号");
                         doctor.wait();
+                        System.out.println("1号线程执行完毕");
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -33,24 +37,12 @@ public class Main {
                 Thread.sleep(5000);
                 System.out.println("我进入了第2个线程");
                 int i = 0;
-                synchronized (doctor) {
-                    doctor.notifyAll();
-                }
-               /* while (true) {//如果这段代码没有被注释则线程1 中的cures方法总共只会执行一次
+                while (true){
                     synchronized (doctor) {
+                        doctor.cures("2号");
                         doctor.notifyAll();
-
-                        i++;
-                        if (i < 100) {
-                            System.out.printf("我是线程2的while循环");
-                            doctor.notifyAll();
-                        } else {
-                            Thread.sleep(1000000);
-                        }
-
                     }
-                }*/
-                // doctor.cures("1号");
+                }
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

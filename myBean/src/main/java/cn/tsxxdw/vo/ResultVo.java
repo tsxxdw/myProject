@@ -24,6 +24,7 @@ import java.io.Serializable;
  * @param <T> 泛型
  */
 @ToString
+@Getter
 public class ResultVo<T> implements Serializable {
     @Getter
     @AllArgsConstructor

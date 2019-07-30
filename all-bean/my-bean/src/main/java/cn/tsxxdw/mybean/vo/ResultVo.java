@@ -1,4 +1,4 @@
-package cn.tsxxdw.vo;
+package cn.tsxxdw.mybean.vo;
 
 /**
  * @Author created by dsj
@@ -9,6 +9,7 @@ package cn.tsxxdw.vo;
 //import org.springframework.stereotype.Component;
 
 import lombok.AllArgsConstructor;
+
 import lombok.Getter;
 import lombok.ToString;
 
@@ -16,7 +17,7 @@ import java.io.Serializable;
 
 /**
  * 返回值：
- * code = -2 代表其他原因错误，一般是不会出现这种情况的(例如，数据库连接错误)，请一定要查看message
+ * code = -2 代表系统原因错误，一般是不会出现这种情况的(例如，数据库连接错误)，请一定要查看message
  * code = -1 代表服务器错误(失败情况下一般会返回：-1)
  * code = 0  代表默认状态,也代表失败，但是正常情况下是不会出现的,如果出现，那么就是逻辑可能有问题
  * code = 1  代表成功
@@ -32,7 +33,7 @@ public class ResultVo<T> implements Serializable {
         DEFAULT(0, "Now you's code is 0,this is not normal"),
         SUCCESS(1, "Already success"),
         FAIL(-1, "Sorry,You fail"),
-        FAILMESSAGE_SERVER_ERROR(-2, "I am sorry,system error");
+        FAILMESSAGE_SYSTEM_ERROR(-2, "I'm sorry,System error");
         private int code;
         private String message;
     }
@@ -59,11 +60,6 @@ public class ResultVo<T> implements Serializable {
         return setFail(message).setData(data);
     }
 
-    public ResultVo<T> setFail_serverError() {
-        this.setCode(MyEnum.FAIL.getCode());
-        this.setMessage(MyEnum.FAILMESSAGE_SERVER_ERROR.getMessage());
-        return this;
-    }
 
     public static ResultVo createSimpleSuccessResult() {
         ResultVo resultVo = new ResultVo();
@@ -72,16 +68,25 @@ public class ResultVo<T> implements Serializable {
         return resultVo;
     }
 
+    /**
+     * 创建一个简单失败的结果
+     * @return
+     */
     public static ResultVo createSimpleFailResult() {
         ResultVo resultVo = new ResultVo();
         resultVo.setCode(MyEnum.FAIL.getCode());
         resultVo.setMessage(MyEnum.FAIL.getMessage());
         return resultVo;
     }
+
+    /**
+     * 创建一个系统错误的结果（该结果正常情况下是不会出现的，一般是写代码有问题）
+     * @return
+     */
     public static ResultVo createServerErrorResult() {
         ResultVo resultVo = new ResultVo();
         resultVo.setCode(MyEnum.FAIL.getCode());
-        resultVo.setMessage(MyEnum.FAIL.getMessage());
+        resultVo.setMessage(MyEnum.FAILMESSAGE_SYSTEM_ERROR.getMessage());
         return resultVo;
     }
 

@@ -1,4 +1,4 @@
-package jvm;
+package jvm.demo1;
 
 public class Jvm001 {
 
@@ -16,7 +16,7 @@ class Parent{
     }
 }
 
-class Child extends Parent{
+class  Child extends Parent{
     public static String c="childStr";
     static {
         System.out.println("child-static");

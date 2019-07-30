@@ -1,4 +1,4 @@
-package jvm;
+package jvm.demo1;
 
 public class Jvm002 {
     String a1=new String("aaa");

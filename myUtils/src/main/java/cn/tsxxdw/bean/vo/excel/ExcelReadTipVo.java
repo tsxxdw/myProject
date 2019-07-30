@@ -1,6 +1,5 @@
 package cn.tsxxdw.bean.vo.excel;
 
-import org.springframework.beans.factory.annotation.Value;
 
 /**
  * @Author created by dsj

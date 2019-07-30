@@ -18,8 +18,7 @@
  */
 package cn.tsxxdw.myJava;
 
-import cn.tsxxdw.vo.ResultVo;
-import org.springframework.scheduling.annotation.Async;
+import cn.tsxxdw.mybean.vo.ResultVo;
 
 import java.util.Objects;
 import java.util.function.BiConsumer;

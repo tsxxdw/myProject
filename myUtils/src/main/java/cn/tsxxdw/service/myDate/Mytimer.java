@@ -1,7 +1,6 @@
 package cn.tsxxdw.service.myDate;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
 
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
@@ -13,7 +12,7 @@ import java.util.Map;
  * @Date 2019/3/6 10:24
  * @Description 计时器，计算时间花费
  */
-@Service
+
 @Slf4j
 public class Mytimer {
     private Map<String, LocalTime> map = new LinkedHashMap<>();

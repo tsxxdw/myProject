@@ -16,7 +16,7 @@
         <artifactId>myProject</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-  <!--  <dependencyManagement>
+   <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>tsxxdw</groupId>
@@ -29,6 +29,6 @@
                 <version>1.0-SNAPSHOT</version>
             </dependency>
         </dependencies>
-    </dependencyManagement>-->
+    </dependencyManagement>
 
 </project>

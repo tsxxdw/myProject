@@ -7,6 +7,7 @@
     <groupId>tsxxdw</groupId>
     <artifactId>myProject</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>all-bean</module>
         <module>myUtils</module>

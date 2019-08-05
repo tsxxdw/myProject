@@ -21,6 +21,7 @@ import java.io.Serializable;
  * code = -1 代表服务器错误(失败情况下一般会返回：-1)
  * code = 0  代表默认状态,也代表失败，但是正常情况下是不会出现的,如果出现，那么就是逻辑可能有问题
  * code = 1  代表成功
+ * 最外层的getCode()，getMessage()方法不能设置为 private,否则在任何转json字符串的地方会导致属性输出错误
  *
  * @param <T> 泛型
  */
@@ -91,9 +92,7 @@ public class ResultVo<T> implements Serializable {
     }
 
 
-    private String getMessage() {
-        return message;
-    }
+
 
     private ResultVo setMessage(String message) {
         this.message = message;
@@ -109,9 +108,7 @@ public class ResultVo<T> implements Serializable {
         return this;
     }
 
-    private int getCode() {
-        return code;
-    }
+
 
     private ResultVo setCode(int code) {
         this.code = code;

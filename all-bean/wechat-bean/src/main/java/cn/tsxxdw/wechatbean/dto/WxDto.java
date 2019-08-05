@@ -18,8 +18,9 @@ public class WxDto {
 
     private String unionid; //代表同一个微信用户
     private String openid; //代表同一个微信小程序用户的身份
-    private String session_key;
+    private String session_key;//可以通过code 获取
     private String access_token;
+
 
     public String toString() {
         System.out.println(ToStringBuilder.reflectionToString(this, ToStringStyle.SHORT_PREFIX_STYLE));

@@ -4,11 +4,13 @@ import cn.tsxxdw.mybean.vo.ResultVo;
 import cn.tsxxdw.wechatbean.dto.WxDto;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.binary.Base64;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 import java.security.AlgorithmParameters;
+import java.security.Security;
 
 /**
  * <p>User: qrn
@@ -19,11 +21,14 @@ import java.security.AlgorithmParameters;
 
 @Slf4j
 public class AesCbcUtil {
-
+    static {
+        //BouncyCastle是一个开源的加解密解决方案，主页在http://www.bouncycastle.org/
+        Security.addProvider(new BouncyCastleProvider());
+    }
     private static String encodingFormat = "utf-8";
 
     /**
-     * AES解密
+     * AES解密(获取小程序用户普通信息)
      */
     public static ResultVo<String> decrypt(WxDto wxDto) throws Exception {
 
@@ -31,7 +36,7 @@ public class AesCbcUtil {
         //被加密的数据
         byte[] dataByte = Base64.decodeBase64(wxDto.getEncryptedData());
         //加密秘钥
-        byte[] keyByte = Base64.decodeBase64(wxDto.getAppSecret());
+        byte[] keyByte = Base64.decodeBase64(wxDto.getSession_key());
         //偏移量
         byte[] ivByte = Base64.decodeBase64(wxDto.getIv());
 

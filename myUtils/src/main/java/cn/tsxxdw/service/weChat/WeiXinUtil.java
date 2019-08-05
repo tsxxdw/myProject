@@ -40,6 +40,12 @@ public class WeiXinUtil {
     }
 */
 
+    /**
+     * 认证
+     * @param restTemplate
+     * @param reqWxDto
+     * @return openid,session_key
+     */
     public static WxDto getJscode2session(RestTemplate restTemplate,WxDto reqWxDto) {
         String url = "https://api.weixin.qq.com/sns/jscode2session?appid=APPID" +
                 "&secret=SECRET" + "&js_code=CODE&grant_type=authorization_code";

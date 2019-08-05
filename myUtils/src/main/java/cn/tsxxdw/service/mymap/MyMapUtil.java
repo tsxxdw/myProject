@@ -1,10 +1,9 @@
-package cn.tsxxdw.service.myMap;
+package cn.tsxxdw.service.mymap;
 
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.Hashtable;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @Author created by dsj

@@ -1,4 +1,4 @@
-package cn.tsxxdw.service.myList;
+package cn.tsxxdw.service.mylist;
 
 import com.google.common.collect.Lists;
 import org.junit.jupiter.api.Test;

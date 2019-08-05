@@ -1,7 +1,7 @@
 package demo;
 
 import bean.Student;
-import cn.tsxxdw.service.myDate.Mytimer;
+import cn.tsxxdw.service.mydate.Mytimer;
 
 import java.util.*;
 

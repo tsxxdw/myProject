@@ -1,4 +1,4 @@
-package cn.tsxxdw.service.weChat;
+package cn.tsxxdw.service.wechat;
 
 import org.apache.commons.codec.binary.Base64;
 

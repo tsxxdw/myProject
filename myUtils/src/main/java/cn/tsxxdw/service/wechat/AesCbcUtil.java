@@ -1,4 +1,4 @@
-package cn.tsxxdw.service.weChat;
+package cn.tsxxdw.service.wechat;
 
 import cn.tsxxdw.mybean.vo.ResultVo;
 import cn.tsxxdw.wechatbean.dto.WxDto;

@@ -5,11 +5,8 @@ package cn.tsxxdw.mybean.vo;
  * @Date 2019/4/22 17:16
  * @Description 返回Vo
  */
-//import org.springframework.context.annotation.Scope;
-//import org.springframework.stereotype.Component;
 
 import lombok.AllArgsConstructor;
-
 import lombok.Getter;
 import lombok.ToString;
 

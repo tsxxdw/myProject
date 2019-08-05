@@ -1,6 +1,4 @@
-package cn.tsxxdw.service.myFuture;
-
-import cn.tsxxdw.bean.vo.excel.ExcelEntityVo;
+package cn.tsxxdw.service.myfuture;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;

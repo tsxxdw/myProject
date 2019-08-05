@@ -1,4 +1,4 @@
-package cn.tsxxdw.service.myList;
+package cn.tsxxdw.service.mylist;
 
 import com.google.common.collect.Lists;
 import org.apache.commons.lang3.StringUtils;
@@ -6,7 +6,6 @@ import org.apache.commons.lang3.StringUtils;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * @Author created by dsj

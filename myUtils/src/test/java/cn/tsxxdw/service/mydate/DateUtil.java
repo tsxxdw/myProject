@@ -1,4 +1,4 @@
-package cn.tsxxdw.service.myDate;
+package cn.tsxxdw.service.mydate;
 
 import org.apache.commons.lang3.time.DateFormatUtils;
 import org.apache.commons.lang3.time.DateUtils;

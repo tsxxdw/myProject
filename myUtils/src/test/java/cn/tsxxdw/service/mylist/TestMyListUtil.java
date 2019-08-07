@@ -1,7 +1,7 @@
 package cn.tsxxdw.service.mylist;
 
 import com.google.common.collect.Lists;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @Author created by dsj

@@ -2,7 +2,7 @@ package cn.tsxxdw.service.myexcel;
 
 import cn.tsxxdw.bean.vo.excel.ExcelReadVo;
 import cn.tsxxdw.service.mydate.MytimerUtil;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.io.InputStream;
 

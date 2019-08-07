@@ -36,12 +36,7 @@
         <!-- https://mvnrepository.com/artifact/com.alibaba/easyexcel -->
 
         <!--简单测试类api  start-->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
+
         <!--简单测试类api  end-->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -53,14 +48,40 @@
             <artifactId>spring-web</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.9.2</version>
+            <optional>true</optional> <!-- 防止将devtools依赖传递到其他模块中 -->
+        </dependency>
+        <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.49</version>
         </dependency>
         <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.5</version>
+            <!-- 防止将devtools依赖传递到其他模块中 <optional>true</optional>-->
+        </dependency>
+
+        <!--yaml 配置文件解析器-->
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.24</version>
+            <!-- 防止将devtools依赖传递到其他模块中 -->
+            <optional>true</optional>
+        </dependency>
+        <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-ext-jdk16</artifactId>
             <version>1.46</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
 
 

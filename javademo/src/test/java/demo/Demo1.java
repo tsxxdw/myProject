@@ -6,10 +6,7 @@ import cn.tsxxdw.service.mydate.Mytimer;
 import java.util.*;
 
 public class Demo1 {
-    public static void main(String[] args) {
-         a1();
 
-    }
 
 
     public static void a1(){

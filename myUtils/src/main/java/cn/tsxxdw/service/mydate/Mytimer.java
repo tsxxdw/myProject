@@ -45,17 +45,5 @@ public class Mytimer {
 
     }
 
-  /*  public static void main(String[] args) {
-        Mytimer mytimer = new Mytimer();
-        for (int i = 0; i < 10; i++) {
-            try {
-                Thread.sleep(1000);
-                mytimer.add(i + "");
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
 
-        }
-        mytimer.getInfo();
-    }*/
 }

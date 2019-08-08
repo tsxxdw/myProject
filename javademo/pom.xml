@@ -7,15 +7,17 @@
     <groupId>tsxxdw</groupId>
     <artifactId>javademo</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <parent>
+        <groupId>tsxxdw</groupId>
+        <artifactId>myProject</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
+                <!--这里不需要设置版本，父类里面做了版本限制-->
             </plugin>
         </plugins>
     </build>
@@ -27,16 +29,8 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
 

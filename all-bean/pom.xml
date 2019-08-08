@@ -16,19 +16,33 @@
         <artifactId>myProject</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-   <dependencyManagement>
+<!--    <properties>
+        <my-bean>1.0-SNAPSHOT</my-bean>
+        <wechat-bean>1.0-SNAPSHOT</wechat-bean>
+    </properties>
+    <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>tsxxdw</groupId>
                 <artifactId>my-bean</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>${my-bean}</version>
             </dependency>
             <dependency>
                 <groupId>tsxxdw</groupId>
                 <artifactId>wechat-bean</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>${wechat-bean}</version>
             </dependency>
         </dependencies>
-    </dependencyManagement>
+    </dependencyManagement>-->
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

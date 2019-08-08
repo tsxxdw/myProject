@@ -16,7 +16,7 @@
         <artifactId>myProject</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-<!--    <properties>
+    <properties>
         <my-bean>1.0-SNAPSHOT</my-bean>
         <wechat-bean>1.0-SNAPSHOT</wechat-bean>
     </properties>
@@ -33,7 +33,8 @@
                 <version>${wechat-bean}</version>
             </dependency>
         </dependencies>
-    </dependencyManagement>-->
+    </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>

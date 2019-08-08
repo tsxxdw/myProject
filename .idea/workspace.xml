@@ -4,14 +4,6 @@
     <list default="true" id="e275e920-54e5-4541-b1fc-1309afb38470" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/all-bean/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/all-bean/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javademo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javademo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javademo/src/main/java/java8/demo/demo20190807/TestOptional.java" beforeDir="false" afterPath="$PROJECT_DIR$/javademo/src/main/java/java8/demo/demo20190807/TestOptional.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javademo/src/main/java/str/Test001.java" beforeDir="false" afterPath="$PROJECT_DIR$/javademo/src/main/java/str/Test001.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myUtils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myexcel/MyExcelListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myexcel/MyExcelListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mylog/MyLogUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mylog/MyLogUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/AESDecodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/AESDecodeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/all-bean/my-bean/target/" />
@@ -44,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/all-bean/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+            <state relative-caret-position="270">
+              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -53,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myUtils/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="323">
               <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
             </state>
           </provider>
@@ -106,7 +98,22 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="all-bean" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="all-bean" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="my-bean" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="my-bean" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -241,7 +248,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/Documents and Settings" />
+    <property name="last_opened_file_path" value="D:/duan/file/companydata/wmmt/code/wmmt_git/vegetableChart-manager" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -269,12 +276,12 @@
       <option name="presentableId" value="Default" />
       <updated>1565231777646</updated>
       <workItem from="1565231778797" duration="68000" />
-      <workItem from="1565231863187" duration="1839000" />
+      <workItem from="1565231863187" duration="2507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1907000" />
+    <option name="totallyTimeSpent" value="2575000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -287,9 +294,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20375335" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -302,7 +308,7 @@
       <window_info anchor="bottom" id="JRebel Executor" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15864022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28895184" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -318,7 +324,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.36662197" />
+      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.3686327" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -376,7 +382,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
+        <state relative-caret-position="323">
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
         </state>
       </provider>
@@ -390,8 +396,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/all-bean/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        <state relative-caret-position="270">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
         </state>
       </provider>
     </entry>

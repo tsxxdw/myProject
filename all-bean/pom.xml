@@ -20,20 +20,7 @@
         <my-bean>1.0-SNAPSHOT</my-bean>
         <wechat-bean>1.0-SNAPSHOT</wechat-bean>
     </properties>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>tsxxdw</groupId>
-                <artifactId>my-bean</artifactId>
-                <version>${my-bean}</version>
-            </dependency>
-            <dependency>
-                <groupId>tsxxdw</groupId>
-                <artifactId>wechat-bean</artifactId>
-                <version>${wechat-bean}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+
 
     <dependencies>
         <dependency>

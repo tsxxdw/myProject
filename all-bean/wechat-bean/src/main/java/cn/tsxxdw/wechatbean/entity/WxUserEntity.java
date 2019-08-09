@@ -7,7 +7,6 @@ import lombok.Data;
  */
 @Data
 public class WxUserEntity {
-    private Long id;
     private String openid;
     private String unionid;
 }

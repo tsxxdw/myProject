@@ -55,7 +55,7 @@ public class MyLogUtil {
             StackTraceElement stackTraceElement = stackTraceElements[2];
 
             Optional.ofNullable(stackTraceElement).ifPresent(o -> {
-                sb.append("Log site is ");
+                sb.append("Error log site is ");
                 sb.append(o.getClassName());
                 sb.append(".");
                 sb.append(o.getMethodName());

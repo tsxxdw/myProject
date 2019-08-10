@@ -6,6 +6,6 @@ import org.junit.Test;
 public class TestMyLogUtil {
     @Test
     public void testLogInfo(){
-        MyLogUtil.logInfo(this.getClass(), ResultVo.createServerErrorResult());
+        MyLogUtil.logInfo(this.getClass(), ResultVo.createSystemErrorResult());
     }
 }

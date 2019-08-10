@@ -1,36 +1,45 @@
 package cn.tsxxdw.mybese;
 
 
-import cn.tsxxdw.myJava.MyFunction;
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.function.Function;
+import java.util.List;
 
 /**
  * @param <E> 插入数据库对应的entity
  * @param <M> 所需的Mapper类
- * @param <R> 操作成功返回的类型
  */
 @Setter
-public class BaseService<E, M extends BaseMapper<E>, R> {
+public class BaseService<E, M extends BaseMapper<E>> {
     @Autowired
     private M m;
 
-    MyFunction<E, Boolean> addFunction = o -> {
-        try {
-            m.insert(o);
-            return true;
-        } catch (Exception e) {
-            throw e;
-        }
-    };
+  //  create,remove,search,alter
 
-    public R add(E e, Function<Boolean, R> thenFunction) throws Exception {
+    public int insert(E e) throws Exception {
+        return m.insert(e);
+    }
 
-        return addFunction.andThen_boolean(thenFunction).apply(e);
+    public int delete(Wrapper wrapper) throws Exception {
+        int res = m.delete(wrapper);
+        return res;
+    }
 
+    public E selectOne(Wrapper wrapper) {
+        E e = (E) m.selectOne(wrapper);
+        return e;
+    }
+
+    public List<E> selectList(Wrapper wrapper) {
+        List<E> list = m.selectList(wrapper);
+        return list;
+    }
+
+    public int update(E e,Wrapper wrapper){
+       return m.update(e,wrapper);
     }
 
 

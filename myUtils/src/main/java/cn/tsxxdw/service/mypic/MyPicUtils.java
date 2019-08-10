@@ -1,6 +1,8 @@
 package cn.tsxxdw.service.mypic;
 
 import cn.tsxxdw.mybean.vo.ResultVo;
+import cn.tsxxdw.service.mylog.MyLogUtil;
+import lombok.extern.slf4j.Slf4j;
 
 import javax.imageio.IIOImage;
 import javax.imageio.ImageIO;
@@ -13,33 +15,35 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Objects;
 
+@Slf4j
 public class MyPicUtils {
-    public static ResultVo compressPic(String source, String target) throws IOException {
-        Objects.requireNonNull(source);
-        Objects.requireNonNull(target);
-        File file = null;
-        BufferedImage src = null;
-        FileOutputStream out = null;
-        ImageWriter imgWrier;
-        ImageWriteParam imgWriteParams;
+    public static ResultVo compressPic(String source, String target) {
+        try {
+            Objects.requireNonNull(source);
+            File file = null;
+            BufferedImage src = null;
+            FileOutputStream out = null;
+            ImageWriter imgWrier;
+            ImageWriteParam imgWriteParams;
 
-        // 指定写图片的方式为 png
-        imgWrier = ImageIO.getImageWritersByFormatName("png").next();
-        imgWriteParams = new javax.imageio.plugins.jpeg.JPEGImageWriteParam(
-                null);
-        // 要使用压缩，必须指定压缩方式为MODE_EXPLICIT
-        imgWriteParams.setCompressionMode(imgWriteParams.MODE_EXPLICIT);
-        // 这里指定压缩的程度，参数qality是取值0~1范围内，
-        imgWriteParams.setCompressionQuality((float) 1);
-        imgWriteParams.setProgressiveMode(imgWriteParams.MODE_DISABLED);
-        ColorModel colorModel = ImageIO.read(new File(source)).getColorModel();// ColorModel.getRGBdefault();
-        // 指定压缩时使用的色彩模式
+            String suffix = getSuffix_notDots(source).getData();
+
+            // 指定写图片的方式为 png
+            imgWrier = ImageIO.getImageWritersByFormatName(suffix).next();
+            imgWriteParams = new javax.imageio.plugins.jpeg.JPEGImageWriteParam(
+                    null);
+            // 要使用压缩，必须指定压缩方式为MODE_EXPLICIT
+            imgWriteParams.setCompressionMode(imgWriteParams.MODE_EXPLICIT);
+            // 这里指定压缩的程度，参数qality是取值0~1范围内，
+            imgWriteParams.setCompressionQuality((float) 0.1);
+            imgWriteParams.setProgressiveMode(imgWriteParams.MODE_DISABLED);
+            ColorModel colorModel = ImageIO.read(new File(source)).getColorModel();// ColorModel.getRGBdefault();
+            // 指定压缩时使用的色彩模式
 //        imgWriteParams.setDestinationType(new javax.imageio.ImageTypeSpecifier(
 //                colorModel, colorModel.createCompatibleSampleModel(16, 16)));
-        imgWriteParams.setDestinationType(new javax.imageio.ImageTypeSpecifier(
-                colorModel, colorModel.createCompatibleSampleModel(16, 16)));
+            imgWriteParams.setDestinationType(new javax.imageio.ImageTypeSpecifier(
+                    colorModel, colorModel.createCompatibleSampleModel(16, 16)));
 
-        try {
 
             file = new File(source);
             System.out.println(file.length());
@@ -59,10 +63,42 @@ public class MyPicUtils {
 
 
         } catch (Exception e) {
-            e.printStackTrace();
-            return ResultVo.createServerErrorResult();
+            log.error("MyPicUtils.compressPic.error:{}", e);
+            return ResultVo.createSystemErrorResult();
         }
 
+    }
+
+    /**
+     * 没有小数点
+     *
+     * @param originFileName
+     * @return
+     */
+    public static ResultVo<String> getSuffix_notDots(String originFileName) {
+        int index = originFileName.lastIndexOf(".");
+        if (index < 0) { //判断是否有“.”
+            return new ResultVo().setFail("Suffix dont have");
+        }
+        int leng = originFileName.length();
+        if (leng - index <= 1) {//判断是否有后缀
+            return new ResultVo().setFail("Dont have suffix");
+        }
+        String suffix = originFileName.substring(index + 1, leng);
+        return new ResultVo().setSuccess(suffix);
+    }
+
+    public static ResultVo<String> getPrefix(String originFileName) {
+        int index = originFileName.lastIndexOf(".");
+        if (index < 0) { //判断是否有“.”
+            return new ResultVo().setFail("Suffix dont have");
+        }
+        int leng = originFileName.length();
+        if (leng - index <= 1) {//判断是否有后缀
+            return new ResultVo().setFail("Dont have suffix");
+        }
+        String suffix = originFileName.substring(0, index);
+        return new ResultVo().setSuccess(suffix);
     }
 
 

@@ -56,7 +56,7 @@ public class AesCbcUtil {
             }
         } catch (Exception e) {
             log.error("AesCbcUtil.decrypt.error:{}", e);
-            return ResultVo.createServerErrorResult();
+            return ResultVo.createSystemErrorResult();
         }
         return new ResultVo<>();//创建一个默认的结果
     }

@@ -81,7 +81,7 @@ public class ResultVo<T> implements Serializable {
      * 创建一个系统错误的结果（该结果正常情况下是不会出现的，一般是写代码有问题）
      * @return
      */
-    public static ResultVo createServerErrorResult() {
+    public static ResultVo createSystemErrorResult() {
         ResultVo resultVo = new ResultVo();
         resultVo.setCode(MyEnum.FAIL.getCode());
         resultVo.setMessage(MyEnum.FAILMESSAGE_SYSTEM_ERROR.getMessage());

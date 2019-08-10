@@ -63,11 +63,11 @@ public class MyJsonUtil {
             }
             if (jsonClassType != null && jsonClassType.trim().length() > 0) {
                 classType = jsonClassType;
-            }else {
-                jsonClassType=FASTJSON_CLASS_TYPE;
-                classType=jsonClassType;
+            } else {
+                jsonClassType = FASTJSON_CLASS_TYPE;
+                classType = jsonClassType;
             }
-            log.info("json初始化：{}",classType);
+            log.info("json初始化：{}", classType);
 
             if (classType != null && classType.length() > 0) {
                 if (Class.forName(CLASS_TYPE_FASTJSON) != null && classType.equals(FASTJSON_CLASS_TYPE)) {
@@ -328,9 +328,9 @@ public class MyJsonUtil {
      * @param <T>       泛型参数类型
      * @return 返回解析后的对象
      */
-    public static <T> T toPojo(String json, Class<T> valueType) {
+    public static <T> T toPojo(String json, Class<T> valueType)throws Exception {
         T result = null;
-        try {
+
 
             switch (classType) {
                 case JACKSON_CLASS_TYPE:
@@ -345,9 +345,7 @@ public class MyJsonUtil {
                 default:
                     break;
             }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+
 
         return result;
     }

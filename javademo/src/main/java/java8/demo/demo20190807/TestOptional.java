@@ -9,7 +9,7 @@ public class TestOptional {
     @Test
     public void test001(){
         System.out.println("1");
-        Optional<ResultVo> optional1=Optional.ofNullable(ResultVo.createServerErrorResult());
+        Optional<ResultVo> optional1=Optional.ofNullable(ResultVo.createSystemErrorResult());
         optional1.ifPresent(o->{
             System.out.println(o.toString());
         });

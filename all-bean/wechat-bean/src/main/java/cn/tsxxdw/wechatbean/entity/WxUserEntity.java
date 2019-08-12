@@ -9,4 +9,7 @@ import lombok.Data;
 public class WxUserEntity {
     private String openid;
     private String unionid;
+    private String phoneNumber;
+    private String purePhoneNumber;
+    private String countryCode;
 }

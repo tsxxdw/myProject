@@ -7,6 +7,7 @@ import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 /**
  * @param <E> 插入数据库对应的entity
@@ -17,9 +18,18 @@ public class BaseService<E, M extends BaseMapper<E>> {
     @Autowired
     private M m;
 
-  //  create,remove,search,alter
+    public M getM() {
+        return m;
+    }
+
+    //  create,remove,search,alter
 
     public int insert(E e) throws Exception {
+        return m.insert(e);
+    }
+
+    public int insert(E e, Consumer<E> consumer) throws Exception {
+        consumer.accept(e);
         return m.insert(e);
     }
 
@@ -38,8 +48,8 @@ public class BaseService<E, M extends BaseMapper<E>> {
         return list;
     }
 
-    public int update(E e,Wrapper wrapper){
-       return m.update(e,wrapper);
+    public int update(E e, Wrapper wrapper) {
+        return m.update(e, wrapper);
     }
 
 

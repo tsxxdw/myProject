@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e275e920-54e5-4541-b1fc-1309afb38470" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e275e920-54e5-4541-b1fc-1309afb38470" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/all-bean/my-bean/target/" />
     <ignored path="$PROJECT_DIR$/all-bean/wechat-bean/target/" />
@@ -612,12 +610,12 @@
       <workItem from="1565345427273" duration="1099000" />
       <workItem from="1565346545929" duration="28000" />
       <workItem from="1565401067957" duration="12413000" />
-      <workItem from="1565572932605" duration="257000" />
+      <workItem from="1565572932605" duration="739000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36653000" />
+    <option name="totallyTimeSpent" value="37135000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

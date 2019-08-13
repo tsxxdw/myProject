@@ -39,6 +39,7 @@
         <mysql-connector-java>6.0.6</mysql-connector-java>
         <druid>1.1.10</druid>
         <mybatis-plus-boot-starter>3.1.2</mybatis-plus-boot-starter>
+        <javax.mail>1.5.4</javax.mail>
     </properties>
 
 
@@ -117,7 +118,11 @@
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus-boot-starter}</version>
             </dependency>
-
+            <dependency >
+                <groupId >com.sun.mail </groupId >
+                <artifactId >javax.mail </artifactId >
+                <version >${javax.mail} </version >
+            </dependency >
         </dependencies>
         <!--build标签描述了如何来编译及打包项目-->
     </dependencyManagement>

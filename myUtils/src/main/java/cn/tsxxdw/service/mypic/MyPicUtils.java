@@ -1,6 +1,6 @@
 package cn.tsxxdw.service.mypic;
 
-import cn.tsxxdw.mybean.vo.ResultVo;
+import cn.tsxxdw.vo.ResultVo;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.imageio.IIOImage;

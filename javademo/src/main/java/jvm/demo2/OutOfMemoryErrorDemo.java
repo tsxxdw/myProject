@@ -1,6 +1,6 @@
 package jvm.demo2;
 
-import cn.tsxxdw.mybean.vo.ResultVo;
+import cn.tsxxdw.vo.ResultVo;
 
 public class OutOfMemoryErrorDemo {
 

@@ -18,7 +18,7 @@
  */
 package cn.tsxxdw.myJava;
 
-import cn.tsxxdw.mybean.vo.ResultVo;
+import cn.tsxxdw.vo.ResultVo;
 
 import java.util.Objects;
 import java.util.function.BiConsumer;

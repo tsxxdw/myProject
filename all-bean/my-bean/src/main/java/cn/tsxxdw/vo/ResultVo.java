@@ -1,4 +1,4 @@
-package cn.tsxxdw.mybean.vo;
+package cn.tsxxdw.vo;
 
 /**
  * @Author created by dsj

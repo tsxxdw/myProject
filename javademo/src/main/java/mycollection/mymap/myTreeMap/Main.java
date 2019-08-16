@@ -1,6 +1,6 @@
 package mycollection.mymap.myTreeMap;
 
-import cn.tsxxdw.mybean.vo.ResultVo;
+import cn.tsxxdw.vo.ResultVo;
 
 import java.util.Map;
 import java.util.TreeMap;

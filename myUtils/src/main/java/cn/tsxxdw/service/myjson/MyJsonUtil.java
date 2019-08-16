@@ -1,6 +1,6 @@
 package cn.tsxxdw.service.myjson;
 
-import cn.tsxxdw.mybean.vo.ResultVo;
+import cn.tsxxdw.vo.ResultVo;
 import cn.tsxxdw.service.mylog.MyLogUtil;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;

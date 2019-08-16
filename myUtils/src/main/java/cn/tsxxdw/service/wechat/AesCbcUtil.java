@@ -1,6 +1,6 @@
 package cn.tsxxdw.service.wechat;
 
-import cn.tsxxdw.mybean.vo.ResultVo;
+import cn.tsxxdw.vo.ResultVo;
 import cn.tsxxdw.wechatbean.dto.WxDto;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.binary.Base64;

@@ -1,7 +1,7 @@
 package cn.tsxxdw.service.mylog;
 
 import cn.tsxxdw.myJava.MyOptional;
-import cn.tsxxdw.mybean.vo.ResultVo;
+import cn.tsxxdw.vo.ResultVo;
 import cn.tsxxdw.service.myjson.MyJsonUtil;
 import lombok.extern.slf4j.Slf4j;
 

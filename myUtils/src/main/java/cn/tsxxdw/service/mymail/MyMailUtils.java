@@ -1,6 +1,6 @@
 package cn.tsxxdw.service.mymail;
 
-import cn.tsxxdw.mybean.vo.ResultVo;
+import cn.tsxxdw.vo.ResultVo;
 import com.sun.mail.util.MailSSLSocketFactory;
 
 import javax.mail.*;

@@ -1,6 +1,6 @@
 package cn.tsxxdw.service.mylog;
 
-import cn.tsxxdw.mybean.vo.ResultVo;
+import cn.tsxxdw.vo.ResultVo;
 import org.junit.Test;
 
 public class TestMyLogUtil {

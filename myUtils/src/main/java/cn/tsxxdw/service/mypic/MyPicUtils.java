@@ -184,7 +184,7 @@ public class MyPicUtils {
 
 
             g.setFont(new java.awt.Font("宋体", java.awt.Font.BOLD, buffImg.getHeight() /10));
-            g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_ATOP, 0.15f));
+            g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_ATOP, 1));
             g.rotate(Math.toRadians(45),  buffImg.getWidth()/2,buffImg.getHeight() /2);
             g.drawString(centerLogoText,  buffImg.getWidth()/3 , buffImg.getHeight()/2);
 

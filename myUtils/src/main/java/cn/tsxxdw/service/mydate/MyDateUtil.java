@@ -3,9 +3,11 @@ package cn.tsxxdw.service.mydate;
 import org.apache.commons.lang3.StringUtils;
 
 import java.text.SimpleDateFormat;
+import java.time.DateTimeException;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
@@ -28,6 +30,23 @@ public class MyDateUtil {
     public static final int DAY_TOTAL_SECOND = 86400;
     public static final Long DAY_TOTAL_MILLISECOND = 86400000L;
     public static final TimeZone TIMEZONE_BEIJING = TimeZone.getTimeZone("GMT+08:00");
+
+    public static String getDateStr(String dateFormat) {
+        LocalDateTime arrivalDate = LocalDateTime.now();
+        try {
+            if (StringUtils.isBlank(dateFormat)) {
+                dateFormat = "yyyy-MM-dd HH:mm:ss";
+            }
+            DateTimeFormatter format = DateTimeFormatter.ofPattern(dateFormat);
+            String landing = arrivalDate.format(format);
+            return landing;
+        } catch (DateTimeException ex) {
+            ex.printStackTrace();
+        }
+        return null;
+    }
+
+
     private static final ThreadLocal<SimpleDateFormat> threadLocal_MMddyyyy = new ThreadLocal<SimpleDateFormat>() {
         protected synchronized SimpleDateFormat initialValue() {
             return new SimpleDateFormat("MM/dd/yyyy");

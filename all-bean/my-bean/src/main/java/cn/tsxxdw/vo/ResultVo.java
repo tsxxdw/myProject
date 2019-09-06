@@ -40,7 +40,15 @@ public class ResultVo<T> implements Serializable {
     private String message = MyEnum.DEFAULT.getMessage();
     private T data = null;
     private String customMessage = "";//自定义返回信息,一般情况下用不到这个属性
+    private Long count;
 
+    public Long getCount() {
+        return count;
+    }
+
+    public void setCount(Long count) {
+        this.count = count;
+    }
 
     public ResultVo<T> setSuccess(T data) {
         return this.setCode(MyEnum.SUCCESS.code).setMessage(MyEnum.SUCCESS.getMessage()).setData(data);

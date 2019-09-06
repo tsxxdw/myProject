@@ -36,7 +36,7 @@ public class AesCbcUtil {
         //被加密的数据
         byte[] dataByte = Base64.decodeBase64(wxDto.getEncryptedData());
         //加密秘钥
-        byte[] keyByte = Base64.decodeBase64(wxDto.getSession_key());
+        byte[] keyByte = Base64.decodeBase64(wxDto.getSessionKey());
         //偏移量
         byte[] ivByte = Base64.decodeBase64(wxDto.getIv());
 

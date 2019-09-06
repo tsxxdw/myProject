@@ -46,12 +46,17 @@ public class ResultVo<T> implements Serializable {
         return count;
     }
 
-    public void setCount(Long count) {
+    public ResultVo<T> setCount(Long count) {
         this.count = count;
+        return this;
     }
 
     public ResultVo<T> setSuccess(T data) {
         return this.setCode(MyEnum.SUCCESS.code).setMessage(MyEnum.SUCCESS.getMessage()).setData(data);
+    }
+
+    public ResultVo<T> setPageSuccess(T data,Long count) {
+        return this.setCode(MyEnum.SUCCESS.code).setMessage(MyEnum.SUCCESS.getMessage()).setData(data).setCount(count);
     }
 
     public ResultVo<T> setSuccess(String message, T data) {

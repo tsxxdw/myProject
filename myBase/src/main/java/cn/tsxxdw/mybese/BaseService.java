@@ -3,6 +3,7 @@ package cn.tsxxdw.mybese;
 
 import cn.tsxxdw.other.NullSafeWrapper;
 import cn.tsxxdw.service.mystr.MyStrUtils;
+import cn.tsxxdw.vo.ResultVo;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -57,8 +58,8 @@ public class BaseService<E, M extends BaseMapper<E>> {
         return list;
     }
 
-    public List<E> selectPage(Object object, NullSafeWrapper where) throws Exception {
-        Map<String, String> fieldMap = new HashMap<>();
+    public ResultVo<List<E>> selectPage(Object object, NullSafeWrapper where) throws Exception {
+        List<E> list = null;
         Field[] field = object.getClass().getDeclaredFields(); //获取实体类的所有属性，返回Field数组
         Integer page = null;
         Integer limit = null;
@@ -72,17 +73,23 @@ public class BaseService<E, M extends BaseMapper<E>> {
             String underlineFiledName = MyStrUtils.camelToUnderline(camelFiledName, 1);
             if (StringUtils.isBlank(value)) continue;
             if ("limit".equals(camelFiledName)) {
-                 limit=Integer.parseInt(value);
+                limit = Integer.parseInt(value);
             }
             if ("page".equals(camelFiledName)) {
-                 page=Integer.parseInt(value);
+                page = Integer.parseInt(value);
             }
             where.eq(underlineFiledName, value);
         }
-        Page<E> myPage = new Page<>(page, limit);
-        IPage<E> iPage = getM().selectPage(myPage, where);
-        List<E> list = iPage.getRecords();
-        return list;
+        if (page == null || limit == null) {
+            list = selectList(where);
+            return new ResultVo().setSuccess(list);
+        } else {
+            Page<E> myPage = new Page<>(page, limit);
+            IPage<E> iPage = getM().selectPage(myPage, where);
+            list = iPage.getRecords();
+            return new ResultVo<List<E>>().setPageSuccess(list,iPage.getTotal());
+        }
+
     }
 
     public int update(E e, Wrapper wrapper) {

@@ -52,13 +52,44 @@ public class BaseService<E, M extends BaseMapper<E>> {
         E e = (E) m.selectOne(wrapper);
         return e;
     }
+    public E selectOne(Object object, NullSafeWrapper where) throws Exception {
+        Field[] field = object.getClass().getDeclaredFields(); //获取实体类的所有属性，返回Field数组
+        for (int j = 0; j < field.length; j++) { //遍历所有属性
+            String camelFiledName = field[j].getName(); //获取属性的名字
+            String name = camelFiledName.substring(0, 1).toUpperCase() + camelFiledName.substring(1); //将属性的首字符大写，方便构造get，set方法
+            String type = field[j].getGenericType().toString(); //获取属性的类型
+            //如果type是类类型，则前面包含"class "，后面跟类名
+            Method m = object.getClass().getMethod("get" + name);
+            String value = (String) m.invoke(object); //调用getter方法获取属性值
+            String underlineFiledName = MyStrUtils.camelToUnderline(camelFiledName, 1);
+            if (StringUtils.isBlank(value)) continue;
+            if("searchContent".equals(camelFiledName)){
+                continue;
+            }
+            if ("limit".equals(camelFiledName)) {
+                continue;
+            }
+            if ("page".equals(camelFiledName)) {
+                continue;
+            }
+            if("orderByAsc".equals(camelFiledName)){
+                where.orderByAsc(camelFiledName);
+            }
+            if("orderByDesc".equals(camelFiledName)){
+                where.orderByDesc(camelFiledName);
+            }
+            where.eq(underlineFiledName, value);
+        }
+       return selectOne(where);
+
+    }
 
     public List<E> selectList(Wrapper wrapper) {
         List<E> list = m.selectList(wrapper);
         return list;
     }
 
-    public ResultVo<List<E>> selectPage(Object object, NullSafeWrapper where) throws Exception {
+    public ResultVo<List<E>> selectList(Object object, NullSafeWrapper where) throws Exception {
         List<E> list = null;
         Field[] field = object.getClass().getDeclaredFields(); //获取实体类的所有属性，返回Field数组
         Integer page = null;

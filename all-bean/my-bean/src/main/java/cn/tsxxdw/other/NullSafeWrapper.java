@@ -10,6 +10,23 @@ public class NullSafeWrapper<T> extends QueryWrapper<T> {
     private static final long serialVersionUID = -3136609040116768649L;
 
     @Override
+    public QueryWrapper<T> orderByAsc(String column) {
+        if (!isEmpty(column)) {
+            return super.orderByAsc(column);
+        }
+        return this;
+    }
+
+    @Override
+    public QueryWrapper<T> orderByDesc(String column) {
+        if (!isEmpty(column)) {
+            return super.orderByDesc(column);
+        }
+        return this;
+    }
+
+
+    @Override
     public QueryWrapper<T> eq(String column, Object params) {
         if (!isEmpty(params)) {
             return super.eq(column, params);

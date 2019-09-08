@@ -78,9 +78,9 @@ public class BaseService<E, M extends BaseMapper<E>> {
             //如果type是类类型，则前面包含"class "，后面跟类名
             Method m = object.getClass().getMethod("get" + name);
             String underlineFiledName = MyStrUtils.camelToUnderline(camelFiledName, 1);
-            Object value = (String) m.invoke(object); //调用getter方法获取属性值
+            Object value =  m.invoke(object); //调用getter方法获取属性值
 
-            if("java.lang.String".equals(type)){
+            if("class java.lang.String".equals(type)){
                 String valueStr= (String) value;
                 if (StringUtils.isBlank(valueStr)) continue;
 
@@ -94,7 +94,7 @@ public class BaseService<E, M extends BaseMapper<E>> {
                 }else {
                     where.eq(underlineFiledName, value);
                 }
-            }else if("java.lang.Integer".equals(type)) {
+            }else if("class java.lang.Integer".equals(type)) {
 
 
                 Integer valueInteger=(Integer)value;

@@ -41,16 +41,16 @@ public class WeiXinUtil {
     public static WxDto getJscode2session(RestTemplate restTemplate, WxDto reqWxDto) {
         WxDto resWxDto = new WxDto();
         String url = "https://api.weixin.qq.com/sns/jscode2session?appid=APPID" +
-                "&secret=SECRET" + "&js_code=CODE&grant_type=authorization_code";
-        url = url.replace("APPID", "wxdd6d991e583e72c6");
-        url = url.replace("SECRET", "a8090183822029781624acd7c676e382");
+                "&secret=APPSECRET" + "&js_code=CODE&grant_type=authorization_code";
+        url = url.replace("APPID", reqWxDto.getAppid());
+        url = url.replace("APPSECRET", reqWxDto.getAppSecret());
         url = url.replace("CODE", reqWxDto.getCode());
 
         try {
             ResponseEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.GET, null, String.class);
             String json = responseEntity.getBody();
             resWxDto =  MyJsonUtil.toPojo(json,WxDto.class);
-
+            //获得session_key和openid
 
         } catch (Exception e) {
             log.error("getAccess_token.error:{}", e);

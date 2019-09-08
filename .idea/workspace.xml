@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e275e920-54e5-4541-b1fc-1309afb38470" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/WeiXinUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/WeiXinUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/all-bean/my-bean/target/" />
@@ -44,28 +44,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/Where.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="37" />
-              <folding>
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#417#418#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javademo/src/main/java/demo/demo/Demo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="12" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javademo/src/main/java/demo/demo20190906/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
@@ -74,15 +52,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="96" column="28" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
+            <state relative-caret-position="266">
+              <caret line="99" column="52" lean-forward="true" selection-start-line="99" selection-start-column="52" selection-end-line="99" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4921#4922#0" expanded="true" />
                 <element signature="e#4964#4965#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/dto/WxDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/WeiXinUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="41" column="22" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,7 +158,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ackson-databind</find>
       <find>${</find>
       <find>snakeyaml</find>
       <find>ybatis-spring-boot-starter</find>
@@ -189,6 +187,7 @@
       <find>openid</find>
       <find>encodingFormat</find>
       <find />
+      <find>SECRET</find>
     </findStrings>
     <replaceStrings>
       <replace>MyFunction</replace>
@@ -244,7 +243,6 @@
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/AESDecodeUtils.java" />
         <option value="$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/dto/WxDto.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/AesCbcUtil.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/WeiXinUtil.java" />
         <option value="$PROJECT_DIR$/javademo/src/main/java/demo/demo20190906/DemoFiles.java" />
         <option value="$PROJECT_DIR$/javademo/src/main/java/demo/demo20190906/Main.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mystr/MyStrUtils.java" />
@@ -254,6 +252,7 @@
         <option value="$PROJECT_DIR$/myBase/pom.xml" />
         <option value="$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/NullSafeWrapper.java" />
         <option value="$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java" />
+        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/WeiXinUtil.java" />
       </list>
     </option>
   </component>
@@ -626,7 +625,7 @@
       <workItem from="1567817754624" duration="7024000" />
       <workItem from="1567840994156" duration="8459000" />
       <workItem from="1567869182885" duration="291000" />
-      <workItem from="1567902925727" duration="8500000" />
+      <workItem from="1567902925727" duration="10235000" />
     </task>
     <task id="LOCAL-00001" summary="bean 位置调整">
       <created>1565920961575</created>
@@ -691,7 +690,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567913893285</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="filed parent">
+      <created>1567914542464</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1567914542464</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -700,7 +706,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109948000" />
+    <option name="totallyTimeSpent" value="111683000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -726,7 +732,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.1388102" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8605898" visible="true" weight="0.11614731" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8605898" visible="true" weight="0.11614731" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49865952" weight="0.07932011" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -746,7 +752,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.14745308" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.14745308" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.1621984" />
@@ -1135,23 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/dto/WxDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/WeiXinUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/all-bean/wechat-bean/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1188,12 +1177,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="96" column="28" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
+        <state relative-caret-position="266">
+          <caret line="99" column="52" lean-forward="true" selection-start-line="99" selection-start-column="52" selection-end-line="99" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4921#4922#0" expanded="true" />
             <element signature="e#4964#4965#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/dto/WxDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/WeiXinUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

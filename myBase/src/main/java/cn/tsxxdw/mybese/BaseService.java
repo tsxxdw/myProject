@@ -10,6 +10,7 @@ import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.google.common.collect.Lists;
 import lombok.Setter;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,10 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.function.Consumer;
 
 /**
@@ -59,37 +57,58 @@ public class BaseService<E, M extends BaseMapper<E>> {
 
 
     private NullSafeWrapper select(Object object, NullSafeWrapper where, PageQueryDto pageQueryDto) throws Exception {
-        Field[] field = object.getClass().getDeclaredFields(); //获取实体类的所有属性，返回Field数组
-        for (int j = 0; j < field.length; j++) { //遍历所有属性
-            String camelFiledName = field[j].getName(); //获取属性的名字
+        List<Field> fieldList= Lists.newArrayList();
+        boolean parentClassIsObject=false;//父类是object?
+        Class parmClass=object.getClass();//获取当前类
+        Class currentClass=object.getClass();//获取当前类
+        do{
+            Field[] field = currentClass.getDeclaredFields(); //获取实体类的所有属性，返回Field数组
+            List<Field> tempList=  Arrays.asList(field);
+            fieldList.addAll(tempList);
+            currentClass=  currentClass.getSuperclass();
+           String currentClassName= currentClass.getName();
+           if("java.lang.Object".equals(currentClassName))parentClassIsObject=true;
+        }while (!parentClassIsObject);
+
+
+        for (int j = 0; j < fieldList.size(); j++) { //遍历所有属性
+            String camelFiledName = fieldList.get(j).getName(); //获取属性的名字
             String name = camelFiledName.substring(0, 1).toUpperCase() + camelFiledName.substring(1); //将属性的首字符大写，方便构造get，set方法
-            String type = field[j].getGenericType().toString(); //获取属性的类型
+            String type = fieldList.get(j).getGenericType().toString(); //获取属性的类型
             //如果type是类类型，则前面包含"class "，后面跟类名
             Method m = object.getClass().getMethod("get" + name);
             String value = (String) m.invoke(object); //调用getter方法获取属性值
             String underlineFiledName = MyStrUtils.camelToUnderline(camelFiledName, 1);
             if (StringUtils.isBlank(value)) continue;
-            where.eq(underlineFiledName, value);
+
+            else if("limit".equals(camelFiledName)){
+                 pageQueryDto.setLimit((Integer) getValue(parmClass,"Limit"));
+             }
+            else   if("page".equals(camelFiledName)){
+
+                pageQueryDto.setPage((Integer) getValue(parmClass, "Page"));
+            }
+            else  if("orderByAsc".equals(camelFiledName)){
+
+                where.orderByAsc((String)getValue(parmClass,  "OrderByAsc"));
+            }
+            else  if("orderByDesc".equals(camelFiledName)){
+                where.orderByDesc((String)getValue(parmClass, "OrderByDesc"));
+            }else {
+                where.eq(underlineFiledName, value);
+            }
         }
-
-        pageQueryDto.setLimit((Integer) getValue(object,"Limit"));
-        pageQueryDto.setPage((Integer) getValue(object, "Page"));
-
-        where.orderByAsc((String)getValue(object,  "OrderByAsc"));
-        where.orderByDesc((String)getValue(object, "OrderByDesc"));
-
-
 
 
         return where;
     }
 
-    private Object getValue(Object object, String methodName) throws Exception{
-        Method method = object.getClass().getMethod("get" + methodName);
+    private Object getValue(Class c, String methodName) throws Exception{
+        Method method = c.getMethod("get" + methodName);
         if (null == method) {
             return null;
         } else {
-            return method.invoke(object);
+            return method.invoke(c);
         }
     }
 

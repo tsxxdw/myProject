@@ -77,32 +77,49 @@ public class BaseService<E, M extends BaseMapper<E>> {
             String type = fieldList.get(j).getGenericType().toString(); //获取属性的类型
             //如果type是类类型，则前面包含"class "，后面跟类名
             Method m = object.getClass().getMethod("get" + name);
-            String value = (String) m.invoke(object); //调用getter方法获取属性值
             String underlineFiledName = MyStrUtils.camelToUnderline(camelFiledName, 1);
-            if (StringUtils.isBlank(value)) continue;
+            Object value = (String) m.invoke(object); //调用getter方法获取属性值
 
-            else if("limit".equals(camelFiledName)){
-                 pageQueryDto.setLimit((Integer) getValue(parmClass,"Limit"));
-             }
-            else   if("page".equals(camelFiledName)){
+            if("java.lang.String".equals(type)){
+                String valueStr= (String) value;
+                if (StringUtils.isBlank(valueStr)) continue;
 
-                pageQueryDto.setPage((Integer) getValue(parmClass, "Page"));
-            }
-            else  if("orderByAsc".equals(camelFiledName)){
 
-                where.orderByAsc((String)getValue(parmClass,  "OrderByAsc"));
+                else  if("orderByAsc".equals(camelFiledName)){
+
+                    where.orderByAsc(valueStr);
+                }
+                else  if("orderByDesc".equals(camelFiledName)){
+                    where.orderByDesc(valueStr);
+                }else {
+                    where.eq(underlineFiledName, value);
+                }
+            }else if("java.lang.Integer".equals(type)) {
+
+
+                Integer valueInteger=(Integer)value;
+                if("limit".equals(camelFiledName)){
+                    pageQueryDto.setLimit(valueInteger);
+                }
+                else   if("page".equals(camelFiledName)){
+
+                    pageQueryDto.setPage(valueInteger);
+                }
             }
-            else  if("orderByDesc".equals(camelFiledName)){
-                where.orderByDesc((String)getValue(parmClass, "OrderByDesc"));
-            }else {
-                where.eq(underlineFiledName, value);
-            }
+
         }
 
 
         return where;
     }
 
+    /**
+     * 该方法有问题，没找到原因
+     * @param c
+     * @param methodName
+     * @return
+     * @throws Exception
+     */
     private Object getValue(Class c, String methodName) throws Exception{
         Method method = c.getMethod("get" + methodName);
         if (null == method) {

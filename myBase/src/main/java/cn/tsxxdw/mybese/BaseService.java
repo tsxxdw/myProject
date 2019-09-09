@@ -87,10 +87,10 @@ public class BaseService<E, M extends BaseMapper<E>> {
 
                 else  if("orderByAsc".equals(camelFiledName)){
 
-                    where.orderByAsc(valueStr);
+                    where.orderByAsc(MyStrUtils.camelToUnderline(valueStr, 1));
                 }
                 else  if("orderByDesc".equals(camelFiledName)){
-                    where.orderByDesc(valueStr);
+                    where.orderByDesc(MyStrUtils.camelToUnderline(valueStr, 1));
                 }else {
                     where.eq(underlineFiledName, value);
                 }

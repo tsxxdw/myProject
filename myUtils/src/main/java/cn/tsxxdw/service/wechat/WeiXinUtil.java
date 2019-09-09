@@ -5,6 +5,8 @@ import cn.tsxxdw.service.myjson.MyJsonUtil;
 import cn.tsxxdw.service.mylog.MyLogUtil;
 import cn.tsxxdw.vo.ResultVo;
 import cn.tsxxdw.wechatbean.dto.WxDto;
+import cn.tsxxdw.wechatbean.dto.WxUserDto;
+import cn.tsxxdw.wechatbean.entity.WxUserEntity;
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.binary.Base64;
@@ -62,7 +64,7 @@ public class WeiXinUtil {
     /**
      * @return
      */
-    public static ResultVo<WxDto> getDecryptData(WxDto wxDto) {
+    public static ResultVo<WxUserDto> getDecryptData(WxDto wxDto) {
         //被加密的数据
         byte[] dataByte = Base64.decodeBase64(wxDto.getEncryptedData());
         //加密秘钥
@@ -82,8 +84,8 @@ public class WeiXinUtil {
             byte[] resultByte = cipher.doFinal(dataByte);
             if (null != resultByte && resultByte.length > 0) {
                 String result = new String(resultByte, encodingFormat);
-                WxDto wxDto1=     MyJsonUtil.toPojo(result,WxDto.class);
-                return new ResultVo<WxDto>().setSuccess(wxDto1.copyData(wxDto));
+                WxUserDto wxUserDto=     MyJsonUtil.toPojo(result,WxUserDto.class);
+                return new ResultVo<WxUserDto>().setSuccess(wxUserDto);
             }
         } catch (Exception e) {
             MyLogUtil.logError(WeiXinUtil.class,e);

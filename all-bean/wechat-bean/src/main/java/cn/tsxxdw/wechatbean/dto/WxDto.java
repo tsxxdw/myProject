@@ -22,7 +22,12 @@ public class WxDto {
     private String accessToken;
 
     private String phoneNumber;
+
+
+
+
     private String avatarUrl ;//微信头像
+    private String nickName;// 这两行可能会被删除
 
 
     public WxDto copyData(WxDto wxDto) {

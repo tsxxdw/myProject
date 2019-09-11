@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e275e920-54e5-4541-b1fc-1309afb38470" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/WeiXinUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/WeiXinUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/all-bean/my-bean/target/" />
@@ -47,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="92" column="78" selection-start-line="92" selection-start-column="78" selection-end-line="92" selection-end-column="78" />
+            <state relative-caret-position="204">
+              <caret line="105" column="61" selection-start-line="105" selection-start-column="61" selection-end-line="105" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/../../../jdk/jdk1.8.0_202/src.zip!/java/lang/Long.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
+            <state relative-caret-position="988">
               <caret line="53" column="23" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="23" />
               <folding>
                 <element signature="e#0#61416#0" expanded="true" />
@@ -635,6 +633,7 @@
       <workItem from="1567869182885" duration="291000" />
       <workItem from="1567902925727" duration="11771000" />
       <workItem from="1567993952320" duration="958000" />
+      <workItem from="1568192779171" duration="673000" />
     </task>
     <task id="LOCAL-00001" summary="bean 位置调整">
       <created>1565920961575</created>
@@ -722,7 +721,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114177000" />
+    <option name="totallyTimeSpent" value="114850000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -736,10 +735,10 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8125" visible="true" weight="0.24731903" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8104839" visible="true" weight="0.24731903" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
-      <window_info id="JRebel" order="3" sideWeight="0.1875" side_tool="true" visible="true" weight="0.24731903" />
+      <window_info id="JRebel" order="3" sideWeight="0.18951613" side_tool="true" visible="true" weight="0.24731903" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
@@ -747,7 +746,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.1388102" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.85991955" weight="0.29745042" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.85924935" weight="0.29745042" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49865952" weight="0.07932011" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -759,7 +758,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49932975" weight="0.13031161" />
-      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.14008042" side_tool="true" visible="true" weight="0.29745042" />
+      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.14075068" side_tool="true" visible="true" weight="0.29745042" />
       <window_info anchor="bottom" id="JRebel Executor" order="15" />
       <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49932975" weight="0.3286119" />
       <window_info anchor="bottom" id="MyBatis Log" order="17" />
@@ -767,10 +766,10 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.14745308" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3538874" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.1621984" />
+      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.1621984" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.1541555" />
@@ -1137,8 +1136,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="92" column="78" selection-start-line="92" selection-start-column="78" selection-end-line="92" selection-end-column="78" />
+        <state relative-caret-position="204">
+          <caret line="105" column="61" selection-start-line="105" selection-start-column="61" selection-end-line="105" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1174,7 +1173,7 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../../jdk/jdk1.8.0_202/src.zip!/java/lang/Long.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
+        <state relative-caret-position="988">
           <caret line="53" column="23" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="23" />
           <folding>
             <element signature="e#0#61416#0" expanded="true" />

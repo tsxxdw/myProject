@@ -96,14 +96,14 @@ public class BaseService<E, M extends BaseMapper<E>> {
                 }
             }else if("class java.lang.Integer".equals(type)) {
 
-
                 Integer valueInteger=(Integer)value;
                 if("limit".equals(camelFiledName)){
                     pageQueryDto.setLimit(valueInteger);
                 }
                 else   if("page".equals(camelFiledName)){
-
                     pageQueryDto.setPage(valueInteger);
+                }else {
+                    where.eq(underlineFiledName, valueInteger);
                 }
             }
 

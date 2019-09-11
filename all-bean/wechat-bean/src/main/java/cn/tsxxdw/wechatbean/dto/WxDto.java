@@ -21,6 +21,9 @@ public class WxDto {
     private String sessionKey;//可以通过code 获取
     private String accessToken;
 
+    private String phoneNumber;
+    private String avatarUrl ;//微信头像
+
 
     public WxDto copyData(WxDto wxDto) {
         //如果字段是null,则将传入的参数的属性值复制过来

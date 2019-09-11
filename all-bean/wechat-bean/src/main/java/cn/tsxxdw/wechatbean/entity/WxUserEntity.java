@@ -12,4 +12,5 @@ public class WxUserEntity {
     private String phoneNumber;
     private String purePhoneNumber;
     private String countryCode;
+    private String avatarUrl ;//微信头像
 }

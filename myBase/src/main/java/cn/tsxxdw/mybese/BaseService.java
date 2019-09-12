@@ -45,8 +45,9 @@ public class BaseService<E, M extends BaseMapper<E>> {
         return m.insert(e);
     }
 
-    public int delete(Wrapper wrapper) throws Exception {
-        int res = m.delete(wrapper);
+    public int delete(Object object, NullSafeWrapper where) throws Exception {
+        getWhere(object,where,null);
+        int res = m.delete(where);
         return res;
     }
 
@@ -56,7 +57,7 @@ public class BaseService<E, M extends BaseMapper<E>> {
     }
 
 
-    private NullSafeWrapper select(Object object, NullSafeWrapper where, PageQueryDto pageQueryDto) throws Exception {
+    private NullSafeWrapper getWhere(Object object, NullSafeWrapper where, PageQueryDto pageQueryDto) throws Exception {
         List<Field> fieldList= Lists.newArrayList();
         boolean parentClassIsObject=false;//父类是object?
         Class parmClass=object.getClass();//获取当前类
@@ -130,7 +131,7 @@ public class BaseService<E, M extends BaseMapper<E>> {
     }
 
     public E selectOne(Object object, NullSafeWrapper where) throws Exception {
-        return selectOne(select(object, where, null));
+        return selectOne(getWhere(object, where, null));
 
     }
 
@@ -142,7 +143,7 @@ public class BaseService<E, M extends BaseMapper<E>> {
     public ResultVo<List<E>> selectList(Object object, NullSafeWrapper where) throws Exception {
         List<E> list = null;
         PageQueryDto pageQueryDto = new PageQueryDto();
-        NullSafeWrapper where1 = select(object, where, pageQueryDto);
+        NullSafeWrapper where1 = getWhere(object, where, pageQueryDto);
         if (pageQueryDto.getPage() == null || pageQueryDto.getLimit() == null) {
             list = selectList(where);
             return new ResultVo().setSuccess(list);

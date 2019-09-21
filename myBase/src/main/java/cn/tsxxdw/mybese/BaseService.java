@@ -3,10 +3,10 @@ package cn.tsxxdw.mybese;
 
 import cn.tsxxdw.dto.PageQueryDto;
 import cn.tsxxdw.other.NullSafeWrapper;
-import cn.tsxxdw.other.Where;
 import cn.tsxxdw.service.mystr.MyStrUtils;
 import cn.tsxxdw.vo.ResultVo;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -16,9 +16,9 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
 import java.util.function.Consumer;
 
 /**
@@ -45,7 +45,7 @@ public class BaseService<E, M extends BaseMapper<E>> {
         return m.insert(e);
     }
 
-    public int delete(Object object, NullSafeWrapper where) throws Exception {
+    public int delete(Object object, QueryWrapper where) throws Exception {
         getWhere(object,where,null);
         int res = m.delete(where);
         return res;
@@ -57,7 +57,7 @@ public class BaseService<E, M extends BaseMapper<E>> {
     }
 
 
-    private NullSafeWrapper getWhere(Object object, NullSafeWrapper where, PageQueryDto pageQueryDto) throws Exception {
+    private QueryWrapper getWhere(Object object, QueryWrapper where, PageQueryDto pageQueryDto) throws Exception {
         List<Field> fieldList= Lists.newArrayList();
         boolean parentClassIsObject=false;//父类是object?
         Class parmClass=object.getClass();//获取当前类
@@ -130,7 +130,7 @@ public class BaseService<E, M extends BaseMapper<E>> {
         }
     }
 
-    public E selectOne(Object object, NullSafeWrapper where) throws Exception {
+    public E selectOne(Object object, QueryWrapper where) throws Exception {
         return selectOne(getWhere(object, where, null));
 
     }
@@ -140,10 +140,10 @@ public class BaseService<E, M extends BaseMapper<E>> {
         return list;
     }
 
-    public ResultVo<List<E>> selectList(Object object, NullSafeWrapper where) throws Exception {
+    public ResultVo<List<E>> selectList(Object object, QueryWrapper where) throws Exception {
         List<E> list = null;
         PageQueryDto pageQueryDto = new PageQueryDto();
-        NullSafeWrapper where1 = getWhere(object, where, pageQueryDto);
+        QueryWrapper where1 = getWhere(object, where, pageQueryDto);
         if (pageQueryDto.getPage() == null || pageQueryDto.getLimit() == null) {
             list = selectList(where);
             return new ResultVo().setSuccess(list);

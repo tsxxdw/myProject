@@ -23,6 +23,20 @@ public class MyStrUtils {
         return  sb.toString();
     }
 
+    /**
+     *
+     * @return String 获取一个字符，日期+随即字符串
+     */
+    public static String getIdDateStr(String type){
+        StringBuffer sb=new StringBuffer();
+        sb.append(MyDateUtil.getDateStr("yyyyMMddHHmmss"));
+        sb.append("-");
+        sb.append( UUID.randomUUID().toString().replaceAll("-", "").substring(0,10));
+        sb.append("_");
+        sb.append(type);
+        return  sb.toString();
+    }
+
 
     //驼峰转下划线
     public static String camelToUnderline(String param, Integer charType) {

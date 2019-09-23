@@ -87,6 +87,24 @@ public class MyPicUtils {
         String suffix = originFileName.substring(index + 1, leng);
         return new ResultVo().setSuccess(suffix);
     }
+    /**
+     *
+     *
+     * @param originFileName
+     * @return
+     */
+    public static ResultVo<String> getSuffix(String originFileName) {
+        int index = originFileName.lastIndexOf(".");
+        if (index < 0) { //判断是否有“.”
+            return new ResultVo().setFail("Suffix dont have");
+        }
+        int leng = originFileName.length();
+        if (leng - index <= 1) {//判断是否有后缀
+            return new ResultVo().setFail("Dont have suffix");
+        }
+        String suffix = originFileName.substring(index, leng);
+        return new ResultVo().setSuccess(suffix);
+    }
 
     public static ResultVo<String> getPrefix(String originFileName) {
         int index = originFileName.lastIndexOf(".");

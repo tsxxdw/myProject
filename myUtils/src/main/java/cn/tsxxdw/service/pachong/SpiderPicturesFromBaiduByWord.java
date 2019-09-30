@@ -20,7 +20,7 @@ public class SpiderPicturesFromBaiduByWord {
 
 
     public static void main(String[] args) throws Exception{
-        String downloadPath = "D:\\duan\\file\\mct\\";
+        String downloadPath = "D:"+File.separator+"duan"+File.separator+"file"+File.separator+"mct"+File.separator+"节日食俗"+File.separator;
         Map<String,List<String>> map=new HashMap<>();
         map.put("立冬",Arrays.asList("立冬饺子\n" +
                 "南瓜饺子\n" +
@@ -89,8 +89,8 @@ public class SpiderPicturesFromBaiduByWord {
                 try {
                     String urlStr=downloadPath+key;
 
-                    List<String> list = nameList(urlStr);
-                    getPictures(list,5,1,urlStr); //1代表下载一页，一页一般有30张图片
+                    List<String> keywordList = nameList(e);
+                    getPictures(keywordList,5,1,urlStr); //1代表下载一页，一页一般有30张图片
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
@@ -108,10 +108,10 @@ public class SpiderPicturesFromBaiduByWord {
         String tempPath = "";
         for(String keyword : keywordList){
             tempPath = downloadPath;
-            if(!tempPath.endsWith("\\")){
-                tempPath = downloadPath+"\\";
+            if(!tempPath.endsWith(File.separator)){
+                tempPath = downloadPath+File.separator;
             }
-            tempPath = tempPath+keyword+"\\";
+            tempPath = tempPath+keyword+File.separator;
             File f = new File(tempPath);
             if(!f.exists()){
                 f.mkdirs();

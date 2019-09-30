@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e275e920-54e5-4541-b1fc-1309afb38470" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myUtils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/SpiderPicturesFromBaiduByWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/SpiderPicturesFromBaiduByWord.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/all-bean/my-bean/target/" />
@@ -71,11 +70,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/SpiderPicturesFromBaiduByWord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="114" column="38" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="38" />
+            <state relative-caret-position="209">
+              <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3670#3678#0" expanded="true" />
+                <element signature="e#5816#5824#0" expanded="true" />
                 <element signature="e#6338#6339#0" expanded="true" />
                 <element signature="e#6377#6378#0" expanded="true" />
               </folding>
@@ -130,10 +129,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>for</find>
-      <find>P</find>
-      <find>easyexcel</find>
-      <find>&lt;artifactId&gt;mybatis-plus&lt;/artifactId&gt;</find>
       <find>mybatis-plu</find>
       <find>mybatis-spring-boot-starter</find>
       <find>mybatis-plus-boot-starter</find>
@@ -160,6 +155,10 @@
       <find>compressPic</find>
       <find>NullSafeWrapper</find>
       <find>客家菜</find>
+      <find>download</find>
+      <find>mkdir</find>
+      <find>\\</find>
+      <find>//</find>
     </findStrings>
     <replaceStrings>
       <replace>MyFunction</replace>
@@ -342,6 +341,17 @@
               <item name="tsxxdw" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="mystr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="myUtils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tsxxdw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="pachong" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -541,7 +551,7 @@
       <workItem from="1569720121201" duration="4889000" />
       <workItem from="1569738880867" duration="1010000" />
       <workItem from="1569808826976" duration="5050000" />
-      <workItem from="1569831061486" duration="2541000" />
+      <workItem from="1569831061486" duration="4143000" />
     </task>
     <task id="LOCAL-00001" summary="bean 位置调整">
       <created>1565920961575</created>
@@ -655,7 +665,21 @@
       <option name="project" value="LOCAL" />
       <updated>1569830588136</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="爬虫001">
+      <created>1569833618746</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1569833618747</updated>
+    </task>
+    <task id="LOCAL-00018" summary="爬虫001">
+      <created>1569833854849</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1569833854849</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -664,7 +688,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167488000" />
+    <option name="totallyTimeSpent" value="169090000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -679,10 +703,10 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80102915" visible="true" weight="0.09517426" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8003565" visible="true" weight="0.16353887" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
-      <window_info id="JRebel" order="3" sideWeight="0.19897084" side_tool="true" visible="true" weight="0.09517426" />
+      <window_info id="JRebel" order="3" sideWeight="0.1996435" side_tool="true" visible="true" weight="0.16353887" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
@@ -690,8 +714,8 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49865952" weight="0.1388102" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8458445" visible="true" weight="0.17422096" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7258713" weight="0.29745042" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8458445" weight="0.40934843" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.72319037" visible="true" weight="0.20538244" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
@@ -701,16 +725,16 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49865952" weight="0.13597734" />
-      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.1541555" side_tool="true" visible="true" weight="0.17422096" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49731904" weight="0.04249292" />
+      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.27680966" side_tool="true" visible="true" weight="0.20538244" />
       <window_info anchor="bottom" id="JRebel Executor" order="15" />
-      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.4953083" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49463806" weight="0.3286119" />
       <window_info anchor="bottom" id="MyBatis Log" order="17" />
       <window_info anchor="bottom" id="Problems" order="18" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.2546917" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.14678285" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.06836461" />
@@ -743,7 +767,8 @@
     <MESSAGE value="微信头像" />
     <MESSAGE value="修改Where" />
     <MESSAGE value="新增有小数点" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增有小数点" />
+    <MESSAGE value="爬虫001" />
+    <option name="LAST_COMMIT_MESSAGE" value="爬虫001" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -768,9 +793,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/SpiderPicturesFromBaiduByWord.java</url>
-          <line>170</line>
+          <line>89</line>
           <properties />
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1180,11 +1205,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/SpiderPicturesFromBaiduByWord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="114" column="38" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="38" />
+        <state relative-caret-position="209">
+          <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3670#3678#0" expanded="true" />
+            <element signature="e#5816#5824#0" expanded="true" />
             <element signature="e#6338#6339#0" expanded="true" />
             <element signature="e#6377#6378#0" expanded="true" />
           </folding>

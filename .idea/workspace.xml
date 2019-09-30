@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e275e920-54e5-4541-b1fc-1309afb38470" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myUtils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mystr/MyStrUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mystr/MyStrUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/all-bean/my-bean/target/" />
@@ -47,12 +46,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myfile/myFileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
+            <state relative-caret-position="437">
               <caret line="29" column="41" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mycharacterspinyin/CharactersPinyinUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="61" column="38" lean-forward="true" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+            <state relative-caret-position="100">
+              <caret line="111" column="26" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,9 +68,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mystr/MyStrUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1596">
+              <caret line="91" column="47" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myintutils/MyIntUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mymail/MyMailUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1919">
+              <caret line="107" column="43" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myUtils/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="342">
               <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
             </state>
           </provider>
@@ -82,7 +106,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
+            <state relative-caret-position="1026">
               <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
             </state>
           </provider>
@@ -128,7 +152,7 @@
       <find>SECRET</find>
       <find>compressPic</find>
       <find>NullSafeWrapper</find>
-      <find></find>
+      <find>客家菜</find>
     </findStrings>
     <replaceStrings>
       <replace>MyFunction</replace>
@@ -146,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/all-bean/pom.xml" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myspringbean/MyBeanUtils.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mypic/PicUtils.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/service/BaseService.java" />
@@ -160,7 +183,6 @@
         <option value="$PROJECT_DIR$/javademo/src/main/java/java8/demo/demo20190807/TestOptional.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/myJava/MyConsumer.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myjson/MyJsonUtil.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mymail/MyMailUtils.java" />
         <option value="$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/vo/RabbitmqObject.java" />
         <option value="$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/TypeReference.java" />
         <option value="$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/TypeReference.java" />
@@ -189,13 +211,15 @@
         <option value="$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/dto/WxUserDto.java" />
         <option value="$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/entity/WxUserEntity.java" />
         <option value="$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/dto/WxDto.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mystr/MyStrUtils.java" />
         <option value="$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/NullSafeWrapper.java" />
         <option value="$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mypic/MyPicUtils.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myfile/myFileUtil.java" />
         <option value="$PROJECT_DIR$/myUtils/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mymail/MyMailUtils.java" />
+        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mystr/MyStrUtils.java" />
+        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myintutils/MyIntUtils.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mycharacterspinyin/CharactersPinyinUtil.java" />
       </list>
     </option>
@@ -236,8 +260,8 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
@@ -249,8 +273,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -303,10 +325,23 @@
               <item name="tsxxdw" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="myUtils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tsxxdw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="mystr" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,12 +410,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyMailUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.tsxxdw.service.mymail.MyMailUtils" />
+    <configuration name="MyIntUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.tsxxdw.service.myintutils.MyIntUtils" />
       <module name="myUtils" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.tsxxdw.service.mymail.*" />
+          <option name="PATTERN" value="cn.tsxxdw.service.myintutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -424,10 +459,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.CharactersPinyinUtil" />
+        <item itemvalue="Application.MyIntUtils" />
         <item itemvalue="Application.myFileUtil" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MyPicUtils" />
-        <item itemvalue="Application.MyMailUtils" />
       </list>
     </recent_temporary>
   </component>
@@ -494,6 +529,11 @@
       <workItem from="1569289122866" duration="599000" />
       <workItem from="1569394244921" duration="648000" />
       <workItem from="1569397562974" duration="3264000" />
+      <workItem from="1569461342185" duration="3345000" />
+      <workItem from="1569566530906" duration="3711000" />
+      <workItem from="1569720121201" duration="4889000" />
+      <workItem from="1569738880867" duration="1010000" />
+      <workItem from="1569808826976" duration="5036000" />
     </task>
     <task id="LOCAL-00001" summary="bean 位置调整">
       <created>1565920961575</created>
@@ -609,7 +649,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146942000" />
+    <option name="totallyTimeSpent" value="164933000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -624,10 +664,10 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8580508" visible="true" weight="0.2727882" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8181818" visible="true" weight="0.211126" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
-      <window_info id="JRebel" order="3" sideWeight="0.14194915" side_tool="true" visible="true" weight="0.2727882" />
+      <window_info id="JRebel" order="3" sideWeight="0.18181819" side_tool="true" visible="true" weight="0.211126" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
@@ -635,8 +675,8 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49865952" weight="0.1388102" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.85254693" visible="true" weight="0.33144477" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49798927" weight="0.26487252" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.84852546" visible="true" weight="0.42351276" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7285523" weight="0.39093485" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
@@ -647,7 +687,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49865952" weight="0.13597734" />
-      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.14745308" side_tool="true" visible="true" weight="0.33144477" />
+      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.15147454" side_tool="true" visible="true" weight="0.42351276" />
       <window_info anchor="bottom" id="JRebel Executor" order="15" />
       <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49865952" weight="0.3286119" />
       <window_info anchor="bottom" id="MyBatis Log" order="17" />
@@ -655,10 +695,10 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.27144772" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.26407507" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.10455764" />
+      <window_info anchor="right" id="Database" order="6" weight="0.06836461" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.1541555" />
@@ -728,9 +768,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/myrabbitmq/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myjson/TypeReference.java" />
     <entry file="file://$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/vo/RabbitmqVo.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1018,13 +1055,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mystr/MyStrUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2090">
@@ -1073,43 +1103,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mymail/MyMailUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myfile/myFileUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
+        <state relative-caret-position="437">
           <caret line="29" column="41" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mymail/MyMailUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1919">
+          <caret line="107" column="43" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="342">
           <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
+        <state relative-caret-position="1026">
           <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myintutils/MyIntUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mystr/MyStrUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1596">
+          <caret line="91" column="47" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mycharacterspinyin/CharactersPinyinUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="61" column="38" lean-forward="true" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+        <state relative-caret-position="100">
+          <caret line="111" column="26" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

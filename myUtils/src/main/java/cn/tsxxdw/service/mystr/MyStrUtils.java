@@ -86,4 +86,14 @@ public class MyStrUtils {
         }
         return sb.toString();
     }
+
+
+
+    public static List<String> replaceStrForInt(String str,String replaceStr,int startInt,int endInt){
+        List<String>list=Lists.newArrayList();
+        for (int i=startInt;i<endInt;i++){
+            list.add(    str.replace(replaceStr,i+""));
+        }
+        return list;
+    }
 }

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e275e920-54e5-4541-b1fc-1309afb38470" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/SpiderPicturesFromBaiduByWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/SpiderPicturesFromBaiduByWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/all-bean/my-bean/target/" />
@@ -46,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myfile/myFileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="437">
               <caret line="29" column="41" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -58,7 +58,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mycharacterspinyin/CharactersPinyinUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
+            <state relative-caret-position="2033">
               <caret line="117" column="53" selection-start-line="117" selection-start-column="53" selection-end-line="117" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -67,16 +67,50 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/SpiderPicturesFromBaiduByWord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
+            <state relative-caret-position="323">
+              <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5816#5824#0" expanded="true" />
-                <element signature="e#6338#6339#0" expanded="true" />
-                <element signature="e#6377#6378#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/Where.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+              <folding>
+                <element signature="e#370#371#0" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/NullSafeWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="100" column="47" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,7 +137,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mymail/MyMailUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1767">
+            <state relative-caret-position="1919">
               <caret line="107" column="43" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="43" />
             </state>
           </provider>
@@ -112,7 +146,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myUtils/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
+            <state relative-caret-position="1938">
               <caret line="102" selection-start-line="102" selection-end-line="102" />
             </state>
           </provider>
@@ -129,7 +163,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mybatis-plu</find>
       <find>mybatis-spring-boot-starter</find>
       <find>mybatis-plus-boot-starter</find>
       <find>createServerErrorResult</find>
@@ -159,6 +192,7 @@
       <find>mkdir</find>
       <find>\\</find>
       <find>//</find>
+      <find>getWhere</find>
     </findStrings>
     <replaceStrings>
       <replace>MyFunction</replace>
@@ -217,7 +251,6 @@
         <option value="$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/entity/WxUserEntity.java" />
         <option value="$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/dto/WxDto.java" />
         <option value="$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/NullSafeWrapper.java" />
-        <option value="$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mypic/MyPicUtils.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myfile/myFileUtil.java" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mymail/MyMailUtils.java" />
@@ -227,6 +260,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/myUtils/pom.xml" />
         <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/SpiderPicturesFromBaiduByWord.java" />
+        <option value="$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java" />
       </list>
     </option>
   </component>
@@ -265,7 +299,7 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -357,8 +391,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -551,7 +585,11 @@
       <workItem from="1569720121201" duration="4889000" />
       <workItem from="1569738880867" duration="1010000" />
       <workItem from="1569808826976" duration="5050000" />
-      <workItem from="1569831061486" duration="4143000" />
+      <workItem from="1569831061486" duration="5019000" />
+      <workItem from="1569847197785" duration="599000" />
+      <workItem from="1570498064966" duration="1034000" />
+      <workItem from="1570526808476" duration="599000" />
+      <workItem from="1570604675680" duration="108000" />
     </task>
     <task id="LOCAL-00001" summary="bean 位置调整">
       <created>1565920961575</created>
@@ -679,7 +717,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569833854849</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="爬虫001">
+      <created>1569835436654</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1569835436654</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -688,7 +733,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169090000" />
+    <option name="totallyTimeSpent" value="172306000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -700,13 +745,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8003565" visible="true" weight="0.16353887" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79228485" visible="true" weight="0.26572958" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
-      <window_info id="JRebel" order="3" sideWeight="0.1996435" side_tool="true" visible="true" weight="0.16353887" />
+      <window_info id="JRebel" order="3" sideWeight="0.20771514" side_tool="true" visible="true" weight="0.26572958" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
@@ -714,8 +759,8 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49865952" weight="0.1388102" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8458445" weight="0.40934843" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.72319037" visible="true" weight="0.20538244" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.84517425" weight="0.28470254" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7225201" visible="true" weight="0.27903682" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
@@ -726,7 +771,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49731904" weight="0.04249292" />
-      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.27680966" side_tool="true" visible="true" weight="0.20538244" />
+      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.2774799" side_tool="true" visible="true" weight="0.048022598" />
       <window_info anchor="bottom" id="JRebel Executor" order="15" />
       <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49463806" weight="0.3286119" />
       <window_info anchor="bottom" id="MyBatis Log" order="17" />
@@ -734,7 +779,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.14678285" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.14658634" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.06836461" />
@@ -1100,41 +1145,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2090">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mypic/MyPicUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1634">
           <caret line="86" column="59" selection-start-line="86" selection-start-column="59" selection-end-line="86" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/Where.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/NullSafeWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1148,10 +1162,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="143" column="25" lean-forward="true" selection-start-line="139" selection-start-column="12" selection-end-line="143" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myfile/myFileUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="437">
           <caret line="29" column="41" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mycharacterspinyin/CharactersPinyinUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2033">
+          <caret line="117" column="53" selection-start-line="117" selection-start-column="53" selection-end-line="117" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1174,44 +1205,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mymail/MyMailUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1767">
+        <state relative-caret-position="1919">
           <caret line="107" column="43" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mycharacterspinyin/CharactersPinyinUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="117" column="53" selection-start-line="117" selection-start-column="53" selection-end-line="117" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="143" column="25" lean-forward="true" selection-start-line="139" selection-start-column="12" selection-end-line="143" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
+        <state relative-caret-position="1938">
           <caret line="102" selection-start-line="102" selection-end-line="102" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/SpiderPicturesFromBaiduByWord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
+        <state relative-caret-position="323">
+          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5816#5824#0" expanded="true" />
-            <element signature="e#6338#6339#0" expanded="true" />
-            <element signature="e#6377#6378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/Where.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/NullSafeWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="100" column="47" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

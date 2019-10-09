@@ -98,6 +98,7 @@ public class BaseService<E, M extends BaseMapper<E>> {
             }else if("class java.lang.Integer".equals(type)) {
 
                 Integer valueInteger=(Integer)value;
+                if(valueInteger==null)continue;
                 if("limit".equals(camelFiledName)){
                     pageQueryDto.setLimit(valueInteger);
                 }

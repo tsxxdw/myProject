@@ -139,7 +139,7 @@ public class SpiderPicturesFromBaiduByWord {
                         sop(keyword+picCount+++":"+finalURL);
                         download(finalURL,tempPath);
                         sop("             下载成功");
-                        if(picCount>=5){
+                        if(picCount>=10){
                             break;
                         }
                     }

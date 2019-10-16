@@ -25,6 +25,7 @@
     <packaging>pom</packaging>
 
     <properties>
+        <commons-io>2.6</commons-io>
         <pinyin4j>2.5.1</pinyin4j>
         <commons-lang3>3.9</commons-lang3>
         <guava>27.1-jre</guava>
@@ -48,6 +49,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.belerweb</groupId>
                 <artifactId>pinyin4j</artifactId>

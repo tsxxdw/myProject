@@ -195,13 +195,13 @@ public class MyPicUtils {
             g.rotate(Math.toRadians(0),  0,0 );
             g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_ATOP, 1));
             g.setFont(new java.awt.Font("宋体", Font.LAYOUT_NO_START_CONTEXT, buffImg.getHeight() /30));
-            g.drawString(rightAndrigthLogoText,  50 , buffImg.getHeight()-50);
+           // g.drawString(rightAndrigthLogoText,  50 , buffImg.getHeight()-50);
 
 
 
 
-
-            g.setFont(new java.awt.Font("宋体", java.awt.Font.BOLD, buffImg.getHeight() /10));
+           int size= (int)Math.sqrt(buffImg.getWidth()*buffImg.getHeight());
+            g.setFont(new java.awt.Font("宋体", java.awt.Font.BOLD,  size/10));
             g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_ATOP, 1));
             g.rotate(Math.toRadians(45),  buffImg.getWidth()/2,buffImg.getHeight() /2);
             g.drawString(centerLogoText,  buffImg.getWidth()/3 , buffImg.getHeight()/2);
@@ -234,9 +234,9 @@ public class MyPicUtils {
     }
 
     public static void main(String[] args) {
-        String source="D:/data/4_uploadfile/images/vegetable_chart/pic/2019/08/14/20190814161801-35ff52d548.JPG";
-        String target="D:/data/4_uploadfile/images/vegetable_chart/pic/2019/08/14/20190814161801-35ff52d548_target2.JPG";
-        MyPicUtils.watermark_2("美菜图","图片来源：外卖名堂美菜图",source,target,new Color(0,0,0),"JPG");
+        String source="D:\\duan\\file\\mct\\中式菜系\\中式菜系\\【黄金满地蒜香蟹】粤菜经典勾魂滋味\\c667d89c269b43a5b643fa015913a6f2.jpeg";
+        String target="D:\\duan\\file\\mct\\中式菜系\\中式菜系\\【黄金满地蒜香蟹】粤菜经典勾魂滋味\\c667d89c269b43a5b643fa015913a6f2_detail.jpeg";
+        MyPicUtils.watermark_2("美菜图","图片来源：外卖名堂美菜图",source,target,new Color(255,255,255),"JPG");
 
     }
 

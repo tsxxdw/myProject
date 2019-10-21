@@ -21,6 +21,7 @@
         <module>springbootdemo1</module>
         <module>myBase</module>
         <module>myrabbitmq</module>
+        <module>xiaolu</module>
     </modules>
     <packaging>pom</packaging>
 

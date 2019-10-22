@@ -22,6 +22,8 @@
         <module>myBase</module>
         <module>myrabbitmq</module>
         <module>xiaolu</module>
+        <module>xm</module>
+        <module>xm</module>
     </modules>
     <packaging>pom</packaging>
 

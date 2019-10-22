@@ -1,0 +1,139 @@
+.user-arrow{//这是箭头的样式
+
+    width:5px;
+
+    float:right;
+
+
+
+
+    margin-top: -5px;
+
+    cursor:pointer;
+
+    display:inline-block;//放箭头的标签一定是块级元素
+
+}
+
+.open{}
+.noOppen{}
+.rotate{
+
+    transform-origin:center center; //旋转中心要是正中间 才行
+
+    transform: rotate(180deg);
+
+    -webkit-transform: rotate(180deg);
+
+    -moz-transform: rotate(180deg);
+
+    -ms-transform: rotate(180deg);
+
+    -o-transform: rotate(180deg);
+
+    transition: transform 0.2s; //过度时间 可调
+
+    -moz-transition: -moz-transform 0.2s;
+
+    -moz-transition: -moz-transform 0.2s;
+
+    -o-transition: -o-transform 0.2s;
+
+    -ms-transition: -ms-transform 0.2s;
+
+}
+
+.rotate1{
+
+    transform-origin:center center;
+
+    transform: rotate(0deg); //返回原点
+
+    -webkit-transform: rotate(0deg);
+
+    -moz-transform: rotate(deg);
+
+    -ms-transform: rotate(0deg);
+
+    -o-transform: rotate(0deg);
+
+    transition: transform 0.2s;
+
+    -moz-transition: -moz-transform 0.2s;
+
+    -moz-transition: -moz-transform 0.2s;
+
+    -o-transition: -o-transform 0.2s;
+
+    -ms-transition: -ms-transform 0.2s;
+
+}
+
+.buttonn{
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+.table_label label {text-align:left;font-weight: normal; padding-right:8px;}
+.panel-heading ul li {float:left;list-style:none;}
+.table-container tr{ border: 0px solid #ddd; }
+.table-bordered>thead>tr>th{ border: 0px solid #ddd;}
+.table-bordered>tbody>tr>th{ border: 0px solid #ddd;}
+.table-bordered>tfoot>tr>th{ border: 0px solid #ddd;}
+.table-bordered>thead>tr>td{ border: 0px solid #ddd;}
+.table-bordered>tbody>tr>td{ border: 0px solid #ddd;}
+.table-bordered>tfoot>tr>td { border: 0px solid #ddd;}
+ #list {background-color:#F8FBFF}
+ #thead>tr>th:nth-child(even) {text-align:left}
+ #list>tr:nth-child(even) >td:nth-child(1) {text-align:left}
+ #list>tr > td:nth-child(1) {text-align:center}
+ #list li|ul {height:30px}
+ #list>tr:nth-child(odd)>td:nth-child(1){padding-top:15px}
+content img {
+    width:20px;
+    height:16px
+}
+
+
+
+.addDiv{
+	position: absolute;
+	width: 468px;
+	height: 104px;
+	z-index: 5;
+	left: 269px;
+	top: 236px;
+	border: 1px solid #ddd;
+}
+#updateDiv {
+	position: absolute;
+	width: 268px;
+	height: 204px;
+	z-index: 1;
+	left: 259px;
+	top: 236px;
+}
+
+.alertDiv{
+  display:none;
+  position: absolute;
+  width: 500px;
+  height: 300px;z-index: 2;
+  left: 35%;
+  top: 25%;
+  color:red;
+  border:1px solid #D1E4E8;
+}
+
+
+.inputt{
+height: 30px;
+    line-height: 30px;
+        padding: 5px 10px;
+        font-size: 12px;
+        border-radius: 3px;
+}

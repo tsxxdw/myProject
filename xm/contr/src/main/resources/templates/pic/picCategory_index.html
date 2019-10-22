@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+      layout:decorator="layout">
+<head>
+    <meta charset="utf-8" />
+    <title>菜品图分类</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/static/js/plugins/datetimepicker/css/bootstrap-datetimepicker.min.css"/>
+    <link rel="stylesheet" href="/static/css/mytable.css"/>
+    <style type="text/css">
+
+
+   </style>
+    <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/pic/picCategory_index.js?t=8"></script>
+    <link type="text/css" rel="styleSheet"  href="/static/css/pic/picCategory_index.css" />
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="container">
+        <div class="row" id="list-table">
+            <div class="col-xs-12">
+                <div class="panel panel-default" >
+                    <div class="panel-heading">
+
+                        <ul style="float:left;display: inline"><li>当前总共<i id="ownerNumber" style="color:red">0</i>个货主</li><li style="margin-left:5px">,&nbsp;&nbsp;<i id="categoryNumber" style="color:red">0</i>个分类</li><li style="width:10px">&nbsp;</li><li style="margin-top:-5px" class="btn btn-sm btn-info" onclick="allOpen()">全部展开</li><li style="margin-top:-5px" class="btn btn-sm btn-info" onclick="allClose()">全部收起</li><li style="width:10px">&nbsp;</li></ul>
+                    </div>
+                    <!--<iframe id="add_iframe" name="download_iframe" style="width:100%; height:100px; border:0px solid; ">add_iframe</iframe>-->
+                    <!--<iframe id="update_iframe" name="download_iframe" style="width:100%; height:100px; border:0px solid; ">update_iframe</iframe>-->
+                    <div class="text-center " style="margin-top:15px;">
+                        <table id="myTable" class="table "
+                               style="table-layout:fixed; white-space:nowrap;width: 1300px" >
+                            <thead id="thead">
+                            <tr>
+
+                                <!--width="75px"--> <th  style="width:190px">顾客</th>
+                                <!--width="60px"--> <th style="width:53.1%">分类</th>
+                                <!--width="60px"--> <th style="width:9.95%">操作</th>
+                                <!--width="50px"--> <th style="width:7%">排序</th>
+                                <th style="width:9.95%">上传</th>
+                                <!--width="40px"-->
+
+                            </tr>
+                            </thead>
+                            <tbody id="list" class="removeline">
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                    <div style="height:30px"><span onclick="saveSort()" style="float:right;margin-right:30px" class="buttonn">保存排序</span></div>
+
+
+                </div>
+            </div>
+        </div>
+        <form action="/product/addProductCategory" method="POST">
+        <div id="addOwner" class="alertDiv" style="">
+            <div style="width:100%;height:30px;background-color:#EDEDED;">
+                <div style="float:left;width:20%;height:30px;color:#000000;">新添货主</div><div style="float:left;width:80%;height:100%;"><img onclick="closeAll()" style="width:15px;height:15px;float:right;"  src="/images/chacha.png" /></div>
+            </div>
+            <div style="width:100%;height:70px;background-color:#F7F7F7;padding-top:10px;">
+              <!--  <div>
+                    <span style="margin-left:15%;color:#000000;">货主</span>
+                    <input style="display:none" name="categorygrade" value='0' />
+                </div>-->
+            </div>
+            <div style="width:100%;height:30px;background-color:#F7F7F7">
+                <div>
+                    <span style="margin-left:15%">&nbsp;</span>
+
+                </div>
+            </div>
+            <div style="width:100%;height:110px;background-color:#F7F7F7">
+                <div>
+                    <span style="margin-left:15%;color:#000000;">排序</span>
+                    <input style="margin-left:7%;width:60%;"  name="categorysort" class="inputt"  value="0" />
+
+                </div>
+            </div>
+            <div style="width:100%;height:60px;background-color:#F7F7F7;border-bottom: 1px solid #D1E4E8;">
+                <input onclick="submitAddOwner()" type="button" style="float:left;margin-left:30%;color:#000000;"  value="确定" />
+                <input type="button" style="float:left;margin-left:30%;color:#000000;" onclick="closeAll()"  value="取消" />
+            </div>
+        </div>
+        </form>
+        <form method="POST" action="/product/addProductCategory">
+        <div id="addCategory" class="alertDiv" style="background-color:#F7F7F7;">
+            <input name="id" style="display:none;" />
+            <input name="categorygrade" style="display:none;" />
+            <div style="width:100%;height:30px;background-color:#EDEDED;">
+                <div style="float:left;width:20%;height:30px;color:#000000; ">新建分类</div><div style="float:left;width:80%;height:100%;"><img onclick="closeAll()" style="width:15px;height:15px;float:right;"  src="/images/chacha.png" /></div>
+            </div>
+            <div style="width:100%;height:70px;background-color:#F7F7F7;padding-top:10px;">
+                <div>
+                    <span style="margin-left:15%;color:#000000;"></span>
+                    <span id="addCategory_owner" style="margin-left:15%;color:#000000;">如果你看到了我，请联系it</span>
+                </div>
+            </div>
+            <div style="width:100%;height:70px;background-color:#F7F7F7">
+                <div>
+                    <span style="margin-left:15%;color:#000000;">分类名称</span>
+                    <input style="margin-left:2%;width:60%;"  name="categoryname" class="inputt" />
+                </div>
+            </div>
+            <div style="width:100%;height:70px;background-color:#F7F7F7">
+                <div>
+                    <span style="margin-left:15%;color:#000000;">排序</span>
+                    <input style="margin-left:7%;width:60%;color:#000000;"  name="categorysort" class="inputt" value="0" />
+
+                </div>
+            </div>
+            <div style="width:100%;height:50px;background-color:#F7F7F7">
+                <input type="button" onclick="submitAddCategory()" style="float:left;margin-left:30%;color:#000000;"  value="确定" />
+                <input type="button" style="float:left;margin-left:30%;color:#000000;"  onclick="closeAll()" value="取消" />
+            </div>
+        </div>
+        </form>
+        <form action="/product/updateProductCategory">
+        <div id="updateCategory" class="alertDiv" style="">
+            <input name="id" style="display:none;" />
+            <div style="width:100%;height:30px;background-color:#EDEDED;">
+                <div style="float:left;width:13%;height:30px;color:#000000;">编辑分类</div><div style="float:left;width:87%;height:100%;"><img onclick="closeAll()" style="width:15px;height:15px;float:right;"  src="/images/chacha.png" /></div>
+            </div>
+            <div style="width:100%;height:70px;background-color:#F7F7F7;padding-top:10px;">
+                <div>
+                    <span style="margin-left:15%;color:#000000;">货主</span>
+                    <span id="updateCategory_owner" style="margin-left:15%;">货主</span>
+
+                </div>
+            </div>
+            <div style="width:100%;height:70px;background-color:#F7F7F7">
+                <div>
+                    <span style="margin-left:15%;color:#000000;">分类名称</span>
+                    <input style="margin-left:2%;width:60%"  name="categoryname" class="inputt" />
+
+                </div>
+            </div>
+            <div style="width:100%;height:70px;background-color:#F7F7F7">
+                <div>
+                    <span style="margin-left:15%;color:#000000;">排序</span>
+                    <input style="margin-left:7%;width:60%"  name="categorysort" class="inputt" />
+
+                </div>
+            </div>
+            <div style="width:100%;height:130px;background-color:#F7F7F7;border-bottom: 1px solid #D1E4E8;">
+                <input onclick="submitUpdateCategory()" type="button" style="float:left;margin-left:30%;color:#000000;"  value="确定" />
+                <input type="button" style="float:left;margin-left:30%;color:#000000;" onclick="closeAll()"  value="取消" />
+            </div>
+        </div>
+        <div id="updateOwner" class="alertDiv" style="">
+            <input name="id" style="display:none;" />
+            <input name="categorygrade" style="display:none;" />
+            <div style="width:100%;height:30px;background-color:#EDEDED;">
+                <div style="float:left;width:13%;height:30px;color:#000000;">编辑货主</div><div style="float:left;width:87%;height:100%;"><img onclick="closeAll()" style="width:15px;height:15px;float:right;"  src="/images/chacha.png" /></div>
+            </div>
+            <div style="width:100%;height:70px;background-color:#F7F7F7;padding-top:10px;">
+                <div>
+                    <span style="margin-left:15%;color:#000000;">货主</span>
+                    <span id="updateOwner_owner" style="margin-left:15%;">货主</span>
+
+                </div>
+            </div>
+            <!--<div style="width:100%;height:70px;background-color:#F7F7F7">-->
+                <!--<div>-->
+                    <!--<span style="margin-left:15%">分类名称</span>-->
+                    <!--<input style="margin-left:2%;width:60%"  name="categoryname" class="inputt" />-->
+
+                <!--</div>-->
+            <!--</div>-->
+            <div style="width:100%;height:70px;background-color:#F7F7F7">
+                <div>
+                    <span style="margin-left:15%;color:#000000;">排序</span>
+                    <input style="margin-left:7%;width:60%"  name="categorysort" class="inputt" />
+
+                </div>
+            </div>
+            <div style="width:100%;height:130px;background-color:#F7F7F7;border-bottom: 1px solid #D1E4E8;">
+                <input onclick="submitUpdateOwner()" type="button" style="float:left;margin-left:30%;color:#000000;"  value="确定" />
+                <input type="button" style="float:left;margin-left:30%;color:#000000;" onclick="closeAll()" value="取消" />
+            </div>
+        </div>
+        </form>
+        <script type="text/javascript" src="/js/plugins/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+        <script type="text/javascript" src="/js/plugins/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+
+        <script>$('#last_update_time').datetimepicker({format: 'yyyy-mm-dd hh:ii:ss'});</script>
+    </div>
+</div>
+</body>
+</html>

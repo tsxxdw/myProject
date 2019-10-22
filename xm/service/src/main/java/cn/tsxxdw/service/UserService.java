@@ -1,7 +1,6 @@
 package cn.tsxxdw.service;
 
 import cn.tsxxdw.entity.UserEntity;
-import cn.tsxxdw.entity.UserEntityt;
 import cn.tsxxdw.mybese.BaseService;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import lombok.extern.slf4j.Slf4j;
@@ -17,7 +16,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 //这里 WxUserEntity 修改为  UserEntity就没报错了
-public class UserService extends BaseService<UserEntityt, BaseMapper<UserEntityt>> {
+public class UserService extends BaseService<UserEntity, BaseMapper<UserEntity>> {
 //    Supplier<UserEntity> userEntitySupplier = UserEntity::new;
 //
 //

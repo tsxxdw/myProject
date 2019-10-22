@@ -11,10 +11,7 @@
 
     <artifactId>xm</artifactId>
     <packaging>pom</packaging>
-    <modules>
-        <module>model</module>
-        <module>contr</module>
-    </modules>
+
 
 
 </project>

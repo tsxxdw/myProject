@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title th:text="#{menu.order.manage}"></title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../static/style/admin.css" media="all">
+    <link rel="stylesheet" href="../../static/style/font/css/oms-icons.css" media="all">
+    <link rel="stylesheet" href="../../static/style/common.css" media="all">
+    <link rel="stylesheet" href="../../static/lib/formSelects/formSelects-v4.css" media="all">
+    <style>
+        .layui-nav .layui-nav-item a, .layui-nav .layui-nav-item a:hover{
+            color: #6c6c6c;
+        }
+        .layui-nav,.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+            background: transparent;
+        }
+        .layui-nav{
+            padding: 0;
+        }
+        .layui-nav .layui-nav-more{
+            border-top-color:#6c6c6c;
+            margin-top: -5px;
+        }
+        .layui-nav-child{
+            top: 45px;
+        }
+        #numberValue {
+            width: 200px;
+        }
+        .xm-select-parent dl {
+            width: 290px;
+        }
+    </style>
+    <script th:inline="javascript">
+        var statusMap = [[${statusMap}]];
+        var typeMap = [[${typeMap}]];
+        var v_number = [[#{order.ordernumber}]];
+        var v_refnumber = [[#{order.refnumber}]];
+        var v_trackingno = [[#{order.trackingno}]];
+        var v_warehouse = [[#{order.warehouse}]];
+        var v_owner = [[#{order.owner}]];
+        var v_expresscode = [[#{order.expresscode}]];
+        var v_countrycode = [[#{order.countrycode}]];
+        var v_sumnum = [[#{order.sumnum}]];
+        var v_ordertype = [[#{order.ordertype}]];
+        var v_status = [[#{order.status}]];
+        var v_operate = [[#{order.operate}]];
+        var v_createdate = [[#{order.createdate}]];
+        var v_deliverytime = [[#{order.deliverytime}]];
+        var v_orderupdate = [[#{menu.order.update}]];
+        var v_ordercreatebatch = [[#{menu.order.create.batch}]];
+        var v_more = [[#{common.operation.more}]];
+        var v_packup = [[#{common.operation.up}]];
+        var v_createnew = [[#{order.create.new.order}]];
+        var v_incoterm = [[#{order.incoterm}]];
+        var v_see = [[#{common.button.view}]];//查看
+        var v_edit = [[#{common.button.edit}]];//编辑
+        var dataRequestException = [[#{common.text.table.error}]];//数据接口请求异常
+        var noData = [[#{common.text.table.empty}]];//无数据
+        var yes = [[#{common.text.yes}]];
+        var no = [[#{common.text.no}]];
+        var v_storage_confirm = [[#{order.status.change.storage.confirm}]];//确实是否暂存
+        var v_new_confirm = [[#{order.status.change.new.confirm}]];//确认是否专为新建
+        var v_choose_order = [[#{common.text.choose.data}]];//请选择订单
+        var v_forecast_confirm = [[#{order.forecast.confirm}]]; //确认是否预报
+        var v_issue_confirm = [[#{order.issue.confirm}]]; //确认是否预报
+        var v_cancel_confirm = [[#{order.cancel.confirm}]]; //确认是否取消
+        var v_title = [[#{common.text.tip.title}]]; //提示
+        var pageConfirm = [[#{common.text.tip.confirm}]];
+        var page = [[#{common.text.page}]];
+        var pageConnectives = [[#{common.text.page.connectives}]];
+        var stripOrPage = [[#{common.text.page.stripOrPage}]];
+        var pageInAll = [[#{common.text.page.pageInAll}]];
+        var strip = [[#{common.text.page.strip}]];
+        var storage_suc = [[#{order.storage.success}]]; //暂存成功
+        var storage_fail = [[#{order.storage.fail}]];   //暂存失败
+        var transfer_succ = [[#{order.transfer.success}]]; //暂存转新建成功
+        var transfer_fail = [[#{order.transfer.fail}]];  //暂存转新建失败
+        var choose_export = [[#{common.choose.export}]];
+        var confirmExportCheckedRecord = [[#{common.confirm.export.checked.record}]]
+        var verifyThatAllRecordsAreExported = [[#{common.verify.that.all.records.are.exported}]];
+        var info = [[#{product.info}]];
+        var yes = [[#{common.text.yes}]];//是
+        var no = [[#{common.text.no}]];//否
+        var input_tip = [[#{order.query.batch.prompt}]];
+        var b_yes = [[#{common.button.yes}]]
+        var b_no = [[#{common.button.no}]]; //取消
+        var v_intercept_confirm = [[#{order.intercept.confirm}]]; //确认是否攔截
+        var v_checkDate = [[#{order.manage.query.date.check}]]; //时间不能大于31天
+        var checkAllLang = [[#{common.text.allelection}]];//全选
+        var emptyLang = [[#{common.text.empty}]];//清空
+        var selectInvertLang = [[#{common.text.reverseelection}]];//反选
+        var v_copy = [[#{order.copy}]];//订单复制
+        var v_create = [[#{common.button.created}]];//修改订单
+    </script>
+</head>
+<body>
+
+<div class="layui-fluid">
+    <div class="layui-card">
+        <form class="layui-form layui-card-header layuiadmin-card-header-auto" id="searchForm">
+            <input id="checkBoxIdList" type="text" name="checkBoxIdList" style="display:none" />
+            <div class="layui-form-item screen-input-content clearfix">
+
+                <div class="layui-inline">
+                    <input style="margin-right:5px;" type="hidden" id="dataCache" th:attr="data-warehousemap=${warehouseMap},data-ownermap=${customerMap}"/>
+                    <input type="hidden" name="status" id="status" value="0"/>
+                    <input type="hidden" name="lockedStatus" id="lockedStatus" />
+                    <label class="layui-form-label" th:text="#{order.warehouse}"></label>
+                    <div class="layui-input-block">
+                        <select xm-select="warehouseCodes" xm-select-search="" xm-select-height="32px" xm-select-search-type="dl" xm-select-skin="default">
+                            <option value="" selected="selected" th:text="#{order.please.select}"></option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="layui-inline">
+                    <label class="layui-form-label" th:text="#{order.owner}"></label>
+                    <div class="layui-input-block">
+                        <select name="owner">
+                            <option value="" selected="selected" th:text="#{order.please.select}"></option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="layui-inline">
+                    <label class="layui-form-label" th:text="#{order.timeinfo}"></label>
+                    <div class="layui-input-block">
+                        <select name="timeInfo" lay-filter="timeInfo">
+                            <option value="" th:text="#{order.please.select}"></option>
+                            <option value="createdate" selected="selected" th:text="#{order.createdate}"></option>
+                            <option value="deliverytime" th:text="#{order.deliverytime}"></option>
+                            <option value="actrldlvrytm" th:text="#{order.actrldlvrytm}"></option>
+                            <option value="whdstrbuttime" th:text="#{order.whdstrbuttime}"></option>
+                            <option value="orderdate" th:text="#{order.orderdate}"></option>
+                        </select>
+                    </div>
+                    <div class="layui-input-block">
+                        <input type="text" name="timeValue" class="layui-input date-picker-range-d" id="time" th:placeholder="#{order.please.input}"/>
+                    </div>
+                </div>
+
+                <div class="layui-inline">
+                    <label class="layui-form-label" th:text="#{order.number}"></label>
+                    <div class="layui-input-block">
+                        <select name="numberType" lay-filter="numberType">
+                            <!--<option value="" selected="selected" th:text="#{order.please.select}"></option>-->
+                            <option value="refnumber" th:text="#{order.refnumber}"></option>
+                            <option value="number" th:text="#{order.ordernumber}"></option>
+                            <option value="trackingno" th:text="#{order.trackingno}"></option>
+                        </select>
+                    </div>
+                    <div class="layui-input-block">
+                        <input type="text" name="numberValue" id="numberValue" th:placeholder="#{order.please.input}" autocomplete="off" class="layui-input"/>
+                    </div>
+
+                    <i class="layui-icon layui-icon-add-circle" style="font-size: 20px; color: #418ef0;cursor:pointer;line-height: 32px" th:title="#{order.manage.batch.search}" id="batchInput"></i>
+                </div>
+
+                <div class="layui-inline more-item">
+                    <label class="layui-form-label" th:text="#{order.sku}"></label>
+                    <div class="layui-input-block">
+                        <input type="text" name="sku" th:placeholder="#{order.please.input}" autocomplete="off" class="layui-input"/>
+                    </div>
+                </div>
+
+
+                <div class="layui-inline more-item">
+                    <label class="layui-form-label" th:text="#{order.expresscode}"></label>
+                    <div class="layui-input-block">
+                        <select xm-select="expressCodes" xm-select-search="" xm-select-height="32px" xm-select-search-type="dl" xm-select-skin="default">
+                            <option value="" selected="selected" th:text="#{order.please.select}"></option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="layui-inline more-item">
+                    <label class="layui-form-label" th:text="#{order.remark}"></label>
+                    <div class="layui-input-block">
+                        <select name="remark">
+                            <option value="" selected="selected" th:text="#{order.please.select}"></option>
+                            <option value="" th:text="#{order.list.remark}"></option>
+                            <option value="remark" th:text="#{order.list.not.remark}"></option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="layui-inline more-item">
+                    <label class="layui-form-label" th:text="#{order.ordertype}"></label>
+                    <div class="layui-input-block">
+                        <select name="orderType">
+                            <option value="" selected="selected" th:text="#{order.please.select}"></option>
+                            <div th:each="type:${typeMap}">
+                                <option th:value="${type.key}" th:text="${type.value}" />
+                            </div>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="layui-inline more-item">
+                    <label class="layui-form-label" th:text="#{order.address}"></label>
+                    <div class="layui-input-block">
+                        <select name="userInfo" lay-filter="userInfo">
+                            <option value="" selected="selected" th:text="#{order.please.select}"></option>
+                            <option value="country" th:text="#{order.detail.country}"></option>
+                            <option value="countrycode" th:text="#{order.countrycode}"></option>
+                            <option value="username" th:text="#{order.detail.username}"></option>
+                            <option value="mobile" th:text="#{order.detail.mobile}"></option>
+                            <option value="provincecode" th:text="#{order.detail.provincecode}"></option>
+                            <option value="city" th:text="#{order.detail.city}"></option>
+                            <option value="postcode" th:text="#{order.detail.postcode}"></option>
+                        </select>
+                    </div>
+                    <div class="layui-input-block">
+                        <input type="text" name="userValue" id="userValue" th:placeholder="#{order.please.input}" autocomplete="off" class="layui-input"/>
+                    </div>
+                </div>
+
+                <div class="layui-inline">
+                    <button class="layui-btn layuiadmin-btn-useradmin" lay-submit lay-filter="LAY-user-front-search" th:title="#{common.button.query}">
+                        <i class="layui-icon layuiadmin-button-btn icon-magnify"></i>
+                    </button>
+                    <div class="filter-btn" th:title="#{common.operation.more}" style="color: #6CBCD2;" layadmin-event="moreToggle" >
+                        <span th:text="#{common.operation.more}"></span><i class="layui-icon layuiadmin-button-btn layui-icon-down"></i>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="layui-tab layui-tab-brief" lay-filter="component-tabs-hash">
+            <ul class="layui-nav layui-tab-title" lay-filter="" id="tabUlId">
+                <li lay-id="0" class="layui-this layui-nav-item"><span th:text="#{order.status.new}"></span>（<span class="status-value" id="status_0">0</span>）</li>
+                <li lay-id="10" class="layui-nav-item"><span th:text="#{order.status.forcasted}"></span>（<span class="status-value" id="status_10">0</span>）</li>
+                <li lay-id="3" class="layui-nav-item"><span th:text="#{order.status.working}"></span>（<span class="status-value" id="status_3">0</span>）</li>
+                <li lay-id="7" class="layui-nav-item"><span th:text="#{order.status.delivery}"></span>（<span class="status-value" id="status_7">0</span>）</li>
+                <li class="layui-nav-item" lay-id="9">
+                    <span th:text="#{order.status.save}"></span>（<span class="status-value" id="status_9">0</span>）<span class="layui-nav-more"></span>
+                    <dl class="layui-nav-child" style="z-index: 9999;"> <!-- 二级菜单 -->
+                        <dd><a href="javascript:;" th:text="#{order.save.manual}" th:class="secondMenu" data-code="1"></a></dd>
+                        <dd><a href="javascript:;" th:text="#{order.forcast.fail}" th:class="secondMenu" data-code="2"></a></dd>
+                        <!--<dd><a href="javascript:;" th:text="#{order.inventory.shortage}" th:class="secondMenu" data-code="3"></a></dd>-->
+                        <dd><a href="javascript:;" th:text="#{order.inventory.other}" th:class="secondMenu" data-code="0"></a></dd>
+                    </dl>
+                </li>
+                <li lay-id="8" class="layui-nav-item"><span th:text="#{order.status.intercept}"></span>（<span class="status-value" id="status_8">0</span>）</li>
+                <li lay-id="6" class="layui-nav-item"><span th:text="#{order.status.canceled}"></span>（<span class="status-value" id="status_6">0</span>）</li>
+                <li lay-id="1" class="layui-nav-item"><span th:text="#{order.status.all}"></span>（<span class="status-value" id="status_1">0</span>）</li>
+            </ul>
+        </div>
+        <div class="layui-card-body">
+            <table class="layui-hide" id="order-table-toolbar" lay-filter="order-table-toolbar"></table>
+            <div id="toolbar-options0" style="display: none">
+                <div class="layui-table-tool-temp">
+                    <div class="layui-btn-container">
+                        <button class="layui-btn layui-btn-primary upload-btn" lay-event="issue"
+                                th:text="#{order.operate.issue}"></button>
+                        <button class="layui-btn layui-btn-primary" lay-event="storageCheckData" th:text="#{order.status.change.storage}"></button>
+                        <button class="layui-btn layui-btn-primary" lay-event="cancel" th:text="#{order.operate.cancel}"></button>
+                        <button class="layui-btn layui-btn-primary" lay-event="export" th:text="#{common.button.export}"></button>
+                    </div>
+                </div>
+            </div>
+            <div id="toolbar-options1" style="display: none">
+                <div class="layui-table-tool-temp">
+                    <div class="layui-btn-container">
+                        <button class="layui-btn layui-btn-primary upload-btn" lay-event="forecast"
+                                th:text="#{order.operate.forecast}"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-btn-container" id="storage" style="display: none;">
+                <div class="layui-btn-container">
+                    <button class="layui-btn layui-btn-primary" lay-event="storageCheckData" th:text="#{order.status.change.storage}"></button>
+                    <button class="layui-btn layui-btn-primary" lay-event="forecast" th:text="#{order.operate.forecast}"></button>
+                    <button class="layui-btn layui-btn-primary" lay-event="cancel" th:text="#{order.operate.cancel}"></button>
+                    <button class="layui-btn layui-btn-primary" lay-event="export" th:text="#{common.button.export}"></button>
+                </div>
+            </div>
+
+            <div class="layui-btn-container" id="newCheck" style="display: none;">
+                <div class="layui-btn-container">
+                    <button class="layui-btn layui-btn-primary" lay-event="newCheckData" th:text="#{order.status.change.new}"></button>
+                    <button class="layui-btn layui-btn-primary" lay-event="cancel" th:text="#{order.operate.cancel}"></button>
+                    <button class="layui-btn layui-btn-primary" lay-event="export" th:text="#{common.button.export}"></button>
+                </div>
+            </div>
+
+            <div id="intercept" style="display: none;">
+                <div class="layui-table-tool-temp">
+                    <div class="layui-btn-container">
+                        <button class="layui-btn layui-btn-primary" lay-event="intercept"
+                                th:text="#{order.operate.cancel}"></button>
+                        <button class="layui-btn layui-btn-primary" lay-event="export"
+                                th:text="#{common.button.export}"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="commomExport"  style="display: none;">
+                <div class="layui-table-tool-temp">
+                    <div class="layui-btn-container">
+                        <button class="layui-btn layui-btn-primary" lay-event="export" th:text="#{common.button.export}"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="export"  style="display: none;">
+                <div class="layui-table-tool-temp">
+                    <div class="layui-btn-container">
+                        <button class="layui-btn layui-btn-primary" lay-event="export" th:text="#{common.button.export}"></button>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/html" id="order-table-toolbar-toolbarDemo">
+                <div class="layui-btn-container">
+                    <div class="layui-btn-container">
+                        <button class="layui-btn layui-btn-primary" lay-event="storageCheckData" th:text="#{order.status.change.storage}"></button>
+                        <button class="layui-btn layui-btn-primary" lay-event="forecast" th:text="#{order.operate.forecast}"></button>
+                        <button class="layui-btn layui-btn-primary" lay-event="cancel" th:text="#{order.operate.cancel}"></button>
+                        <button class="layui-btn layui-btn-primary" lay-event="export" th:text="#{common.button.export}"></button>
+                    </div>
+                </div>
+
+                <div class="com-option-content">
+                    <div class="layui-inline" th:title="#{common.button.created}" lay-event="lay_event_add"><i class="layui-icon icon-plus-box-outline"></i></div>
+                    <div class="layui-inline" th:title="#{inventory.screen.clo}" lay-event="LAYTABLE_COLS"><i class="layui-icon icon-tune"></i></div>
+                </div>
+            </script>
+
+        </div>
+    </div>
+</div>
+
+<script src="../../static/layui/layui.js" type="text/javascript"></script>
+<script src="../../static/modules/order/order_manage.js" type="text/javascript"></script>
+</body>
+</html>
+

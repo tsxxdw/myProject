@@ -18,11 +18,8 @@
         <module>all-bean</module>
         <module>javademo</module>
         <module>myUtils</module>
-        <module>springbootdemo1</module>
         <module>myBase</module>
         <module>myrabbitmq</module>
-        <module>xiaolu</module>
-        <module>xm</module>
         <module>xm</module>
     </modules>
     <packaging>pom</packaging>

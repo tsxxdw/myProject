@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title th:text="#{instock.create}"></title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../static/style/admin.css" media="all">
+    <link rel="stylesheet" href="../../static/style/font/css/oms-icons.css" media="all">
+    <link rel="stylesheet" href="../../static/style/common.css" media="all">
+    <link rel="stylesheet" href="../../static/lib/formSelects/formSelects-v4.css" media="all">
+    <style type="text/css">
+        html, body {
+            background: #FFFFFF;
+            height: 100%;
+        }
+
+        .layui-form-radio {
+            margin-top: 0;
+        }
+
+        .edit-tip {
+            position: absolute;
+            top: 4px;
+            left: 380px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .range-box {
+            border: 1px solid #CCCCCC;
+        }
+
+        .range-box .layui-row + .layui-row {
+            border-top: 1px dashed #CCCCCC;
+        }
+
+        .edit-page .range-box .layui-input-block {
+            margin-left: 0px;
+        }
+
+        .range-box .layui-row {
+            padding-left: 10px;
+        }
+
+        .count-tips {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .range-box .date-time-input {
+            width: 100px;
+            margin-left: 10px;
+        }
+
+        .range-box .time-select-box button, .range-box .time-select-box input {
+            display: inline-block;
+        }
+
+        .range-box .time-tips {
+            padding-left: 90px;
+        }
+
+        .range-box .time-tips > span {
+            font-size: 12px;
+            color: #999999;
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+        }
+
+        .pd-left {
+            padding-left: 78px;
+        }
+
+        .range-box .pd-left .time-tips {
+            padding-left: 12px;
+        }
+
+        .range-box .time-tips-end {
+            margin-left: 8px;
+        }
+
+        .priority-time-box {
+            border: 1px solid #CCCCCC;
+            padding: 10px;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+        .priority-time-box .date-time-range {
+            width: 280px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .priority-time-box .layui-form-item {
+            padding-left: 10px;
+        }
+
+        .priority-time-box .layui-form-switch {
+            margin-top: -2px;
+        }
+
+        .priority-input {
+            width: 80px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .priority-tips {
+            font-size: 12px;
+            color: #999999;
+            margin-left: 10px;
+        }
+
+        .time-priority {
+            display: inline-block;
+        }
+
+        .time-range-delete {
+            margin-left: 10px;
+            vertical-align: bottom;
+        }
+
+        .select-box-w .xm-select-parent {
+            width: 370px;
+        }
+    </style>
+    <script th:inline="javascript">
+        var checkAllLang = [[#{common.text.allelection}]];//全选
+        var emptyLang = [[#{common.text.empty}]];//清空
+        var selectInvertLang = [[#{common.text.reverseelection}]];//反选
+        var choose = [[#{common.text.choose}]];
+        var prompt_owner = [[#{instock.add.owner}]];
+        var prompt_sku = [[#{instock.add.sku}]];
+        var tip_required = [[#{common.text.tip.required}]];
+        var mail_confirm = [[#{order.email.valid.error}]];
+        var short_code_confirm = [[#{customer.shortcode.confirm.erro}]]
+        var productRequiredRule = [[#{common.text.tip.required}]];
+    </script>
+</head>
+<body>
+
+<div class="layui-fluid edit-page">
+    <div class="layui-card" style="box-shadow: none;">
+        <div class="layui-card-body">
+            <div class="layui-form" action="" lay-filter="component-form-group">
+                <input type="hidden" name="id" id="id" th:value="${hairRuleBean.id}"/>
+                <div class="layui-row">
+                    <div class="layui-col-xs12">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label required-tag"
+                                   th:text="#{order.auto.issue.rule.name}"></label>
+                            <div class="layui-input-block">
+                                <input type="text" name="rulename" class="layui-input" autocomplete="off" th:value="${hairRuleBean.rulename}"
+                                       id="code" th:placeholder="#{common.text.input}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-xs12">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label required-tag"
+                                   th:text="#{order.auto.issue.rule.description}"> </label>
+                            <div class="layui-input-block">
+                                <textarea name="ruledescrption" class="layui-textarea" th:text="${hairRuleBean.ruledescrption}"
+                                          th:placeholder="#{common.text.input}"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-xs12">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label required-tag" th:text="#{common.text.owner}"></label>
+                            <input type="hidden" id="ownerList" th:value="${hairRuleBean.owners}">
+                            <div class="layui-input-block" id="owners">
+                                    <span th:each="owner:${owners}">
+                                    <input type="checkbox" th:value="${owner.code}" lay-skin="primary"
+                                           lay-filter="owner-filter"
+                                           th:title="${session.language=='en'?owner.code:owner.name}"/>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-xs12">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label required-tag" th:text="#{common.text.warehouse}"></label>
+                            <input type="hidden" id="warehouseCodeList" th:value="${hairRuleBean.warehousecdoes}">
+                            <div class="layui-input-block" id="warehouseCodes">
+                                <span th:each="warehouse:${warehouses}">
+                                <input type="checkbox" th:value="${warehouse.code}" lay-skin="primary"
+                                       lay-filter="warehouse-filter"
+                                       th:title="${session.language=='en'?warehouse.enName:warehouse.cnName}"/>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-xs12">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label required-tag"
+                                   th:text="#{oms.shipper.addres.channel}"></label>
+                            <div class="layui-input-block select-box-w">
+                                <select xm-select="channelcodes" xm-select-search="" xm-select-height="32px"
+                                        xm-select-search-type="dl" xm-select-skin="default" th:value="${hairRuleBean.channels}">
+                                    <option value="" selected="selected" th:text="#{order.please.select}"></option>
+                                </select>
+                                <span class="edit-tip" th:text="#{order.auto.issue.rule.channel.not.select}"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-xs12">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label required-tag"
+                                   th:text="#{order.auto.issue.rule.orderType}"></label>
+                            <input type="hidden" th:value="${orderTypes}" id="orderTypes"/>
+                            <div class="layui-input-block select-box-w">
+                                <select xm-select="ordertypes" xm-select-search="" xm-select-height="32px" th:value="${hairRuleBean.ordertypes}"
+                                        xm-select-search-type="dl" xm-select-skin="default">
+                                    <option value="" th:text="#{order.please.select}"></option>
+                                </select>
+                                <span class="edit-tip" th:text="#{order.auto.issue.rule.type}"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-xs12">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label required-tag"
+                                   th:text="#{order.auto.issue.rule.remark}"></label>
+                            <div class="layui-input-block">
+                                <input type="radio" name="hairremark" value="true" th:title="#{common.text.yes}"
+                                       checked="">
+                                <input type="radio" name="hairremark" value="false" th:title="#{common.text.no}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="range-box">
+                    <div class="layui-row">
+                        <div class="layui-col-xs3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label" th:text="#{order.auto.issue.rule.local.range}"></label>
+                                <div class="layui-input-block" id="weekday">
+                                    <input type="checkbox" lay-skin="primary" th:title="#{order.auto.issue.rule.Monday}"
+                                           value="1"
+                                           lay-filter="week-filter"/>
+                                    <input type="checkbox" lay-skin="primary"
+                                           th:title="#{order.auto.issue.rule.Tuesday}" value="2"
+                                           lay-filter="week-filter"/>
+                                    <input type="checkbox" lay-skin="primary"
+                                           th:title="#{order.auto.issue.rule.Wednesday}" value="3"
+                                           lay-filter="week-filter"/>
+                                    <input type="checkbox" lay-skin="primary"
+                                           th:title="#{order.auto.issue.rule.Thursday}" value="4"
+                                           lay-filter="week-filter"/>
+                                    <input type="checkbox" lay-skin="primary" th:title="#{order.auto.issue.rule.Friday}"
+                                           value="5"
+                                           lay-filter="week-filter"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label required-tag"
+                                       th:text="#{order.auto.issue.rule.total}"></label>
+                                <div class="layui-input-block">
+                                    <input type="text" class="layui-input" autocomplete="off" id="weekday-haircount"
+                                           lay-verify="required" ws-verify="required" value=""
+                                           th:placeholder="#{common.text.input}" style="width: 100px;">
+                                    <p class="count-tips" th:text="#{order.auto.issue.rule.total.count}"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs6">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label" style="float: none;"
+                                       th:text="#{order.auto.issue.rule.local.date}"></label>
+                                <div class="layui-input-block" id="weekday-timeRange">
+                                    <div class="time-select-box">
+                                        <div id="weekday-timeRang">
+                                            <button class="layui-btn layui-btn-sm layui-btn-normal time-range-add"
+                                                    type="button" th:text="#{common.button.created}">
+                                            </button>
+                                            <input type="text" class="layui-input date-time-input" id="startDate"
+                                                   th:placeholder="#{common.text.beginDate}"/>
+                                            <input type="text" class="layui-input date-time-input" id="endDate"
+                                                   th:placeholder="#{common.text.endDate}"/>
+                                        </div>
+                                        <div class="time-tips">
+                                            <span class="time-tips-start">北京时间：13:00</span>
+                                            <span class="time-tips-end">北京时间：17:56</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-row">
+                        <div class="layui-col-xs3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label" th:text="#{order.auto.issue.rule.local.range}"></label>
+                                <div class="layui-input-block">
+                                    <input type="checkbox" lay-skin="primary" lay-filter="saturday-filter"
+                                           th:title="#{order.auto.issue.rule.Saturday}" id="saturday"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label required-tag"
+                                       th:text="#{order.auto.issue.rule.total}"></label>
+                                <div class="layui-input-block">
+                                    <input type="text" class="layui-input" autocomplete="off" id="saturday-haircount"
+                                           value=""
+                                           th:placeholder="#{common.text.input}" style="width: 100px;">
+                                    <p class="count-tips" th:text="#{order.auto.issue.rule.total.count}"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs6">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label" style="float: none;"
+                                       th:text="#{order.auto.issue.rule.local.date}"></label>
+                                <div class="layui-input-block" id="saturday-timeRange">
+                                    <div class="time-select-box">
+                                        <div>
+                                            <button class="layui-btn layui-btn-sm layui-btn-normal time-range-add"
+                                                    type="button" th:text="#{common.button.created}">
+                                            </button>
+                                            <input type="text" class="layui-input date-time-input" id="sat-startDate"
+                                                   th:placeholder="#{common.text.beginDate}"/>
+                                            <input type="text" class="layui-input date-time-input" id="sat-endDate"
+                                                   th:placeholder="#{common.text.endDate}"/>
+                                        </div>
+                                        <div class="time-tips">
+                                            <span class="time-tips-start">北京时间：13:00</span>
+                                            <span class="time-tips-end">北京时间：17:56</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-row">
+                        <div class="layui-col-xs3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label" th:text="#{order.auto.issue.rule.local.range}"></label>
+                                <div class="layui-input-block">
+                                    <input type="checkbox" lay-skin="primary" th:title="#{order.auto.issue.rule.Sunday}"
+                                           lay-filter="sunday-filter"
+                                           id="sunday"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label required-tag"
+                                       th:text="#{order.auto.issue.rule.total}"></label>
+                                <div class="layui-input-block">
+                                    <input type="text" class="layui-input" autocomplete="off" id="sunday-haircount"
+                                           value=""
+                                           th:placeholder="#{common.text.input}" style="width: 100px;">
+                                    <p class="count-tips" th:text="#{order.auto.issue.rule.total.count}"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs6">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label" style="float: none;"
+                                       th:text="#{order.auto.issue.rule.local.date}"></label>
+                                <div class="layui-input-block" id="sunday-timeRange">
+                                    <div class="time-select-box">
+                                        <div>
+                                            <button class="layui-btn layui-btn-sm layui-btn-normal time-range-add"
+                                                    type="button" th:text="#{common.button.created}">
+                                            </button>
+                                            <input type="text" class="layui-input date-time-input" id="sun-startDate"
+                                                   th:placeholder="#{common.text.beginDate}"/>
+                                            <input type="text" class="layui-input date-time-input" id="sun-endDate"
+                                                   th:placeholder="#{common.text.endDate}"/>
+                                        </div>
+                                        <div class="time-tips">
+                                            <span class="time-tips-start">北京时间：13:00</span>
+                                            <span class="time-tips-end">北京时间：17:56</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="priority-time-box">
+                    <div class="layui-row">
+                        <div class="layui-col-xs12">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label" th:text="#{order.deliverytime}"></label>
+                                <div class="layui-input-block">
+                                    <input type="checkbox" name="goodsdate" lay-skin="switch" lay-filter="switchBtn"
+                                           checked/>
+                                    <div class="time-priority" id="deliveryTimeRange">
+                                        <input type="text" class="layui-input date-time-range" name="gooddatestr"
+                                               th:placeholder="#{order.auto.issue.rule.date.range}"/>
+                                        <input type="text" class="layui-input priority-input" autocomplete="off"
+                                               name="goodsdategrade"
+                                               placeholder=""/>
+                                        <span class="priority-tips" th:text="#{order.auto.issue.rule.priority}"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-row">
+                        <div class="layui-col-xs12">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label" th:text="#{order.auto.issue.rule.makeDate}"></label>
+                                <div class="layui-input-block">
+                                    <input type="checkbox" name="makdate" lay-skin="switch" lay-filter="switchBtn"
+                                           checked/>
+                                    <div class="time-priority" id="startOrderTimeRange">
+                                        <input type="text" class="layui-input date-time-range" name="makdatestr"
+                                               th:placeholder="#{order.auto.issue.rule.date.range}"/>
+                                        <input type="text" class="layui-input priority-input" autocomplete="off"
+                                               name="makdategrade"
+                                               placeholder=""/>
+                                        <span class="priority-tips" th:text="#{order.auto.issue.rule.priority}"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-row">
+                        <div class="layui-col-xs12">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label" th:text="#{order.createdate}"></label>
+                                <div class="layui-input-block">
+                                    <input type="checkbox" name="flagcreatedate" lay-skin="switch"
+                                           lay-filter="switchBtn" checked/>
+                                    <div class="time-priority" id="createOrderTimeRange">
+                                        <input type="text" class="layui-input date-time-range" id="test16"
+                                               name="createdatestr"
+                                               th:placeholder="#{order.auto.issue.rule.date.range}"/>
+                                        <input type="text" class="layui-input priority-input" id="" autocomplete="off"
+                                               name="createdategrade"
+                                               placeholder=""/>
+                                        <span class="priority-tips" th:text="#{order.auto.issue.rule.priority}"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edit-options-content">
+                    <button class="layui-btn" lay-submit="" lay-filter="component-form-order-rule"
+                            th:text="#{common.button.save}"></button>
+                    <button type="reset" class="layui-btn layui-btn-primary" th:text="#{common.button.reset}"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../static/layui/layui.js" type="text/javascript"></script>
+<script src="../../static/modules/order/order_issue_rule_edit.js" type="text/javascript"></script>
+
+</body>
+</html>
+

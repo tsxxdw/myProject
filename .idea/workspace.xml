@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/BaiDuPicDownUtil.java" line="14" mnemonic="4" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e275e920-54e5-4541-b1fc-1309afb38470" name="Default Changelist" comment="">
+    <list default="true" id="e2f4d603-de2d-4c51-beef-603868a120ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xm/contr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xm/contr/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xm/model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xm/model/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xm/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xm/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xm/service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xm/service/src/main/java/cn/tsxxdw/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/xm/service/src/main/java/cn/tsxxdw/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xm/service/src/main/java/cn/tsxxdw/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xm/service/src/main/java/cn/tsxxdw/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xm/service/src/main/java/cn/tsxxdw/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xm/service/src/main/java/cn/tsxxdw/service/UserService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/all-bean/my-bean/target/" />
     <ignored path="$PROJECT_DIR$/all-bean/wechat-bean/target/" />
-    <ignored path="$PROJECT_DIR$/myUtils/target/" />
-    <ignored path="$PROJECT_DIR$/javademo/target/" />
-    <ignored path="$PROJECT_DIR$/springbootdemo1/target/" />
-    <ignored path="$PROJECT_DIR$/all-bean/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/myBase/target/" />
-    <ignored path="$PROJECT_DIR$/myrabbitmq/target/" />
-    <ignored path="$PROJECT_DIR$/xiaolu/target/" />
-    <ignored path="$PROJECT_DIR$/xm/target/" />
-    <ignored path="$PROJECT_DIR$/xm/model/target/" />
-    <ignored path="$PROJECT_DIR$/xm/service/target/" />
     <ignored path="$PROJECT_DIR$/xm/contr/target/" />
+    <ignored path="$PROJECT_DIR$/myUtils/target/" />
+    <ignored path="$PROJECT_DIR$/myBase/target/" />
+    <ignored path="$PROJECT_DIR$/all-bean/target/" />
+    <ignored path="$PROJECT_DIR$/xm/target/" />
+    <ignored path="$PROJECT_DIR$/myrabbitmq/target/" />
+    <ignored path="$PROJECT_DIR$/xm/model/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/all-bean/my-bean/target/" />
+    <ignored path="$PROJECT_DIR$/javademo/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -53,94 +47,31 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xm/service/src/main/java/cn/tsxxdw/service/OrderDetailService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xm/service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="80" column="19" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xm/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="247">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xm/contr/pom.xml">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            <state relative-caret-position="247">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>data</find>
-      <find>openid</find>
-      <find>encodingFormat</find>
-      <find />
-      <find>SECRET</find>
-      <find>compressPic</find>
-      <find>NullSafeWrapper</find>
-      <find>客家菜</find>
-      <find>download</find>
-      <find>mkdir</find>
-      <find>\\</find>
-      <find>//</find>
-      <find>baidu</find>
-      <find>easyexcel</find>
-      <find>&quot;深圳&quot;</find>
-      <find>深圳</find>
-      <find>getWhere</find>
-      <find>finalURL</find>
-      <find>tempPath</find>
-      <find>JPG</find>
-      <find>wordstr</find>
-      <find>word</find>
-      <find>UserEntity</find>
-      <find>lom</find>
-      <find>lombok</find>
-      <find>mybatis-plus-boot-starter</find>
-      <find>MyFileUtil</find>
-      <find>GBK</find>
-      <find>getSuffix_notDots</find>
-      <find>watermark_2</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>MyFunction</replace>
-      <replace>MyConsumer</replace>
-      <replace>source</replace>
-      <replace>target</replace>
-      <replace>/</replace>
-      <replace>RabbitmqVo</replace>
-      <replace>QueryWrapper</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -148,70 +79,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/myrabbitmq/src/main/java/cn/tsxxdw/myrabbitmq/config/RabbitmqTestConfig.java" />
-        <option value="$PROJECT_DIR$/myrabbitmq/src/main/java/cn/tsxxdw/myrabbitmq/controller/RabbitmqController.java" />
-        <option value="$PROJECT_DIR$/myrabbitmq/src/main/java/cn/tsxxdw/myrabbitmq/service/RabbitmqTestProducer.java" />
-        <option value="$PROJECT_DIR$/myrabbitmq/src/main/java/cn/tsxxdw/myrabbitmq/service/RabbitmqTestConsumer.java" />
-        <option value="$PROJECT_DIR$/myrabbitmq/pom.xml" />
-        <option value="$PROJECT_DIR$/myrabbitmq/src/main/java/cn/tsxxdw/myrabbitmq/config/RabbitmqConfig.java" />
-        <option value="$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/vo/PageVo.java" />
-        <option value="$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/vo/BaseVo.java" />
-        <option value="$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/dto/BaseVo.java" />
-        <option value="$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/Where.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mydate/MyDateUtil.java" />
-        <option value="$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/dto/PageQueryDto.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/AESDecodeUtils.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/AesCbcUtil.java" />
-        <option value="$PROJECT_DIR$/javademo/src/main/java/demo/demo20190906/DemoFiles.java" />
-        <option value="$PROJECT_DIR$/javademo/src/main/java/demo/demo20190906/Main.java" />
-        <option value="$PROJECT_DIR$/javademo/src/main/java/demo/demo20190906/PageClass.java" />
-        <option value="$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/vo/ResultVo.java" />
-        <option value="$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/dto/BaseQueryDto.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/wechat/WeiXinUtil.java" />
-        <option value="$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/dto/WxDto.java" />
-        <option value="$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/NullSafeWrapper.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mymail/MyMailUtils.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mystr/MyStrUtils.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myintutils/MyIntUtils.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mycharacterspinyin/CharactersPinyinUtil.java" />
-        <option value="$PROJECT_DIR$/myUtils/pom.xml" />
-        <option value="$PROJECT_DIR$/javademo/src/main/java/meituan/demo1/Test001.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myexcel/MyExcelUtil.java" />
-        <option value="$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/vo/PointVo.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/PicDownUtil.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/SpiderPicturesFromBaiduByWord.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myfile/myFileUtil.java" />
-        <option value="$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java" />
-        <option value="$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/dto/WxUserDto.java" />
-        <option value="$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/WxService.java" />
-        <option value="$PROJECT_DIR$/all-bean/pom.xml" />
-        <option value="$PROJECT_DIR$/all-bean/my-bean/pom.xml" />
-        <option value="$PROJECT_DIR$/myBase/pom.xml" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myfile/MyFileUtil.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/decompile/MyDecompileUtil.java" />
-        <option value="$PROJECT_DIR$/javademo/src/main/java/mythread/Test001.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mypic/MyPicUtils.java" />
-        <option value="$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/BaiDuPicDownUtil.java" />
-        <option value="$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/entity/WxUserEntity.java" />
-        <option value="$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/entity/UserEntityy.java" />
-        <option value="$PROJECT_DIR$/xm/model/pom.xml" />
-        <option value="$PROJECT_DIR$/xm/service/pom.xml" />
         <option value="$PROJECT_DIR$/xm/pom.xml" />
-        <option value="$PROJECT_DIR$/xm/contr/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="JRebelWorkspace">
-    <option name="jrebelEnabledAutocompile" value="true" />
-  </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="localRepository" value="C:\Users\HP\.m2\repository" />
-        <option name="userSettingsFile" value="C:\Users\HP\.m2\settings.xml" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="lookForNested" value="true" />
@@ -223,33 +96,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="all-bean" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="myProject" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="wechat-bean" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="wechat-bean" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="wechat-bean" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="com.baomidou:mybatis-plus-boot-starter:3.1.2" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
         </path>
       </expand>
       <select />
     </treeState>
-  </component>
-  <component name="MavenRunner">
-    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-470" />
@@ -257,14 +108,12 @@
     <option name="width" value="1935" />
     <option name="height" value="1040" />
   </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,120 +124,26 @@
             <path>
               <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="myUtils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
               <item name="xm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="xm" type="462c0819:PsiDirectoryNode" />
-              <item name="contr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="xm" type="462c0819:PsiDirectoryNode" />
-              <item name="contr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="xm" type="462c0819:PsiDirectoryNode" />
-              <item name="contr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="xm" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="xm" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="xm" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="myProject" type="462c0819:PsiDirectoryNode" />
               <item name="xm" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="xm" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="xm" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="xm" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/xm/model/src/main/java/cn/tsxxdw" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.tsxxdw.wechatbean.dto" />
-      <recent name="cn.tsxxdw.service.mydate" />
-      <recent name="cn.tsxxdw" />
-      <recent name="cn.tsxxdw.mybese" />
-      <recent name="cn.tsxxdw.mybean.service" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\duan\soft\idea\file\myProject\xm\model\src\main\java\cn\tsxxdw" />
-      <recent name="C:\duan\soft\idea\file\myProject\all-bean\my-bean\src\main\java\cn\tsxxdw\vo" />
-      <recent name="C:\duan\soft\idea\file\myProject\myrabbitmq\src\main\java\cn\tsxxdw\myrabbitmq" />
-      <recent name="C:\duan\soft\idea\file\myProject\myUtils\src\main\java\cn\tsxxdw\service\mydate" />
-      <recent name="C:\duan\soft\idea\file\myProject\myUtils\src\main\java\cn\tsxxdw\service\mystr" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -402,72 +157,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyPicUtils">
-    <configuration name="BaiDuPicDownUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.tsxxdw.service.pachong.BaiDuPicDownUtil" />
-      <module name="myUtils" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.tsxxdw.service.pachong.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyDecompileUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.tsxxdw.service.decompile.MyDecompileUtil" />
-      <module name="myUtils" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.tsxxdw.service.decompile.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyFileUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.tsxxdw.service.myfile.MyFileUtil" />
-      <module name="myUtils" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.tsxxdw.service.myfile.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyPicUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.tsxxdw.service.mypic.MyPicUtils" />
-      <module name="myUtils" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.tsxxdw.service.mypic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test001" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mythread.Test001" />
-      <module name="javademo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mythread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="MyrabbitmqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="myrabbitmq" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tsxxdw.myrabbitmq.MyrabbitmqApplication" />
@@ -475,893 +165,96 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MyPicUtils" />
-        <item itemvalue="Application.Test001" />
-        <item itemvalue="Application.MyDecompileUtil" />
-        <item itemvalue="Application.MyFileUtil" />
-        <item itemvalue="Application.BaiDuPicDownUtil" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e275e920-54e5-4541-b1fc-1309afb38470" name="Default Changelist" comment="" />
-      <created>1565231777646</created>
+      <changelist id="e2f4d603-de2d-4c51-beef-603868a120ed" name="Default Changelist" comment="" />
+      <created>1571727856041</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1565231777646</updated>
-      <workItem from="1565231778797" duration="68000" />
-      <workItem from="1565231863187" duration="2507000" />
-      <workItem from="1565234600190" duration="1336000" />
-      <workItem from="1565247329958" duration="2895000" />
-      <workItem from="1565271727321" duration="1611000" />
-      <workItem from="1565312420531" duration="9943000" />
-      <workItem from="1565329423103" duration="5000" />
-      <workItem from="1565329600140" duration="3175000" />
-      <workItem from="1565343825874" duration="1316000" />
-      <workItem from="1565345427273" duration="1099000" />
-      <workItem from="1565346545929" duration="28000" />
-      <workItem from="1565401067957" duration="12413000" />
-      <workItem from="1565572932605" duration="1943000" />
-      <workItem from="1565590287134" duration="1716000" />
-      <workItem from="1565657251645" duration="4517000" />
-      <workItem from="1565686095758" duration="644000" />
-      <workItem from="1565744094914" duration="8287000" />
-      <workItem from="1565917713673" duration="1072000" />
-      <workItem from="1565918795969" duration="1788000" />
-      <workItem from="1566381098715" duration="1638000" />
-      <workItem from="1566436959351" duration="2066000" />
-      <workItem from="1566522303152" duration="661000" />
-      <workItem from="1566524492083" duration="6174000" />
-      <workItem from="1566611077006" duration="790000" />
-      <workItem from="1566712504921" duration="521000" />
-      <workItem from="1567648919224" duration="269000" />
-      <workItem from="1567672910687" duration="644000" />
-      <workItem from="1567732442884" duration="630000" />
-      <workItem from="1567733974571" duration="3430000" />
-      <workItem from="1567754573649" duration="10051000" />
-      <workItem from="1567772930956" duration="2437000" />
-      <workItem from="1567817754624" duration="7024000" />
-      <workItem from="1567840994156" duration="8459000" />
-      <workItem from="1567869182885" duration="291000" />
-      <workItem from="1567902925727" duration="11771000" />
-      <workItem from="1567993952320" duration="958000" />
-      <workItem from="1568192779171" duration="673000" />
-      <workItem from="1568197635464" duration="622000" />
-      <workItem from="1568200105851" duration="1453000" />
-      <workItem from="1568249805605" duration="59000" />
-      <workItem from="1568259478629" duration="2722000" />
-      <workItem from="1568292633501" duration="1069000" />
-      <workItem from="1568514263659" duration="1422000" />
-      <workItem from="1568517486352" duration="1983000" />
-      <workItem from="1568612777856" duration="2386000" />
-      <workItem from="1568684233504" duration="7228000" />
-      <workItem from="1568787223047" duration="1084000" />
-      <workItem from="1569034061542" duration="2251000" />
-      <workItem from="1569209618170" duration="3707000" />
-      <workItem from="1569225585646" duration="1595000" />
-      <workItem from="1569289122866" duration="599000" />
-      <workItem from="1569394244921" duration="648000" />
-      <workItem from="1569397562974" duration="3264000" />
-      <workItem from="1569461342185" duration="3345000" />
-      <workItem from="1569566530906" duration="3711000" />
-      <workItem from="1569720121201" duration="4889000" />
-      <workItem from="1569738880867" duration="1010000" />
-      <workItem from="1569808826976" duration="5050000" />
-      <workItem from="1569831061486" duration="5019000" />
-      <workItem from="1569847197785" duration="599000" />
-      <workItem from="1570498064966" duration="1034000" />
-      <workItem from="1570526808476" duration="599000" />
-      <workItem from="1570604675680" duration="746000" />
-      <workItem from="1570671976555" duration="32000" />
-      <workItem from="1570686519081" duration="1988000" />
-      <workItem from="1570757193752" duration="5646000" />
-      <workItem from="1570791331597" duration="254000" />
-      <workItem from="1570842621597" duration="610000" />
-      <workItem from="1571035349120" duration="3497000" />
-      <workItem from="1571039367010" duration="2676000" />
-      <workItem from="1571055943914" duration="112000" />
-      <workItem from="1571125365712" duration="2984000" />
-      <workItem from="1571188712144" duration="16367000" />
-      <workItem from="1571229005495" duration="475000" />
-      <workItem from="1571276091731" duration="128000" />
-      <workItem from="1571292312246" duration="10502000" />
-      <workItem from="1571362170691" duration="600000" />
-      <workItem from="1571366768004" duration="765000" />
-      <workItem from="1571385450433" duration="871000" />
-      <workItem from="1571387464216" duration="5909000" />
-      <workItem from="1571394657510" duration="1700000" />
-      <workItem from="1571621120060" duration="4488000" />
-      <workItem from="1571643287573" duration="50000" />
-      <workItem from="1571648345732" duration="658000" />
-      <workItem from="1571649027299" duration="2575000" />
-      <workItem from="1571655301253" duration="298000" />
-      <workItem from="1571706784779" duration="304000" />
-      <workItem from="1571708394427" duration="3614000" />
-      <workItem from="1571712712944" duration="2625000" />
-      <workItem from="1571723821938" duration="6000" />
+      <updated>1571727856041</updated>
+      <workItem from="1571727857289" duration="450000" />
     </task>
-    <task id="LOCAL-00001" summary="bean 位置调整">
-      <created>1565920961575</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1565920961575</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add Resultvo.count">
-      <created>1567734217174</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1567734217174</updated>
-    </task>
-    <task id="LOCAL-00003" summary="更新数据">
-      <created>1567756757709</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1567756757709</updated>
-    </task>
-    <task id="LOCAL-00004" summary="公共的分页方法">
-      <created>1567764395335</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1567764395335</updated>
-    </task>
-    <task id="LOCAL-00005" summary="公共的分页方法完成">
-      <created>1567765010430</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1567765010430</updated>
-    </task>
-    <task id="LOCAL-00006" summary="公共的分页方法完成">
-      <created>1567765565183</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1567765565183</updated>
-    </task>
-    <task id="LOCAL-00007" summary="selectList 更新+orderby">
-      <created>1567841666388</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1567841666388</updated>
-    </task>
-    <task id="LOCAL-00008" summary="filed parent">
-      <created>1567911591253</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1567911591253</updated>
-    </task>
-    <task id="LOCAL-00009" summary="filed parent">
-      <created>1567913893285</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1567913893285</updated>
-    </task>
-    <task id="LOCAL-00010" summary="filed parent">
-      <created>1567914542464</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1567914542464</updated>
-    </task>
-    <task id="LOCAL-00011" summary="filed parent">
-      <created>1567916632282</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1567916632282</updated>
-    </task>
-    <task id="LOCAL-00012" summary="微信头像">
-      <created>1568200262770</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1568200262770</updated>
-    </task>
-    <task id="LOCAL-00013" summary="微信头像">
-      <created>1568273873726</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1568273873726</updated>
-    </task>
-    <task id="LOCAL-00014" summary="修改Where">
-      <created>1569036903226</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1569036903226</updated>
-    </task>
-    <task id="LOCAL-00015" summary="新增有小数点">
-      <created>1569209729553</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1569209729553</updated>
-    </task>
-    <task id="LOCAL-00016" summary="新增有小数点">
-      <created>1569830588136</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1569830588136</updated>
-    </task>
-    <task id="LOCAL-00017" summary="爬虫001">
-      <created>1569833618746</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1569833618747</updated>
-    </task>
-    <task id="LOCAL-00018" summary="爬虫001">
-      <created>1569833854849</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1569833854849</updated>
-    </task>
-    <task id="LOCAL-00019" summary="爬虫001">
-      <created>1569835436654</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1569835436654</updated>
-    </task>
-    <task id="LOCAL-00020" summary="修复查询bug">
-      <created>1570604822963</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1570604822963</updated>
-    </task>
-    <task id="LOCAL-00021" summary="excel 更新等级">
-      <created>1571038845814</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1571038845814</updated>
-    </task>
-    <task id="LOCAL-00022" summary="pointvo update">
-      <created>1571040953877</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1571040953877</updated>
-    </task>
-    <task id="LOCAL-00023" summary="百度图片根据关键字下载">
-      <created>1571211342122</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1571211342123</updated>
-    </task>
-    <task id="LOCAL-00024" summary="弄info">
-      <created>1571385479881</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1571385479881</updated>
-    </task>
-    <task id="LOCAL-00025" summary="txt文件读取问题">
-      <created>1571641748771</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1571641748771</updated>
-    </task>
-    <task id="LOCAL-00026" summary="修改百度图片下载">
-      <created>1571712272414</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1571712272414</updated>
-    </task>
-    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="Test001_testToString - 2019.08.13 at 08h 59m 14s.xml">
-      <configuration name="Test001.testToString" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243645000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.78698224" visible="true" weight="0.29959786" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="JRebel" order="3" sideWeight="0.21259843" side_tool="true" weight="0.26572958" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49865952" weight="0.13857143" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.84182304" weight="0.24787535" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7211796" visible="true" weight="0.10764872" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.042857144" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4966488" weight="0.46033993" />
-      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.27882037" side_tool="true" visible="true" weight="0.10764872" />
-      <window_info anchor="bottom" id="JRebel Executor" order="15" weight="0.3295129" />
-      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49396783" weight="0.35835695" />
-      <window_info anchor="bottom" id="MyBatis Log" order="17" />
-      <window_info anchor="bottom" id="Problems" order="18" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.26876676" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.26107383" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.1541555" />
+      <window_info id="Designer" order="0" />
+      <window_info id="JRebel" order="1" side_tool="true" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.25268096" />
+      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info anchor="bottom" id="Database Console" order="1" weight="0.32904148" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.06437768" />
+      <window_info anchor="bottom" id="Problems" order="6" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="JRebel Executor" order="10" />
+      <window_info anchor="bottom" id="JRebel Console" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="MyBatis Log" order="12" weight="0.32904148" />
+      <window_info anchor="bottom" id="Message" order="13" />
+      <window_info anchor="bottom" id="Find" order="14" weight="0.05007153" />
+      <window_info anchor="bottom" id="Run" order="15" />
+      <window_info active="true" anchor="bottom" id="Debug" order="16" visible="true" weight="0.34985834" />
+      <window_info anchor="bottom" id="Cvs" order="17" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="18" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="19" />
+      <window_info anchor="right" id="Maven" order="0" visible="true" weight="0.16286863" />
+      <window_info anchor="right" id="Palette" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.30495977" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Bean Validation" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.78698224" visible="true" weight="0.26572958" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="JRebel" order="3" sideWeight="0.21259843" side_tool="true" visible="true" weight="0.26572958" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49865952" weight="0.1388102" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.84404284" visible="true" weight="0.2838983" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7225201" weight="0.27903682" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49731904" weight="0.04249292" />
-      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.15595716" side_tool="true" visible="true" weight="0.28349787" />
-      <window_info anchor="bottom" id="JRebel Executor" order="15" />
-      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49463806" weight="0.3286119" />
-      <window_info anchor="bottom" id="MyBatis Log" order="17" />
-      <window_info anchor="bottom" id="Problems" order="18" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.29585007" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.06827309" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.1541555" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="bean 位置调整" />
-    <MESSAGE value="add Resultvo.count" />
-    <MESSAGE value="更新数据" />
-    <MESSAGE value="公共的分页方法" />
-    <MESSAGE value="公共的分页方法完成" />
-    <MESSAGE value="selectList 更新+orderby" />
-    <MESSAGE value="filed parent" />
-    <MESSAGE value="微信头像" />
-    <MESSAGE value="修改Where" />
-    <MESSAGE value="新增有小数点" />
-    <MESSAGE value="爬虫001" />
-    <MESSAGE value="修复查询bug" />
-    <MESSAGE value="excel 更新等级" />
-    <MESSAGE value="pointvo update" />
-    <MESSAGE value="百度图片根据关键字下载" />
-    <MESSAGE value="弄info" />
-    <MESSAGE value="txt文件读取问题" />
-    <MESSAGE value="修改百度图片下载" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改百度图片下载" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mymail/MyMailUtils.java</url>
-          <line>75</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/Where.java</url>
-          <line>2</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/SpiderPicturesFromBaiduByWord.java</url>
-          <line>89</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/SpiderPicturesFromBaiduByWord.java</url>
-          <line>124</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myfile/MyFileUtil.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mypic/MyPicUtils.java</url>
-          <line>78</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>name.substring(1)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/vo/PointVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/xm/service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mylog/MyLogUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="67" column="9" lean-forward="true" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mycharacterspinyin/CharactersPinyinUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1171">
-          <caret line="117" column="53" selection-start-line="117" selection-start-column="53" selection-end-line="117" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mydate/MyDateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="228" column="44" selection-start-line="228" selection-start-column="39" selection-end-line="228" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mydate/Mytimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myintutils/MyIntUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mystr/MyStrUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="91" column="47" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myjson/MyJsonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="72" column="75" selection-start-line="72" selection-start-column="75" selection-end-line="72" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/Where.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/all-bean/my-bean/src/main/java/cn/tsxxdw/other/NullSafeWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1691">
-          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mymap/MyMapUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../jdk/jdk1.8.0_202/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="231" column="36" selection-start-line="231" selection-start-column="25" selection-end-line="231" selection-end-column="36" />
-          <folding>
-            <element signature="e#7967#7968#0" expanded="true" />
-            <element signature="e#8013#8014#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../jdk/jdk1.8.0_202/src.zip!/java/util/regex/Pattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="1026" column="26" selection-start-line="1026" selection-start-column="26" selection-end-line="1026" selection-end-column="26" />
-          <folding>
-            <element signature="e#48487#48488#0" expanded="true" />
-            <element signature="e#48531#48532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myspringbean/MyBeanUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaolu/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/dto/WxDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.1.2/mybatis-plus-core-3.1.2.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/all-bean/my-bean/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myBase/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../jdk/jdk1.8.0_202/src.zip!/java/nio/charset/Charset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="635" column="20" selection-start-line="635" selection-start-column="20" selection-end-line="635" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/myfile/MyFileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/decompile/MyDecompileUtil.java" />
-    <entry file="file://$PROJECT_DIR$/javademo/src/main/java/mythread/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javademo/src/main/java/mythread/Test001.java" />
-    <entry file="file://$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/entity/UserEntityy.java" />
-    <entry file="file://$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/dto/WxUserDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/bean/vo/excel/ExcelReadVo.java">
+    <entry file="file://$PROJECT_DIR$/xm/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/WxService.java" />
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/mypic/MyPicUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4104">
-          <caret line="216" column="31" selection-start-line="216" selection-start-column="31" selection-end-line="216" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/BaiDuPicDownUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/all-bean/wechat-bean/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/all-bean/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/src/main/java/cn/tsxxdw/service/pachong/SpiderPicturesFromBaiduByWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1957">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/all-bean/wechat-bean/src/main/java/cn/tsxxdw/wechatbean/entity/WxUserEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1208">
-          <caret line="128" column="24" selection-start-line="128" selection-start-column="24" selection-end-line="128" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xm/model/src/main/java/cn/tsxxdw/entity/OrderDetailEntity.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xm/model/src/main/java/cn/tsxxdw/dto/OrderDto.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xm/model/src/main/java/cn/tsxxdw/entity/SetMealEntity.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xm/model/src/main/java/cn/tsxxdw/entity/OrderEntity.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xm/model/src/main/java/cn/tsxxdw/entity/NoticeEntity.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xm/model/src/main/java/cn/tsxxdw/entity/MqEntity.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xm/model/src/main/java/cn/tsxxdw/entity/UserEntity.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xm/model/src/main/java/cn/tsxxdw/dto/UserQueueDto.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xm/model/src/main/java/cn/tsxxdw/dto/OrderQueryDto.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xm/model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xm/model/src/main/java/cn/tsxxdw/entity/UserEntityt.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xm/service/src/main/java/cn/tsxxdw/service/OrderDetailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xm/service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="80" column="19" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xm/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xm/contr/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        <state relative-caret-position="247">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>contr</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -234,10 +234,10 @@ public class MyPicUtils {
     }
 
     public static void main(String[] args) {
-        String source="D:\\duan\\file\\mct\\中式菜系\\中式菜系\\【黄金满地蒜香蟹】粤菜经典勾魂滋味\\c667d89c269b43a5b643fa015913a6f2.jpeg";
-        String target="D:\\duan\\file\\mct\\中式菜系\\中式菜系\\【黄金满地蒜香蟹】粤菜经典勾魂滋味\\c667d89c269b43a5b643fa015913a6f2_detail.jpeg";
-        MyPicUtils.watermark_2("美菜图","图片来源：外卖名堂美菜图",source,target,new Color(255,255,255),"JPG");
-
+//        String source="D:\\duan\\file\\mct\\中式菜系\\中式菜系\\【黄金满地蒜香蟹】粤菜经典勾魂滋味\\c667d89c269b43a5b643fa015913a6f2.jpeg";
+//        String target="D:\\duan\\file\\mct\\中式菜系\\中式菜系\\【黄金满地蒜香蟹】粤菜经典勾魂滋味\\c667d89c269b43a5b643fa015913a6f2_detail.jpeg";
+//        MyPicUtils.watermark_2("美菜图","图片来源：外卖名堂美菜图",source,target,new Color(255,255,255),"JPG");
+        getSuffix_notDots("C:\\duan\\soft\\idea\\file\\aaaa");
     }
 
 }

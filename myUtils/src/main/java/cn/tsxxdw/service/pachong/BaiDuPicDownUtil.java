@@ -8,10 +8,10 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import sun.misc.BASE64Encoder;
 
-import java.io.ByteArrayOutputStream;
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileOutputStream;
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.ImageObserver;
+import java.io.*;
 import java.net.URL;
 
 /**
@@ -48,28 +48,30 @@ public class BaiDuPicDownUtil {
                 JSONObject jsonObject1 = (JSONObject) jsonArray.get(i);
                 String picUrlPath = (String) jsonObject1.get("objURL");
                 String filename = picUrlPath.substring(picUrlPath.lastIndexOf('/') + 1);
-                String newFilePaht = saveFolderPath + File.separator + filename;
-                if(i>=number)break;
-               try {
-                   download(picUrlPath, newFilePaht);
-               }catch (Exception e){
-                   number++;
-                   MyLogUtil.logError(BaiDuPicDownUtil.class,downFilePath+",i:"+i);
-               }
+                String newFilePath = saveFolderPath + File.separator + filename;
+                if (i >= number) break;
+                try {
+                    download(picUrlPath, newFilePath);
+                    deleteErrorPic(newFilePath);//删除问题图片
+                } catch (Exception e) {
+                    number++;
+                    MyLogUtil.logError(BaiDuPicDownUtil.class, downFilePath + ",i:" + i);
+                }
             }
         } catch (Exception e) {
             //MyLogUtil.logError(BaiDuPicDownUtil.class, e);
-          //  MyLogUtil.logError(BaiDuPicDownUtil.class,downFilePath);
+            //  MyLogUtil.logError(BaiDuPicDownUtil.class,downFilePath);
         }
     }
 
-    private static void download(String urlList, String path) throws Exception {
+    private static void download(String urlList, String newFilePath) throws Exception {
+
         URL url = null;
         try {
             url = new URL(urlList);
             DataInputStream dataInputStream = new DataInputStream(url.openStream());
 
-            FileOutputStream fileOutputStream = new FileOutputStream(new File(path));
+            FileOutputStream fileOutputStream = new FileOutputStream(new File(newFilePath));
             ByteArrayOutputStream output = new ByteArrayOutputStream();
 
             byte[] buffer = new byte[1024];
@@ -84,9 +86,25 @@ public class BaiDuPicDownUtil {
             fileOutputStream.write(output.toByteArray());
             dataInputStream.close();
             fileOutputStream.close();
+
         } catch (Exception e) {
-           // MyLogUtil.logError(BaiDuPicDownUtil.class,e);
+            // MyLogUtil.logError(BaiDuPicDownUtil.class,e);
             throw new Exception("下载异常");
+        }
+    }
+
+
+    private static void deleteErrorPic(String filePath) {
+        Image srcImg = null;
+        File file = new File(filePath);
+        try {
+            if (file.length() < 1) file.delete();
+            srcImg = ImageIO.read(file);
+            srcImg.getWidth((ImageObserver) null);
+            MyLogUtil.logInfo(BaiDuPicDownUtil.class, "Pic down success");
+        } catch (Exception e) {
+            MyLogUtil.logError(BaiDuPicDownUtil.class, "Pic is error");
+            file.delete();
         }
     }
 }

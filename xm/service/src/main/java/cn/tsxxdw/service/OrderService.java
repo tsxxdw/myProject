@@ -2,13 +2,14 @@ package cn.tsxxdw.service;
 
 import cn.tsxxdw.dto.OrderDto;
 import cn.tsxxdw.dto.OrderQueryDto;
+import cn.tsxxdw.entity.OrderDetailEntity;
 import cn.tsxxdw.entity.OrderEntity;
-import cn.tsxxdw.mapper.OrderMapper;
 import cn.tsxxdw.mybese.BaseService;
 import cn.tsxxdw.other.Where;
 import cn.tsxxdw.service.myspringbean.MyBeanUtils;
 import cn.tsxxdw.service.mystr.MyStrUtils;
 import cn.tsxxdw.vo.ResultVo;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -24,7 +25,7 @@ import java.util.List;
 
 @Slf4j
 @Service
-public class OrderService extends BaseService<OrderEntity, OrderMapper> {
+public class OrderService extends BaseService<OrderEntity, BaseMapper<OrderEntity>>{
     private final String unPaid="unPaid";
     public ResultVo add(OrderDto orderDto) throws Exception {
         OrderEntity orderEntity = MyBeanUtils.copyPropertiesAndResTarget(orderDto, OrderEntity::new,o->{

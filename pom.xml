@@ -19,7 +19,6 @@
         <module>javademo</module>
         <module>myUtils</module>
         <module>myBase</module>
-        <module>myrabbitmq</module>
         <module>xm/contr</module>
         <module>xm/service</module>
         <module>xm/model</module>

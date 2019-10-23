@@ -1,7 +1,5 @@
-package cn.tsxxdw.service;
+package cn.tsxxdw.mybese;
 
-import cn.tsxxdw.dto.UserDto;
-import cn.tsxxdw.mybese.BaseService;
 import cn.tsxxdw.other.Where;
 import cn.tsxxdw.service.mylog.MyLogUtil;
 import cn.tsxxdw.service.myspringbean.MyBeanUtils;
@@ -31,7 +29,7 @@ import java.util.function.Supplier;
 @Slf4j
 @Service
 //这里 WxWxUserEntity 修改为  WxUserEntity就没报错了e
-public class UserService extends BaseService<WxUserEntity, BaseMapper<WxUserEntity>> {
+public class WxService extends BaseService<WxUserEntity, BaseMapper<WxUserEntity>> {
     Supplier<WxUserEntity> WxUserEntitySupplier = WxUserEntity::new;
 
 
@@ -54,7 +52,7 @@ public class UserService extends BaseService<WxUserEntity, BaseMapper<WxUserEnti
             //判断是否存在openid
             WxUserEntity WxUserEntity = selectOne(Where.useNullSafe(WxUserEntity.class).eq("openid", wxDto.getOpenid()));
             if (WxUserEntity != null) {
-                ResultVo resultVo = new ResultVo().setSuccess(MyBeanUtils.copyPropertiesAndResTarget(WxUserEntity, UserDto::new));
+                ResultVo resultVo = new ResultVo().setSuccess(MyBeanUtils.copyPropertiesAndResTarget(WxUserEntity, WxUserDto::new));
                 return resultVo;
             } else {//如果数据库没有该用户，则创建
                 return ResultVo.createSimpleFailResult();

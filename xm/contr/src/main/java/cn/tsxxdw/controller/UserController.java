@@ -1,4 +1,4 @@
-package tsxxdw.controller;
+package cn.tsxxdw.controller;
 
 import cn.tsxxdw.service.UserService;
 import lombok.extern.slf4j.Slf4j;

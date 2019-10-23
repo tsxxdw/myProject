@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2f4d603-de2d-4c51-beef-603868a120ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xm/service/src/main/java/cn/tsxxdw/mapper/MyBaseMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseMapper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/all-bean/wechat-bean/target/" />
@@ -49,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xm/contr/src/main/java/cn/tsxxdw/ContrApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="190">
+              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -58,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="83" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
+            <state relative-caret-position="95">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -67,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xm/service/src/main/java/cn/tsxxdw/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="19" column="67" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="67" />
+            <state relative-caret-position="58">
+              <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -495,20 +494,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11908000" />
+    <option name="totallyTimeSpent" value="12191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
-      <window_info id="JRebel" order="1" sideWeight="0.1239531" side_tool="true" visible="true" weight="0.3230563" />
+      <window_info id="JRebel" order="1" sideWeight="0.41239893" side_tool="true" visible="true" weight="0.3230563" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.8760469" visible="true" weight="0.3230563" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.58760107" visible="true" weight="0.3230563" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Database Console" order="1" weight="0.32904148" />
@@ -521,12 +520,12 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49865952" weight="0.3286119" />
       <window_info anchor="bottom" id="JRebel Executor" order="10" />
-      <window_info anchor="bottom" id="JRebel Console" order="11" sideWeight="0.113270774" side_tool="true" visible="true" weight="0.15439093" />
+      <window_info anchor="bottom" id="JRebel Console" order="11" sideWeight="0.113270774" side_tool="true" visible="true" weight="0.47450426" />
       <window_info anchor="bottom" id="MyBatis Log" order="12" weight="0.32904148" />
       <window_info anchor="bottom" id="Message" order="13" />
       <window_info anchor="bottom" id="Find" order="14" sideWeight="0.49932975" weight="0.34135976" />
       <window_info anchor="bottom" id="Run" order="15" sideWeight="0.8847185" weight="0.34560907" />
-      <window_info active="true" anchor="bottom" id="Debug" order="16" sideWeight="0.88672924" visible="true" weight="0.15439093" />
+      <window_info active="true" anchor="bottom" id="Debug" order="16" sideWeight="0.88672924" visible="true" weight="0.47450426" />
       <window_info anchor="bottom" id="Cvs" order="17" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="18" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="19" />
@@ -813,15 +812,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xm/contr/src/main/java/cn/tsxxdw/ContrApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="190">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xm/service/src/main/java/cn/tsxxdw/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="19" column="67" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="67" />
+        <state relative-caret-position="58">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -830,8 +829,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myBase/src/main/java/cn/tsxxdw/mybese/BaseMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="83" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

@@ -11,3 +11,4 @@ package.bat
 .DS_Store
 .rebel*
 rebel-remote.xml
+.idea/workspace.xml

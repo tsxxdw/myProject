@@ -12,3 +12,4 @@ package.bat
 .rebel*
 rebel-remote.xml
 .idea/workspace.xml
+.idea/*

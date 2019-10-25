@@ -34,7 +34,88 @@ public class BaseService<E, M extends BaseMapper<E>> {
         return m;
     }
 
-    //  create,remove,search,alter
+    public void add(E e) throws Exception {
+        m.insert(e);
+    }
+
+    public void add(E e, Consumer<E> consumer) throws Exception {
+        consumer.accept(e);
+        m.insert(e);
+    }
+
+    public int delete(Object object, QueryWrapper where) throws Exception {
+        getWhere(object,where,null);
+        int res = m.delete(where);
+        return res;
+    }
+
+
+    public E query(Wrapper wrapper) {
+        E e = (E) m.selectOne(wrapper);
+        return e;
+    }
+
+    private QueryWrapper getWhere1(Object object, QueryWrapper where, PageQueryDto pageQueryDto) throws Exception {
+        List<Field> fieldList = Lists.newArrayList();
+        boolean parentClassIsObject = false;//父类是object?
+        Class currentClass = object.getClass();//获取当前类
+        do {
+            Field[] field = currentClass.getDeclaredFields(); //获取实体类的所有属性，返回Field数组
+            List<Field> tempList = Arrays.asList(field);
+            fieldList.addAll(tempList);
+            currentClass = currentClass.getSuperclass();
+            String currentClassName = currentClass.getName();
+            if ("java.lang.Object".equals(currentClassName)) {
+                //设置父类为Object
+                parentClassIsObject = true;
+            }
+        } while (!parentClassIsObject);
+
+
+        for (int j = 0; j < fieldList.size(); j++) { //遍历所有属性
+            String camelFiledName = fieldList.get(j).getName(); //获取属性的名字
+            String name = camelFiledName.substring(0, 1).toUpperCase() + camelFiledName.substring(1); //将属性的首字符大写，方便构造get，set方法
+            String type = fieldList.get(j).getGenericType().toString(); //获取属性的类型
+            //如果type是类类型，则前面包含"class "，后面跟类名
+            Method m = object.getClass().getMethod("get" + name);
+            String underlineFiledName = MyStrUtils.camelToUnderline(camelFiledName, 1);
+            Object value = m.invoke(object); //调用getter方法获取属性值
+
+            if ("class java.lang.String".equals(type)) {
+                String valueStr = (String) value;
+                if (StringUtils.isBlank(valueStr)) continue;
+
+
+                else if ("orderByAsc".equals(camelFiledName)) {
+
+                    where.orderByAsc(MyStrUtils.camelToUnderline(valueStr, 1));
+                } else if ("orderByDesc".equals(camelFiledName)) {
+                    where.orderByDesc(MyStrUtils.camelToUnderline(valueStr, 1));
+                } else {
+                    where.eq(underlineFiledName, value);
+                }
+            } else if ("class java.lang.Integer".equals(type)) {
+
+                Integer valueInteger = (Integer) value;
+                if (valueInteger == null) continue;
+                if ("limit".equals(camelFiledName)) {
+                    pageQueryDto.setLimit(valueInteger);
+                } else if ("page".equals(camelFiledName)) {
+                    pageQueryDto.setPage(valueInteger);
+                } else {
+                    where.eq(underlineFiledName, valueInteger);
+                }
+            }
+
+        }
+
+
+        return where;
+    }
+
+
+/*旧版本的代码再下面----------------------------------------------------------*/
+
 
     public int insert(E e) throws Exception {
         return m.insert(e);
@@ -45,11 +126,6 @@ public class BaseService<E, M extends BaseMapper<E>> {
         return m.insert(e);
     }
 
-    public int delete(Object object, QueryWrapper where) throws Exception {
-        getWhere(object,where,null);
-        int res = m.delete(where);
-        return res;
-    }
 
     public E selectOne(Wrapper wrapper) {
         E e = (E) m.selectOne(wrapper);
@@ -58,18 +134,18 @@ public class BaseService<E, M extends BaseMapper<E>> {
 
 
     private QueryWrapper getWhere(Object object, QueryWrapper where, PageQueryDto pageQueryDto) throws Exception {
-        List<Field> fieldList= Lists.newArrayList();
-        boolean parentClassIsObject=false;//父类是object?
-        Class parmClass=object.getClass();//获取当前类
-        Class currentClass=object.getClass();//获取当前类
-        do{
+        List<Field> fieldList = Lists.newArrayList();
+        boolean parentClassIsObject = false;//父类是object?
+        Class parmClass = object.getClass();//获取当前类
+        Class currentClass = object.getClass();//获取当前类
+        do {
             Field[] field = currentClass.getDeclaredFields(); //获取实体类的所有属性，返回Field数组
-            List<Field> tempList=  Arrays.asList(field);
+            List<Field> tempList = Arrays.asList(field);
             fieldList.addAll(tempList);
-            currentClass=  currentClass.getSuperclass();
-           String currentClassName= currentClass.getName();
-           if("java.lang.Object".equals(currentClassName))parentClassIsObject=true;
-        }while (!parentClassIsObject);
+            currentClass = currentClass.getSuperclass();
+            String currentClassName = currentClass.getName();
+            if ("java.lang.Object".equals(currentClassName)) parentClassIsObject = true;
+        } while (!parentClassIsObject);
 
 
         for (int j = 0; j < fieldList.size(); j++) { //遍历所有属性
@@ -79,32 +155,30 @@ public class BaseService<E, M extends BaseMapper<E>> {
             //如果type是类类型，则前面包含"class "，后面跟类名
             Method m = object.getClass().getMethod("get" + name);
             String underlineFiledName = MyStrUtils.camelToUnderline(camelFiledName, 1);
-            Object value =  m.invoke(object); //调用getter方法获取属性值
+            Object value = m.invoke(object); //调用getter方法获取属性值
 
-            if("class java.lang.String".equals(type)){
-                String valueStr= (String) value;
+            if ("class java.lang.String".equals(type)) {
+                String valueStr = (String) value;
                 if (StringUtils.isBlank(valueStr)) continue;
 
 
-                else  if("orderByAsc".equals(camelFiledName)){
+                else if ("orderByAsc".equals(camelFiledName)) {
 
                     where.orderByAsc(MyStrUtils.camelToUnderline(valueStr, 1));
-                }
-                else  if("orderByDesc".equals(camelFiledName)){
+                } else if ("orderByDesc".equals(camelFiledName)) {
                     where.orderByDesc(MyStrUtils.camelToUnderline(valueStr, 1));
-                }else {
+                } else {
                     where.eq(underlineFiledName, value);
                 }
-            }else if("class java.lang.Integer".equals(type)) {
+            } else if ("class java.lang.Integer".equals(type)) {
 
-                Integer valueInteger=(Integer)value;
-                if(valueInteger==null)continue;
-                if("limit".equals(camelFiledName)){
+                Integer valueInteger = (Integer) value;
+                if (valueInteger == null) continue;
+                if ("limit".equals(camelFiledName)) {
                     pageQueryDto.setLimit(valueInteger);
-                }
-                else   if("page".equals(camelFiledName)){
+                } else if ("page".equals(camelFiledName)) {
                     pageQueryDto.setPage(valueInteger);
-                }else {
+                } else {
                     where.eq(underlineFiledName, valueInteger);
                 }
             }
@@ -117,12 +191,13 @@ public class BaseService<E, M extends BaseMapper<E>> {
 
     /**
      * 该方法有问题，没找到原因
+     *
      * @param c
      * @param methodName
      * @return
      * @throws Exception
      */
-    private Object getValue(Class c, String methodName) throws Exception{
+    private Object getValue(Class c, String methodName) throws Exception {
         Method method = c.getMethod("get" + methodName);
         if (null == method) {
             return null;

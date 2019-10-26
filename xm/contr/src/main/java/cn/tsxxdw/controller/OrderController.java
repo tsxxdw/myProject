@@ -54,7 +54,7 @@ public class OrderController {
         MyLogUtil.logInfo(this.getClass(), orderQueryDto);
         ResultVo resultVo = null;
         try {
-            resultVo = orderService.get(orderQueryDto);
+            resultVo = orderService.queryList(orderQueryDto);
         } catch (Exception e) {
             e.printStackTrace();
         }

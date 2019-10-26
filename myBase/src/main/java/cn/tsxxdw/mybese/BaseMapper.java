@@ -1,5 +1,8 @@
 package cn.tsxxdw.mybese;
 
-public interface BaseMapper extends com.baomidou.mybatisplus.core.mapper.BaseMapper {
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface BaseMapper<E> extends com.baomidou.mybatisplus.core.mapper.BaseMapper<E> {
 
 }

@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @Controller
-@MapperScan("cn.tsxxdw")
+@MapperScan("cn.tsxxdw.*")
 public class ContrApplication {
 
     public static void main(String[] args) {

@@ -3,6 +3,7 @@ package cn.tsxxdw.mybese;
 
 import cn.tsxxdw.dto.BaseQueryDto;
 import cn.tsxxdw.dto.PageQueryDto;
+import cn.tsxxdw.service.mylog.MyLogUtil;
 import cn.tsxxdw.service.mystr.MyStrUtils;
 import cn.tsxxdw.service.reflex.ReflexUtil;
 import cn.tsxxdw.vo.ResultVo;
@@ -36,23 +37,23 @@ public class BaseService<E, M extends BaseMapper<E>> {
         return m;
     }
 
-    public void add(E e) throws Exception {
+    public void addOne(E e) throws Exception {
         m.insert(e);
     }
 
-    public void add(E e, Consumer<E> consumer) throws Exception {
+    public void addOne(E e, Consumer<E> consumer) throws Exception {
         consumer.accept(e);
         m.insert(e);
     }
 
-    public int delete(Object object, QueryWrapper where) throws Exception {
+    public int deleteList(Object object, QueryWrapper where) throws Exception {
         getWhere(object, where, null);
         int res = m.delete(where);
         return res;
     }
 
 
-    public E query(Wrapper wrapper) {
+    public E queryOne(Wrapper wrapper) {
         E e = (E) m.selectOne(wrapper);
         return e;
     }
@@ -140,8 +141,12 @@ public class BaseService<E, M extends BaseMapper<E>> {
 
 
     public E selectOne(Wrapper wrapper) {
-        E e = (E) m.selectOne(wrapper);
-        return e;
+        try {
+            E e = (E) m.selectOne(wrapper);
+        }catch (Exception e){
+            MyLogUtil.logError(this.getClass(),e);
+        }
+        return null;
     }
 
 

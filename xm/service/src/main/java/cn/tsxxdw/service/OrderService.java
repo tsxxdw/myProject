@@ -37,10 +37,9 @@ public class OrderService extends BaseService<OrderEntity, BaseMapper<OrderEntit
         return ResultVo.createSimpleFailResult();
     }
 
-    public ResultVo get(OrderQueryDto orderQueryDto) throws Exception {
+    public ResultVo queryList(OrderQueryDto orderQueryDto) throws Exception {
         //根据openid 查询订单号
-
-        List<OrderEntity> orderEntityList = super.selectList(orderQueryDto,Where.useNullSafe(OrderEntity.class)).getData();
+        List<OrderEntity> orderEntityList = super.queryList(orderQueryDto,Where.useNullSafe(OrderEntity.class)).getData();
         return new ResultVo().setSuccess(orderEntityList);
     }
 

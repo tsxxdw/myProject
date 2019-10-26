@@ -11,7 +11,7 @@ import cn.tsxxdw.vo.ResultVo;
 import cn.tsxxdw.wechatbean.dto.WxDto;
 import cn.tsxxdw.wechatbean.dto.WxUserDto;
 import cn.tsxxdw.wechatbean.entity.WxUserEntity;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import cn.tsxxdw.mybese.BaseMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -25,12 +25,8 @@ import java.util.List;
 @Service
 public class ShopService extends BaseService<ShopEntity, BaseMapper<ShopEntity>>{
     public ResultVo add(ShopDto shopDto) throws Exception {
-        OrderEntity orderEntity = MyBeanUtils.copyPropertiesAndResTarget(orderDto, OrderEntity::new,o->{
-            o.setId(MyStrUtils.getIdDateStr("order"));
-            o.setPayMoneyStatus(unPaid);//未付款
-            o.setCreateDate(new Date());
-        });
-        insert(orderEntity);
+        ShopEntity shopEntity=  MyBeanUtils.copyPropertiesAndResTarget(shopDto,ShopEntity::new);
+        add("shop",shopEntity);
         return ResultVo.createSimpleFailResult();
     }
 

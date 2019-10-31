@@ -1,6 +1,8 @@
 {
   "pages": [
+   "pages/order_record/order_record",
     "pages/index/index",
+    "pages/mine/mine",
     "pages/logs/logs"
   ],
   "window": {

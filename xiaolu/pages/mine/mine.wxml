@@ -1,0 +1,79 @@
+<view>
+  <view style="width:100%;height:1px;background:#1F98FF"></view>
+
+  <view class="header">
+    <view class="header1" style="width:{{screen_width}}px; position: relative;">
+      <image style=" position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index= -1" mode="aspectFill" src="/images/home-banner.png"></image>
+      <view style="width:100%;height:60px;position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index= 1">
+        <view class="person-container">
+          <view class="avatar">
+            <image style="width:60px;height:60px;z-index=2" mode="aspectFill" src="{{avatarUrl}}"></image>
+          </view>
+          <view class="info-box">
+            <view class="info">
+              <view wx:if="{{openid==null}}" class="name" >   <button  open-type="getUserInfo" bindgetuserinfo="getUserInfo">请登录 </button>
+              </view>
+                <view wx:else  class="name" > {{nickName}} </view>
+              <view class="position">
+                <view>
+                  <image style="margin-right: 6rpx;width:12px;height:12px;" src="/images/male.png">
+                  </image>
+                </view>
+                <text>
+                </text>
+              </view>
+            </view>
+            <view class="intro">什么也没留下哦~</view>
+          </view>
+        </view>
+      </view>
+      <view class="follow-container">
+        <view catchtap="_jumptoFollowProblem" class="follow-item">
+          <text>0
+</text>
+          <text>
+ 目前预约人数
+</text>
+        </view>
+        <view catchtap="_jumptoAttentionUser" class="follow-item">
+          <text>
+0
+</text>
+          <text>
+已完成次数
+</text>
+        </view>
+        <view catchtap="_jumptoFollowMeUser" class="follow-item">
+          <text>
+0
+</text>
+          <text>
+ 空闲小哥人数
+</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="action" style="padding-top:40px;height:{{actionHeight}}px; ">
+
+    <view class="action_in" style="width:{{screen_width}}px;height:{{actionHeight}}px;margin:0 auto;">
+      <view style="width:{{actionWidth}}px;height:10px;">
+      </view>
+      <navigator url='/pages/order_record/order_record'>
+        <view class="col">
+          <image class="tubiao" src="/images/icon_me_03.png"></image>
+          <text>订单</text>
+          <image class="jiantou" src="/images/jiantou.png"></image>
+        </view>
+      </navigator>
+
+      <view bindtap="tel" class="col" bindtap='calling'>
+        <image class="tubiao" src="/images/icon_me_04.png"></image>
+        <text>联系客服</text>
+        <image class="jiantou" src="/images/jiantou.png"></image>
+      </view>
+    </view>
+  </view>
+
+</view>

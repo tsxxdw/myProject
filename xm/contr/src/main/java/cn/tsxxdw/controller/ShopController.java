@@ -1,5 +1,7 @@
 package cn.tsxxdw.controller;
 
+import cn.tsxxdw.dto.ShopDto;
+import cn.tsxxdw.dto.ShopQueryDto;
 import cn.tsxxdw.service.ShopService;
 import cn.tsxxdw.service.mylog.MyLogUtil;
 import cn.tsxxdw.vo.ResultVo;
@@ -10,45 +12,47 @@ import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @Controller
-@RequestMapping("/order")
+@RequestMapping("/shop")
 public class ShopController {
     @Autowired
-    private ShopService orderService;
+    private ShopService shopService;
+
     /**
      * 微信登录
      *
-     * @param orderDto
+     * @param shopDto
      * @return
      */
     @ResponseBody
     @RequestMapping(value = "", method = RequestMethod.POST)
-    public ResultVo<UserDto> add(@RequestBody OrderDto orderDto) {
-        MyLogUtil.logInfo(this.getClass(), orderDto);
-        ResultVo resultVo = null;
+    public ResultVo add(@RequestBody ShopDto shopDto) {
+        MyLogUtil.logInfo(this.getClass(), shopDto);
         try {
-            resultVo = orderService.add(orderDto);
+            ResultVo resultVo = shopService.add(shopDto);
+            return resultVo;
         } catch (Exception e) {
-            e.printStackTrace();
+            MyLogUtil.logError(this.getClass(), e);
+            return ResultVo.createSimpleFailResult();
         }
-        return resultVo;
 
     }
+
     /**
      * 微信登录
      *
-     * @param orderQueryDto
+     * @param shopQueryDto
      * @return
      */
     @ResponseBody
     @RequestMapping(value = "", method = RequestMethod.GET)
-    public ResultVo<UserDto> get(OrderQueryDto orderQueryDto) {
-        MyLogUtil.logInfo(this.getClass(), orderQueryDto);
-        ResultVo resultVo = null;
+    public ResultVo<ShopDto> get(ShopQueryDto shopQueryDto) {
+        MyLogUtil.logInfo(this.getClass(), shopQueryDto);
         try {
-            resultVo = orderService.get(orderQueryDto);
+            ResultVo resultVo = shopService.query(shopQueryDto);
+            return resultVo;
         } catch (Exception e) {
-            e.printStackTrace();
+            MyLogUtil.logError(this.getClass(), e);
+            return ResultVo.createSimpleFailResult();
         }
-        return resultVo;
     }
 }

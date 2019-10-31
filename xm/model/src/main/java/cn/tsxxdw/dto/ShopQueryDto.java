@@ -3,7 +3,7 @@ package cn.tsxxdw.dto;
 import lombok.Data;
 
 @Data
-public class ShopQueryDto {
+public class ShopQueryDto extends BaseQueryDto{
   private String id ;
   private String phone;
   private String fullName;

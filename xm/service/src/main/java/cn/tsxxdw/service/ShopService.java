@@ -1,6 +1,7 @@
 package cn.tsxxdw.service;
 
 import cn.tsxxdw.dto.ShopDto;
+import cn.tsxxdw.dto.ShopQueryDto;
 import cn.tsxxdw.entity.ShopEntity;
 import cn.tsxxdw.mybese.BaseService;
 import cn.tsxxdw.other.Where;
@@ -30,11 +31,12 @@ public class ShopService extends BaseService<ShopEntity, BaseMapper<ShopEntity>>
         return ResultVo.createSimpleFailResult();
     }
 
-    public ResultVo get(OrderQueryDto orderQueryDto) throws Exception {
+    public ResultVo query(ShopQueryDto shopQueryDto) throws Exception {
         //根据openid 查询订单号
 
-        List<OrderEntity> orderEntityList = super.selectList(orderQueryDto,Where.useNullSafe(OrderEntity.class)).getData();
-        return new ResultVo().setSuccess(orderEntityList);
+        List<ShopEntity> shopEntityList = super.queryListByPage(shopQueryDto,Where.useNullSafe(ShopEntity.class)).getData();
+
+        return new ResultVo().setSuccess(shopEntityList);
     }
 
 

@@ -4,6 +4,7 @@ import cn.tsxxdw.mybese.wx.WxUserService;
 import cn.tsxxdw.service.mylog.MyLogUtil;
 import cn.tsxxdw.vo.ResultVo;
 import cn.tsxxdw.wechatbean.dto.WxDto;
+import cn.tsxxdw.wechatbean.dto.WxUserDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,7 +30,7 @@ public class UserController {
      */
     @ResponseBody
     @RequestMapping(value = "/smallProcedure", method = RequestMethod.GET)
-    public ResultVo<UserDto> smallProcedureLogin(WxDto wxDto) {
+    public ResultVo<WxUserDto> smallProcedureLogin(WxDto wxDto) {
         MyLogUtil.logInfo(this.getClass(), wxDto);
 
         ResultVo resultVo = wxUserService.smallProcedureLogin(wxDto);
@@ -38,7 +39,7 @@ public class UserController {
     }
     @ResponseBody
     @RequestMapping(value = "/smallProcedure", method = RequestMethod.POST)
-    public ResultVo<UserDto> smallProcedureRegister(@RequestBody WxDto wxDto) {
+    public ResultVo<WxUserDto> smallProcedureRegister(@RequestBody WxDto wxDto) {
       try {
           MyLogUtil.logInfo(this.getClass(), wxDto);
           ResultVo resultVo = wxUserService.smallProcedureRegister(wxDto);
@@ -52,7 +53,7 @@ public class UserController {
 
     @ResponseBody
     @RequestMapping(value = "/smallProcedure", method = RequestMethod.PUT)
-    public ResultVo<UserDto> smallProcedureUpdateInfo(@RequestBody WxDto wxDto) {
+    public ResultVo<WxUserDto> smallProcedureUpdateInfo(@RequestBody WxDto wxDto) {
         try {
             MyLogUtil.logInfo(this.getClass(), wxDto);
             ResultVo resultVo = wxUserService.smallProcedureUpdateInfo(wxDto);

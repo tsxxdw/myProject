@@ -1,28 +1,19 @@
 package cn.tsxxdw.controller;
 
-import cn.tsxxdw.dto.OrderDto;
-import cn.tsxxdw.dto.OrderQueryDto;
-import cn.tsxxdw.dto.UserDto;
-import cn.tsxxdw.service.OrderService;
+import cn.tsxxdw.service.ShopService;
 import cn.tsxxdw.service.mylog.MyLogUtil;
 import cn.tsxxdw.vo.ResultVo;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.InputStream;
 
 @Slf4j
 @Controller
 @RequestMapping("/order")
-public class OrderController {
+public class ShopController {
     @Autowired
-    private OrderService orderService;
+    private ShopService orderService;
     /**
      * 微信登录
      *
@@ -59,34 +50,5 @@ public class OrderController {
             e.printStackTrace();
         }
         return resultVo;
-    }
-
-
-    /**
-     * 导入商品信息
-     *
-     * @return
-     */
-    @RequestMapping("/importProduct")
-    public String importProduct(@RequestParam(value = "pic") MultipartFile file) {
-        if (file == null || file.isEmpty()) {
-            return "file is null";
-        }
-        try {
-            String fileName = file.getOriginalFilename();
-            String path = System.getenv("TEMP") + File.separator + "upload";
-            File dir = new File(path);
-            if (!dir.exists()) {// 如果目录不存在就创建目录
-                dir.mkdirs();
-            }
-            InputStream stream = file.getInputStream();
-            // 上传文件
-            IOUtils.copy(stream, new FileOutputStream(path + File.separator + fileName));
-
-        } catch (Exception e) {
-            log.error("importProduct:", e);
-            e.printStackTrace();
-        }
-        return "product/uploadsuccess";
     }
 }

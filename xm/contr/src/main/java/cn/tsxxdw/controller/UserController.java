@@ -1,6 +1,5 @@
 package cn.tsxxdw.controller;
 
-import cn.tsxxdw.dto.UserDto;
 import cn.tsxxdw.mybese.wx.WxUserService;
 import cn.tsxxdw.service.mylog.MyLogUtil;
 import cn.tsxxdw.vo.ResultVo;

@@ -1,9 +1,7 @@
 package cn.tsxxdw.service;
 
-import cn.tsxxdw.dto.OrderDto;
-import cn.tsxxdw.dto.OrderQueryDto;
-import cn.tsxxdw.entity.OrderDetailEntity;
-import cn.tsxxdw.entity.OrderEntity;
+import cn.tsxxdw.dto.ShopDto;
+import cn.tsxxdw.entity.ShopEntity;
 import cn.tsxxdw.mybese.BaseService;
 import cn.tsxxdw.other.Where;
 import cn.tsxxdw.service.myspringbean.MyBeanUtils;
@@ -25,9 +23,8 @@ import java.util.List;
 
 @Slf4j
 @Service
-public class OrderService extends BaseService<OrderEntity, BaseMapper<OrderEntity>>{
-    private final String unPaid="unPaid";
-    public ResultVo add(OrderDto orderDto) throws Exception {
+public class ShopService extends BaseService<ShopEntity, BaseMapper<ShopEntity>>{
+    public ResultVo add(ShopDto shopDto) throws Exception {
         OrderEntity orderEntity = MyBeanUtils.copyPropertiesAndResTarget(orderDto, OrderEntity::new,o->{
             o.setId(MyStrUtils.getIdDateStr("order"));
             o.setPayMoneyStatus(unPaid);//未付款

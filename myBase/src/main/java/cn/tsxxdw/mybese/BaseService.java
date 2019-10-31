@@ -3,6 +3,7 @@ package cn.tsxxdw.mybese;
 
 import cn.tsxxdw.dto.BaseQueryDto;
 import cn.tsxxdw.dto.PageQueryDto;
+import cn.tsxxdw.entity.BaseEntity;
 import cn.tsxxdw.service.mystr.MyStrUtils;
 import cn.tsxxdw.service.reflex.ReflexUtil;
 import cn.tsxxdw.vo.ResultVo;
@@ -19,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 import java.util.function.Consumer;
@@ -32,10 +34,22 @@ public class BaseService<E, M extends BaseMapper<E>> {
     @Autowired
     private M m;
 
+    private void insertCompletion(String idStr,BaseEntity baseEntity){
+        Date date= new Date();
+        baseEntity.setId(idStr);
+        baseEntity.setCreateDate(date);
+        baseEntity.setUpdateDate(date);
+    }
+
+
     public M getM() {
         return m;
     }
-
+    
+    public void add(String idStr,E e) throws Exception {
+        insertCompletion(idStr, (BaseEntity) e);
+        m.insert(e);
+    }
     public void add(E e) throws Exception {
         m.insert(e);
     }

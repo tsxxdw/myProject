@@ -1,0 +1,13 @@
+<view style="z-index:3;width:96%;position: absolute;">
+  <block wx:key="carList" wx:for="{{carList}}">
+    <view style="height:25px" class="item_cat">
+      <text  bindtap="clickCar" style="font-size:10px;font-weight:500;"  data-index="{{index}}" data-id="{{item.index}}" class="{{currentCar_index==index?'active1':''}}">{{item.name}}</text>
+    </view>
+  </block>
+
+</view>
+<swiper current="{{currentCar_index}}" class="myswiper" circular="true" autoplayDisableOnInteraction="false" bindchange="swiperchange">
+  <swiper-item wx:for="{{dataList}}" wx:key="item.id">
+    <image style="width:100%;height:90%;" src="{{item.proUrl}}" mode='aspectFill' bindtap="swipclick"></image>
+  </swiper-item>
+</swiper>

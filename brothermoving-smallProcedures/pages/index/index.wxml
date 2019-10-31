@@ -1,0 +1,78 @@
+<view class="view_index_view_1_mycontain1">
+  <slide2 bind:getCarInfo="getCarInfo" class="view_index_view_1_mycontain1_1" name="slide2" />
+  <view class="view_index_view_1_mycontain1_2">
+    <view class="view_index_view_1_mycontain1_2_item">
+      <view class="item_left">
+        <navigator url='/pages/add_address/add_oldAddress'>
+          <input type="text" value="{{startAddress}}" placeholder-class="placeholderStyle" placeholder="您要从哪里搬出" style="width:100%;height:100%;font-size:8px"></input>
+        </navigator>
+
+      </view>
+      <view class="verticalLine" />
+      <view class="item_right">
+        <scroll_1 bind:getStartInfo="getStartInfo" textInfo='搬出楼层' />
+      </view>
+    </view>
+    <view class="view_index_view_1_mycontain1_2_item">
+      <view class="item_left">
+        <navigator url='/pages/add_address/add_newAddress'>
+          <input type="text" value="{{endAddress}}" placeholder-class="placeholderStyle" placeholder="想要搬到哪去" style="width:100%;height:100%;font-size:8px" />
+        </navigator>
+      </view>
+      <view class="verticalLine" />
+      <view class="item_right">
+        <scroll_1 bind:getEndInfo="getEndInfo" textInfo='搬入楼层' />
+      </view>
+    </view>
+    <view class="view_index_view_1_mycontain1_2_item">
+      <view style="font-size:12px;" type="text" class="item_left">
+        搬运时间
+      </view>
+      <view class="verticalLine" />
+      <view type="text" class="item_right">
+        <scroll_dateSet bind:getCarryDate="getCarryDate" />
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="view_index_view_1_mycontain2">
+  <view>
+    <text style="color:#EB6465">{{assessmentCostsStr}}元</text>
+  </view>
+  <view>
+    <text style="font-size:10px;color:#EB6465">温馨提示：不包含步行费</text>
+  </view>
+  
+  <view>
+    <text style="color:#989898;font-size:10px">{{assessmentCostsStrMethod}}</text>
+  </view>
+  <view>
+    <text style="color:#989898;font-size:10px">{{assessmentCostsStrMethodStr}}</text>
+  </view>
+  <view>
+    <text style="color:#989898">{{carIntroduce}}</text>
+  </view>
+  <view>
+    <button style="background-color:#0090FF" type="default" bindtap="nextStep">
+      <text style="color:white">下一步</text> </button>
+  </view>
+
+  <view style="height:50px;">
+    <view style="float:left;" class="item_3">
+      <image style="float:left;margin-left:20%" src="/images/fy1.png" />
+      <text style="float:left;">费用说明</text>
+
+    </view>
+    <view style="float:center;" class="item_3">
+      <image style="float:left;margin-left:20%" src="/images/dh1.png" />
+      <text style="float:left">客服电话</text>
+    </view>
+    <view style="float:right;" class="item_3">
+      <text style="float:right;margin-right:30%">用户须知</text>
+      <image style="float:right;" src="/images/zlz1.png" />
+
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<picker name="picker_hx" class="cybm_pic_1" id="{{dataList[index].id}}"
+   data-selecthx="{{dataList[index].name}}" range="{{dataList}}" range-key="{{'name'}}" bindchange="bindPickerChange_hx">
+  <view class="fonthui">
+       <input style="font-size: 8px;z-index=-1" name="carry_from" class="input"  type="number" placeholder="{{textInfo}}" value="{{carryLadder}}" />
+  </view>
+</picker>

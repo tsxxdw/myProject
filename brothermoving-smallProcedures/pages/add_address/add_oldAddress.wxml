@@ -1,0 +1,40 @@
+<view class="container">
+  <view style="width:100%;">
+    <image mode="widthFix" style="width:100%;" src="/images/logo_1.png"></image>
+  </view>
+  <form bindsubmit="bindSave">
+    <view class="form-box">
+      
+      
+     
+      <view class="row-wrap" bindtap="selectCity">
+        <view class="label">选择地区</view>
+        <picker bindchange="bindPickerProvinceChange" range="{{provinces}}">
+          <view class="picker {{selProvince=='请选择'?'hui':''}}">
+            {{selProvince}}
+          </view>
+        </picker>
+        <picker bindchange="bindPickerCityChange" range="{{citys}}">
+          <view class="picker {{selCity=='请选择'?'hui':''}}">
+            {{selCity}}
+          </view>
+        </picker>
+        <picker bindchange="bindPickerChange" range="{{districts}}">
+          <view class="picker {{selDistrict=='请选择'?'hui':''}}">
+            {{selDistrict}}
+          </view>
+        </picker>
+      </view>
+      <view class="addr-details">
+        <view class="label">详细地址</view>
+        <view style="width:100%;height:100%" class="label-right">
+          <!--<input class="input" type="text" placeholder="街道门牌信息"/>-->
+          <input style="width:100%;height:100%" name="address" auto-height placeholder="街道门牌信息" value="" />
+        </view>
+      </view>
+  
+    </view>
+    <button type="warn" class="save-btn" formType="submit">保存</button>
+    
+  </form>
+</view>

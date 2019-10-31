@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "搬家",
+  "usingComponents": {
+      "slide2": "/../../../component/slide/slide_2",
+      "scroll_1": "/../../../component/selector/scroll/scroll_1",
+      "scroll_dateSet": "/../../../component/selector/scroll/scroll_dateSet"
+
+  }
+}

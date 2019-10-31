@@ -1,5 +1,6 @@
-package cn.tsxxdw.mybese;
+package cn.tsxxdw.mybese.wx;
 
+import cn.tsxxdw.mybese.BaseService;
 import cn.tsxxdw.other.Where;
 import cn.tsxxdw.service.mylog.MyLogUtil;
 import cn.tsxxdw.service.myspringbean.MyBeanUtils;
@@ -9,7 +10,6 @@ import cn.tsxxdw.vo.ResultVo;
 import cn.tsxxdw.wechatbean.dto.WxDto;
 import cn.tsxxdw.wechatbean.dto.WxUserDto;
 import cn.tsxxdw.wechatbean.entity.WxUserEntity;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ import java.util.function.Supplier;
 @Slf4j
 @Service
 //这里 WxWxUserEntity 修改为  WxUserEntity就没报错了e
-public class WxService extends BaseService<WxUserEntity, BaseMapper<WxUserEntity>> {
+public class WxUserService extends BaseService<WxUserEntity, WxUserMapper> {
     Supplier<WxUserEntity> WxUserEntitySupplier = WxUserEntity::new;
 
 

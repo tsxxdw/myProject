@@ -24,7 +24,7 @@ import java.util.List;
 
 @Slf4j
 @Service
-public class ShopService extends BaseService<ShopEntity, BaseMapper<ShopEntity>>{
+public class ShopService extends BaseService<ShopEntity, ShopMapper>{
     public ResultVo add(ShopDto shopDto) throws Exception {
         ShopEntity shopEntity=  MyBeanUtils.copyPropertiesAndResTarget(shopDto,ShopEntity::new);
         add("shop",shopEntity);
@@ -33,7 +33,6 @@ public class ShopService extends BaseService<ShopEntity, BaseMapper<ShopEntity>>
 
     public ResultVo query(ShopQueryDto shopQueryDto) throws Exception {
         //根据openid 查询订单号
-
         List<ShopEntity> shopEntityList = super.queryListByPage(shopQueryDto,Where.useNullSafe(ShopEntity.class)).getData();
 
         return new ResultVo().setSuccess(shopEntityList);

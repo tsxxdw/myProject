@@ -10,9 +10,11 @@ function getAllData(urlStr, json,that, successCallback, failCallback, completeCa
 }
 
 function getPageData(urlStr, json, that, successCallback, failCallback, completeCallback) {
-  networkRequest.request(urlStr, "GET", json, that, function (res) {
+  networkRequest.request(urlStr, "GET", json, function (res) {
     if (res.code == 1) {
-      that.data.dataList = res.data;
+      that.setData({
+          dataList : res.data
+      })
     }
   })
 }

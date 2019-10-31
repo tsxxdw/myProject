@@ -11,9 +11,10 @@
           </view>
           <view class="info-box">
             <view class="info">
-              <view wx:if="{{openid==null}}" class="name" >   <button  open-type="getUserInfo" bindgetuserinfo="getUserInfo">请登录 </button>
+              <view wx:if="{{openid==null}}" class="name">
+                <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">请登录 </button>
               </view>
-                <view wx:else  class="name" > {{nickName}} </view>
+              <view wx:else class="name"> {{nickName}} </view>
               <view class="position">
                 <view>
                   <image style="margin-right: 6rpx;width:12px;height:12px;" src="/images/male.png">
@@ -32,7 +33,7 @@
           <text>0
 </text>
           <text>
- 目前预约人数
+ 电话拨打次数
 </text>
         </view>
         <view catchtap="_jumptoAttentionUser" class="follow-item">
@@ -40,7 +41,7 @@
 0
 </text>
           <text>
-已完成次数
+当前关注人数
 </text>
         </view>
         <view catchtap="_jumptoFollowMeUser" class="follow-item">
@@ -48,7 +49,7 @@
 0
 </text>
           <text>
- 空闲小哥人数
+ 当前会员人数
 </text>
         </view>
       </view>
@@ -59,19 +60,6 @@
 
     <view class="action_in" style="width:{{screen_width}}px;height:{{actionHeight}}px;margin:0 auto;">
       <view style="width:{{actionWidth}}px;height:10px;">
-      </view>
-      <navigator url='/pages/order_record/order_record'>
-        <view class="col">
-          <image class="tubiao" src="/images/icon_me_03.png"></image>
-          <text>订单</text>
-          <image class="jiantou" src="/images/jiantou.png"></image>
-        </view>
-      </navigator>
-
-      <view bindtap="tel" class="col" bindtap='calling'>
-        <image class="tubiao" src="/images/icon_me_04.png"></image>
-        <text>联系客服</text>
-        <image class="jiantou" src="/images/jiantou.png"></image>
       </view>
     </view>
   </view>

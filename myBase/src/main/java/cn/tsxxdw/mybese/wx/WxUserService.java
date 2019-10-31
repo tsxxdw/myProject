@@ -33,9 +33,9 @@ public class WxUserService extends BaseService<WxUserEntity, WxUserMapper> {
     Supplier<WxUserEntity> WxUserEntitySupplier = WxUserEntity::new;
 
 
-    private String appsecret = "af14dce8b373b6cd9b6c9c45b780d645";
+    private String appsecret = "0faa4e76e804c6dbf124cbf6782d5e31";
 
-    private String appid = "wx875e3bd02183d25c";
+    private String appid = "wx836984aa6540b580";
     @Autowired
     private RestTemplate restTemplate;
 

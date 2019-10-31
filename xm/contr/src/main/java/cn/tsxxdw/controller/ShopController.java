@@ -8,6 +8,7 @@ import cn.tsxxdw.vo.ResultVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Slf4j
@@ -16,6 +17,14 @@ import org.springframework.web.bind.annotation.*;
 public class ShopController {
     @Autowired
     private ShopService shopService;
+
+
+    @RequestMapping(value = "/add", method = RequestMethod.GET)
+    public String productCategoryManagement(Model model) {
+        return "shop/shop_add";
+    }
+
+
 
     /**
      * 微信登录

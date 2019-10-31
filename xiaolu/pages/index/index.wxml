@@ -1,13 +1,36 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view>
+
+  <block wx:for='{{dataList}}' wx:key='list' wx:for-item="item">
+    <view class="item">
+      <view class="item_1" />
+      <view class="item_2">
+        <text style="font-size: 30rpx;float:left;margin-left:3%">
+          店铺名称：{{item.shopName}}
+        </text>
+       <text style="font-size: 26rpx;color:#717171;float:right;margin-right:3%;">
+          未拨打
+        </text> 
+      </view>
+      <view style="font-size:8px;" class="item_3">
+        {{item.situation}}
+      </view>
+      <view class="item_4">
+        <view style="width:100%;height:20px;">
+          <text style="left:3%;width:100%;height:20px;position: absolute;color:#BEBEBE;font-size: 26rpx">商家电话 {{item.phone}}</text>
+        </view>
+        <view style="width:100%;height:30px;">
+          <view style="left:3%;width:200px;height:20px;position: absolute;color:#BEBEBE;font-size: 26rpx">创建时间： {{item.createDate}}</view>
+        </view>
+      </view>
+
+      <view class="item_5">
+             <view bindtap="calling"  data-phone='{{item.phone}}'  class="item_5_item1">    <image class="tubiao" src="/images/icon_me_04.png"></image></view>
+             <view class="item_5_item1">{{item.fullName}}</view>
+      </view>
+
+    </view>
+  </block>
+</view>
+<view class="bottom_view">
+ 没有更多信息了~
 </view>

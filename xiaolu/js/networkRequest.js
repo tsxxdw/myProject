@@ -5,6 +5,7 @@ function request(urlStr, method, json, successCallback, failCallback, completeCa
     data: json,
     method: method,
     success: function (res) {
+      console.info("request:"+res.data)
       successCallback(res.data);
     },
     fail: function (e) {

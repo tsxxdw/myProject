@@ -36,7 +36,7 @@ public class BaseService<E, M extends BaseMapper<E>> {
 
     private void insertCompletion(String idStr,BaseEntity baseEntity){
         Date date= new Date();
-        baseEntity.setId(idStr);
+        baseEntity.setId(MyStrUtils.getIdDateStr(idStr));
         baseEntity.setCreateDate(date);
         baseEntity.setUpdateDate(date);
     }

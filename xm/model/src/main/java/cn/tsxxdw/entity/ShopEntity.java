@@ -3,8 +3,7 @@ package cn.tsxxdw.entity;
 import lombok.Data;
 
 @Data
-public class ShopEntity {
-  private String id ;
+public class ShopEntity extends BaseEntity{
   private String phone;
   private String fullName;
   private  String shopName;

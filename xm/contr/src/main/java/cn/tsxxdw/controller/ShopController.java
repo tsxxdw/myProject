@@ -2,9 +2,12 @@ package cn.tsxxdw.controller;
 
 import cn.tsxxdw.dto.ShopDto;
 import cn.tsxxdw.dto.ShopQueryDto;
+import cn.tsxxdw.mybese.wx.WxUserService;
+import cn.tsxxdw.other.Where;
 import cn.tsxxdw.service.ShopService;
 import cn.tsxxdw.service.mylog.MyLogUtil;
 import cn.tsxxdw.vo.ResultVo;
+import cn.tsxxdw.wechatbean.entity.WxUserEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,13 +23,13 @@ import java.util.Optional;
 public class ShopController {
     @Autowired
     private ShopService shopService;
-
+    @Autowired
+    private WxUserService wxUserService;
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String productCategoryManagement(Model model) {
         return "shop/shop_add";
     }
-
 
 
     /**
@@ -40,15 +43,18 @@ public class ShopController {
     public ResultVo add(@RequestBody List<ShopDto> shopDtoList) {
         MyLogUtil.logInfo(this.getClass(), shopDtoList);
         try {
-            Optional.ofNullable(shopDtoList).ifPresent(list->{
-                list.forEach(o->{
-                    try {
-                        shopService.add(o);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                });
+            if (wxUserService.query(Where.useNullSafe(WxUserEntity.class).eq("openid", shopDtoList.get(0).getOpenid())) == null) {
+              return new ResultVo().setFail("用户编号错误");
+            }
+
+            shopDtoList.forEach(o -> {
+                try {
+                    shopService.add(o);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             });
+
             return ResultVo.createSimpleSuccessResult();
         } catch (Exception e) {
             MyLogUtil.logError(this.getClass(), e);

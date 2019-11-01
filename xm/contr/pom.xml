@@ -29,7 +29,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>cn.cn.tsxxdw.ContrApplication</mainClass>
+                    <mainClass>cn.tsxxdw.ContrApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

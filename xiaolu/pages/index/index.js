@@ -1,6 +1,7 @@
 const app = getApp();
 var shopStr = app.globalData.domainname + '/shop'
 var dataUtil = require('../../js/dataUtil.js');
+var networkRequest = require('../../js/networkRequest.js');
 
 Page({
 
@@ -85,16 +86,32 @@ Page({
   },
 
   calling: function (e) {
+    var that=this;
     var phone = e.currentTarget.dataset.phone;
-    debugger
+    var index = e.currentTarget.dataset.index;
+    var id = e.currentTarget.dataset.id;
     wx.makePhoneCall({
       phoneNumber: phone, //此号码并非真实电话号码，仅用于测试
       success: function () {
+        var json = { openid: app.globalData.openid, id: id, callStatus:'true'}
+        networkRequest.request(shopStr, "PUT", json, function (res) {
+          var callStatus = 'dataList[' + index + '].callStatus'
+          that.setData({
+            [callStatus]: 'true'
+          })
+        })
         console.log("拨打电话成功！")
       },
       fail: function () {
         console.log("拨打电话失败！")
       }
     })
+  },
+  onShareAppMessage: function () {
+    return {
+      title: '转发',
+      path: '/pages/start/start',
+      success: function (res) { }
+    }
   },
 })

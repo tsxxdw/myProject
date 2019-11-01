@@ -8,7 +8,7 @@ App({
     userInfo: null,
     session_key: null,
     code: null,
-    domainname: 'http://localhost:9069'
+    domainname: 'https://cay3.waimaimingtang.com'
     // domainname:'http://1f49q55928.imwork.net:32789'//家里
     // domainname:'http://1f49q55928.imwork.net:18165'//公司
     // domainname: 'https://pic3.waimaimingtang.com'

@@ -10,4 +10,6 @@ public class ShopDto {
   private  String shopName;
   private String situation;//情况
   private String openid;
+  private String callStatus;//拨打状态
+  private String callDate;//拨打时间
 }

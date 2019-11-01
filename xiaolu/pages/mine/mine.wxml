@@ -56,10 +56,23 @@
     </view>
   </view>
 
-  <view class="action" style="padding-top:40px;height:{{actionHeight}}px; ">
+ <view class="action" style="padding-top:40px;height:{{actionHeight}}px; ">
 
     <view class="action_in" style="width:{{screen_width}}px;height:{{actionHeight}}px;margin:0 auto;">
       <view style="width:{{actionWidth}}px;height:10px;">
+      </view>
+      <navigator url='/pages/order_record/order_record'>
+        <view class="col">
+          <image class="tubiao" src="/images/bh.png"></image>
+          <text>编号获取</text>
+          <image class="jiantou" src="/images/hqxx.png"></image>
+        </view>
+      </navigator>
+
+      <view bindtap="tel" class="col" bindtap='calling'>
+        <image class="tubiao" src="/images/icon_me_04.png"></image>
+        <text>智能开关</text>
+        <image class="jiantou" src="/images/jiantou.png"></image>
       </view>
     </view>
   </view>

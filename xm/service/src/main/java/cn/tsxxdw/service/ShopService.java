@@ -24,19 +24,30 @@ import java.util.List;
 
 @Slf4j
 @Service
-public class ShopService extends BaseService<ShopEntity, ShopMapper>{
+public class ShopService extends BaseService<ShopEntity, ShopMapper> {
     public ResultVo add(ShopDto shopDto) throws Exception {
-        ShopEntity shopEntity=  MyBeanUtils.copyPropertiesAndResTarget(shopDto,ShopEntity::new);
-        add("shop",shopEntity);
+        ShopEntity shopEntity = MyBeanUtils.copyPropertiesAndResTarget(shopDto, ShopEntity::new, o -> {
+            o.setCallStatus("false");
+        });
+        add("shop", shopEntity);
         return ResultVo.createSimpleFailResult();
     }
 
     public ResultVo query(ShopQueryDto shopQueryDto) throws Exception {
         //根据openid 查询订单号
-        List<ShopEntity> shopEntityList = super.queryListByPage(shopQueryDto,Where.useNullSafe(ShopEntity.class)).getData();
+        List<ShopEntity> shopEntityList = super.queryListByPage(shopQueryDto, Where.useNullSafe(ShopEntity.class)).getData();
 
         return new ResultVo().setSuccess(shopEntityList);
     }
 
+
+    public ResultVo update(ShopDto shopDto) {
+        ShopEntity shopEntity = new ShopEntity();
+       // shopEntity.setId(shopDto.getId());
+        shopEntity.setCallStatus(shopDto.getCallStatus());
+       // shopEntity.setOpenid(shopDto.getOpenid());
+        super.update(shopEntity, Where.useNullSafe(shopEntity.getClass()).eq("openid", shopDto.getOpenid()).eq("id", shopDto.getId()));
+        return ResultVo.createSimpleSuccessResult();
+    }
 
 }

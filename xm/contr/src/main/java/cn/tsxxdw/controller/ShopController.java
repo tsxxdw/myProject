@@ -81,4 +81,23 @@ public class ShopController {
             return ResultVo.createSimpleFailResult();
         }
     }
+
+    /**
+     * 更新
+     *
+     * @param shopDto
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value = "", method = RequestMethod.PUT)
+    public ResultVo<ShopDto> update(@RequestBody ShopDto shopDto) {
+        MyLogUtil.logInfo(this.getClass(), shopDto);
+        try {
+            ResultVo resultVo = shopService.update(shopDto);
+            return resultVo;
+        } catch (Exception e) {
+            MyLogUtil.logError(this.getClass(), e);
+            return ResultVo.createSimpleFailResult();
+        }
+    }
 }

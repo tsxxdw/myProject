@@ -7,7 +7,10 @@
         <text style="font-size: 30rpx;float:left;margin-left:3%">
           店铺名称：{{item.shopName}}
         </text>
-       <text style="font-size: 26rpx;color:#717171;float:right;margin-right:3%;">
+       <text wx:if="{{item.callStatus=='true'}}" style="font-size: 26rpx;color:#717171;float:right;margin-right:3%;">
+          已经拨打
+        </text> 
+        <text wx:else style="font-size: 26rpx;color:#717171;float:right;margin-right:3%;">
           未拨打
         </text> 
       </view>
@@ -24,7 +27,10 @@
       </view>
 
       <view class="item_5">
-             <view bindtap="calling"  data-phone='{{item.phone}}'  class="item_5_item1">    <image class="tubiao" src="/images/icon_me_04.png"></image></view>
+             <view bindtap="calling"  data-id='{{item.id}}' data-index="{{index}}"   data-phone='{{item.phone}}'  class="item_5_item1">   
+              <image wx:if="{{item.callStatus=='true'}}" class="tubiao" src="/images/dh2.png"></image>
+               <image wx:else  class="tubiao" src="/images/dh1.png"></image>
+             </view>
              <view class="item_5_item1">{{item.fullName}}</view>
       </view>
 

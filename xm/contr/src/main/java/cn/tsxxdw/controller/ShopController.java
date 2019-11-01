@@ -11,6 +11,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+import java.util.Optional;
+
 @Slf4j
 @Controller
 @RequestMapping("/shop")
@@ -29,16 +32,24 @@ public class ShopController {
     /**
      * 微信登录
      *
-     * @param shopDto
+     * @param shopDtoList
      * @return
      */
     @ResponseBody
     @RequestMapping(value = "", method = RequestMethod.POST)
-    public ResultVo add(@RequestBody ShopDto shopDto) {
-        MyLogUtil.logInfo(this.getClass(), shopDto);
+    public ResultVo add(@RequestBody List<ShopDto> shopDtoList) {
+        MyLogUtil.logInfo(this.getClass(), shopDtoList);
         try {
-            ResultVo resultVo = shopService.add(shopDto);
-            return resultVo;
+            Optional.ofNullable(shopDtoList).ifPresent(list->{
+                list.forEach(o->{
+                    try {
+                        shopService.add(o);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                });
+            });
+            return ResultVo.createSimpleSuccessResult();
         } catch (Exception e) {
             MyLogUtil.logError(this.getClass(), e);
             return ResultVo.createSimpleFailResult();

@@ -48,6 +48,7 @@
         <java-client>7.2.0</java-client>
         <selenium-java>4.0.0-alpha-3</selenium-java>
         <testng>6.14.2</testng>
+        <servlet-api>3.0-alpha-1</servlet-api>
     </properties>
 
 
@@ -171,6 +172,11 @@
                 <groupId>org.testng</groupId>
                 <artifactId>testng</artifactId>
                 <version>${testng}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>${servlet-api}</version>
             </dependency>
         </dependencies>
         <!--build标签描述了如何来编译及打包项目-->

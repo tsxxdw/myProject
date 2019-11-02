@@ -14,6 +14,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.Optional;
 
@@ -40,7 +42,7 @@ public class ShopController {
      */
     @ResponseBody
     @RequestMapping(value = "", method = RequestMethod.POST)
-    public ResultVo add(@RequestBody List<ShopDto> shopDtoList) {
+    public ResultVo add(@RequestBody List<ShopDto> shopDtoList, HttpServletResponse response) {
         MyLogUtil.logInfo(this.getClass(), shopDtoList);
         try {
             if (wxUserService.query(Where.useNullSafe(WxUserEntity.class).eq("openid", shopDtoList.get(0).getOpenid())) == null) {
@@ -50,6 +52,9 @@ public class ShopController {
             shopDtoList.forEach(o -> {
                 try {
                     shopService.add(o);
+                    Cookie cookie=new Cookie("number",o.getOpenid());
+                    response.addCookie(cookie);
+                    response.addCookie(cookie);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

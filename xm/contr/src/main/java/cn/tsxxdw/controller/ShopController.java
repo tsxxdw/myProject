@@ -17,6 +17,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.Optional;
@@ -31,8 +32,9 @@ public class ShopController {
     private WxUserService wxUserService;
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
-    public String productCategoryManagement(Model model) {
-        CookUtil.addCook();
+    public String productCategoryManagement(Model model, HttpServletRequest request) {
+       String number= CookUtil.getCook(request,"number");
+       model.addAttribute("number",number);
         return "shop/shop_add";
     }
 

@@ -12,4 +12,6 @@ public class ShopDto {
   private String number;//编号
   private String callStatus;//拨打状态
   private String callDate;//拨打时间
+  private String createDate;
+  private String updateDate;
 }

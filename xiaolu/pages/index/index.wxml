@@ -1,25 +1,30 @@
 <view>
 
   <block wx:for='{{dataList}}' wx:key='list' wx:for-item="item">
+  <form  bindsubmit="formSubmit" >
+  <input name="id" style="display:none" value="{{item.id}}" />
     <view class="item">
       <view class="item_1" />
       <view class="item_2">
-        <text style="font-size: 30rpx;float:left;margin-left:3%">
-          店铺名称：{{item.shopName}}
+        <text style="font-size: 30rpx;float:left;margin-left:3%;height:100%">
+          店铺名称：
         </text>
-       <text wx:if="{{item.callStatus=='true'}}" style="font-size: 26rpx;color:#717171;float:right;margin-right:3%;">
+        <input name="shopName" style="font-size: 30rpx;float:left;margin-left:3%;height:100%" value="{{item.shopName}}" />
+
+        <text wx:if="{{item.callStatus=='true'}}" style="font-size: 26rpx;color:#717171;float:right;margin-right:3%;">
           已经拨打
-        </text> 
+        </text>
         <text wx:else style="font-size: 26rpx;color:#717171;float:right;margin-right:3%;">
           未拨打
-        </text> 
+        </text>
       </view>
       <view style="font-size:8px;" class="item_3">
-        {{item.situation}}
+        <input name="situation" value="{{item.situation}}" />
       </view>
       <view class="item_4">
         <view style="width:100%;height:20px;">
-          <text style="left:3%;width:100%;height:20px;position: absolute;color:#BEBEBE;font-size: 26rpx">商家电话 {{item.phone}}</text>
+          <text style="left:3%;width:100%;height:20px;position: absolute;color:#BEBEBE;font-size: 26rpx">商家电话 </text>
+          <input name="phone" value="{{item.phone}}" style="left:20%;width:100%;height:20px;position: absolute;color:#BEBEBE;font-size: 26rpx" /> 
         </view>
         <view style="width:100%;height:30px;">
           <view style="left:3%;width:200px;height:20px;position: absolute;color:#BEBEBE;font-size: 26rpx">创建时间： {{item.createDate}}</view>
@@ -27,16 +32,18 @@
       </view>
 
       <view class="item_5">
-             <view bindtap="calling"  data-id='{{item.id}}' data-index="{{index}}"   data-phone='{{item.phone}}'  class="item_5_item1">   
-              <image wx:if="{{item.callStatus=='true'}}" class="tubiao" src="/images/dh2.png"></image>
-               <image wx:else  class="tubiao" src="/images/dh1.png"></image>
-             </view>
-             <view class="item_5_item1">{{item.fullName}}</view>
+        <view bindtap="calling" data-id='{{item.id}}' data-index="{{index}}" data-phone='{{item.phone}}' class="item_5_item1">
+          <image wx:if="{{item.callStatus=='true'}}" class="tubiao" src="/images/dh2.png"></image>
+          <image wx:else class="tubiao" src="/images/dh1.png"></image>
+        </view>
+        <view class="item_5_item1">{{item.fullName}}</view>
+       <button form-type="submit">点击修改</button>
       </view>
 
     </view>
+    </form>
   </block>
 </view>
 <view class="bottom_view">
- 没有更多信息了~
+  没有更多信息了~
 </view>

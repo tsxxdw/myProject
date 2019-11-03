@@ -1,5 +1,6 @@
 const app = getApp();
 var shopStr = app.globalData.domainname + '/shop'
+var userUrl = app.globalData.domainname + '/user';
 var dataUtil = require('../../js/dataUtil.js');
 var networkRequest = require('../../js/networkRequest.js');
 
@@ -36,17 +37,34 @@ Page({
   onReady: function () {
 
   },
+  formSubmit: function (e) {
+   
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
 
+    var json = e.detail.value;
+    networkRequest.request(shopStr, "PUT", json, function (res) {
+         console.info(11);
+    })
+
+  },
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    var that=this;
     wx.setStorageSync("firstLogin", "second");
-    var json = { 
-      openid: app.globalData.openid 
-      ,page:1,limit:100
+    var json = { openid: app.globalData.openid }
+    networkRequest.request(userUrl + "/number", "GET", json, function (res) {
+      if (res.code == 1) {
+        var json1 = {
+           number:res.data
+          , orderByDesc: 'createDate'
+          , page: 1, limit: 100
+        }
+        dataUtil.getPageData(shopStr, json1, that);
       }
-    dataUtil.getPageData(shopStr, json, this);
+    })
+   
    
   },
 
@@ -85,6 +103,9 @@ Page({
 
   },
 
+/**
+ * 打电话
+ */
   calling: function (e) {
     var that=this;
     var phone = e.currentTarget.dataset.phone;

@@ -7,6 +7,7 @@ import cn.tsxxdw.other.Where;
 import cn.tsxxdw.service.ShopService;
 import cn.tsxxdw.service.mycook.CookUtil;
 import cn.tsxxdw.service.mylog.MyLogUtil;
+import cn.tsxxdw.service.mymd5.MyMd5Util;
 import cn.tsxxdw.vo.ResultVo;
 import cn.tsxxdw.wechatbean.entity.WxUserEntity;
 import lombok.extern.slf4j.Slf4j;
@@ -31,6 +32,7 @@ public class ShopController {
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String productCategoryManagement(Model model) {
+        CookUtil.addCook();
         return "shop/shop_add";
     }
 
@@ -46,14 +48,11 @@ public class ShopController {
     public ResultVo add(@RequestBody List<ShopDto> shopDtoList, HttpServletResponse response) {
         MyLogUtil.logInfo(this.getClass(), shopDtoList);
         try {
-            if (wxUserService.query(Where.useNullSafe(WxUserEntity.class).eq("openid", shopDtoList.get(0).getOpenid())) == null) {
-              return new ResultVo().setFail("用户编号错误");
-            }
-
+            //存储cook  编号
+            CookUtil.addCook(response,"number", shopDtoList.get(0).getNumber());
             shopDtoList.forEach(o -> {
                 try {
                     shopService.add(o);
-                    CookUtil.addCook(response,"number",o.getOpenid());
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

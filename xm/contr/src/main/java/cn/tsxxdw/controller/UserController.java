@@ -2,6 +2,7 @@ package cn.tsxxdw.controller;
 
 import cn.tsxxdw.mybese.wx.WxUserService;
 import cn.tsxxdw.service.mylog.MyLogUtil;
+import cn.tsxxdw.service.mymd5.MyMd5Util;
 import cn.tsxxdw.vo.ResultVo;
 import cn.tsxxdw.wechatbean.dto.WxDto;
 import cn.tsxxdw.wechatbean.dto.WxUserDto;
@@ -35,6 +36,20 @@ public class UserController {
 
         ResultVo resultVo = wxUserService.smallProcedureLogin(wxDto);
         return resultVo;
+
+    }
+    /**
+     * 微信登录
+     *
+     * @param wxDto
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value = "/number", method = RequestMethod.GET)
+    public ResultVo<String> get(WxDto wxDto) {
+        MyLogUtil.logInfo(this.getClass(), wxDto);
+       String md5Str= MyMd5Util.getMD5Str(wxDto.getOpenid());
+        return new ResultVo<String>().setSuccess(md5Str);
 
     }
     @ResponseBody

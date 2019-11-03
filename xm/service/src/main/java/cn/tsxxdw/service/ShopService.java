@@ -46,7 +46,7 @@ public class ShopService extends BaseService<ShopEntity, ShopMapper> {
        // shopEntity.setId(shopDto.getId());
         shopEntity.setCallStatus(shopDto.getCallStatus());
        // shopEntity.setOpenid(shopDto.getOpenid());
-        super.update(shopEntity, Where.useNullSafe(shopEntity.getClass()).eq("openid", shopDto.getOpenid()).eq("id", shopDto.getId()));
+        super.update(shopEntity, Where.useNullSafe(shopEntity.getClass()).eq("number", shopDto.getNumber()).eq("id", shopDto.getId()));
         return ResultVo.createSimpleSuccessResult();
     }
 

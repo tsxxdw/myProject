@@ -95,6 +95,7 @@ layui.config({
             errArrayInfo.push("编号没有填写");
             checkResult = false;
         }
+
         var arrayList = content.split(/[\n]/);
         for (var i = 0; i < arrayList.length; i++) {
             var arrayOther = arrayList[i].trim().split(" ")
@@ -180,7 +181,7 @@ layui.config({
     function initData() {
         var blankStr = "   ";
         loadOwner($("select[name='owner']"));
-        var content = "15673903693" + blankStr + "刘小鹿" + blankStr + "炸鸡汉堡店铺" + blankStr + "这个店铺的情况很糟糕\n" +
+        var content = "默认格式数据\n15673903693" + blankStr + "刘小鹿" + blankStr + "炸鸡汉堡店铺" + blankStr + "这个店铺的情况很糟糕\n" +
             "15673903639" + blankStr + "刘大鹿" + blankStr + "炸鸡披萨店铺" + blankStr + "这个店铺的情况很不错"
 
         $('#content').attr('placeholder', content);

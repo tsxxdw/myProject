@@ -65,7 +65,7 @@
         <view class="col">
           <image class="tubiao" src="/images/bh.png"></image>
           <text>编号获取</text>
-          <image class="jiantou" src="/images/hqxx.png"></image>
+          <image bindtap="getNumberText" class="jiantou" src="/images/hqxx.png"></image>
         </view>
       </navigator>
 

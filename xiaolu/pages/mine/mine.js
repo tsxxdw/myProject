@@ -3,6 +3,7 @@ var aaa=13
 var fileUtils = require('../../js/fileUtil.js');
 var networkRequest = require('../../js/networkRequest.js');
 var urlStr = app.globalData.domainname + '/user/smallProcedure'
+var userUrl = app.globalData.domainname + '/user';
 var registerStr = app.globalData.domainname + '/user/smallProcedure'
 Page({
   data: {
@@ -141,5 +142,26 @@ Page({
         console.log("拨打电话失败！")
       }
     })
+  },
+
+  getNumberText: function (e) {
+    var json={openid:app.globalData.openid}
+    networkRequest.request(userUrl+"/number", "GET", json, function (res) {
+      if (res.code == 1) {
+        wx.setClipboardData({
+          data: res.data,
+          success: function (res) {
+            wx.getClipboardData({
+              success: function (res) {
+                wx.showToast({
+                  title: '复制成功'
+                })
+              }
+            })
+          }
+        })
+      }
+    })
+  
   },
 })

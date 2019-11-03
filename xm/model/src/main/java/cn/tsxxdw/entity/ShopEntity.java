@@ -12,5 +12,6 @@ public class ShopEntity extends BaseEntity{
   private String situation;//情况
   private String callStatus;//拨打状态
   private String callDate;//拨打时间
-    private String openid;
+  private String number;//编号
+
 }

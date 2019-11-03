@@ -10,7 +10,7 @@ public class CookUtil {
         response.addCookie(cookie);
     }
 
-    public String getCook(HttpServletRequest request, String name) {
+    public static String getCook(HttpServletRequest request, String name) {
         Cookie[] cookies = request.getCookies();
         if (cookies != null) {
             for (Cookie cookie : cookies) {

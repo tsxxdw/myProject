@@ -49,6 +49,7 @@
         <selenium-java>4.0.0-alpha-3</selenium-java>
         <testng>6.14.2</testng>
         <servlet-api>3.0-alpha-1</servlet-api>
+        <fast-md5>2.7.1</fast-md5>
     </properties>
 
 

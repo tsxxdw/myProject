@@ -5,6 +5,7 @@ import cn.tsxxdw.dto.ShopQueryDto;
 import cn.tsxxdw.mybese.wx.WxUserService;
 import cn.tsxxdw.other.Where;
 import cn.tsxxdw.service.ShopService;
+import cn.tsxxdw.service.mycook.CookUtil;
 import cn.tsxxdw.service.mylog.MyLogUtil;
 import cn.tsxxdw.vo.ResultVo;
 import cn.tsxxdw.wechatbean.entity.WxUserEntity;
@@ -52,9 +53,7 @@ public class ShopController {
             shopDtoList.forEach(o -> {
                 try {
                     shopService.add(o);
-                    Cookie cookie=new Cookie("number",o.getOpenid());
-                    response.addCookie(cookie);
-                    response.addCookie(cookie);
+                    CookUtil.addCook(response,"number",o.getOpenid());
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

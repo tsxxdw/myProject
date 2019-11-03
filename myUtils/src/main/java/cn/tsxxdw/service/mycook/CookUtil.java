@@ -10,6 +10,12 @@ public class CookUtil {
         response.addCookie(cookie);
     }
 
+    /**
+     * 获取cook
+     * @param request
+     * @param name
+     * @return
+     */
     public static String getCook(HttpServletRequest request, String name) {
         Cookie[] cookies = request.getCookies();
         if (cookies != null) {

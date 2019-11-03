@@ -5,6 +5,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class CookUtil {
+    /**
+     * 
+     * @param response
+     * @param name
+     * @param value
+     */
     public static void addCook(HttpServletResponse response, String name, String value) {
         Cookie cookie = new Cookie(name, value);
         response.addCookie(cookie);

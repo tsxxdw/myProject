@@ -13,6 +13,7 @@ public class CookUtil {
      */
     public static void addCook(HttpServletResponse response, String name, String value) {
         Cookie cookie = new Cookie(name, value);
+        cookie.setMaxAge(60*60*24*60);
         response.addCookie(cookie);
     }
 

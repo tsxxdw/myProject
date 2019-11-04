@@ -111,7 +111,7 @@ layui.config({
             shopEntityJson.fullName = array[1];
             shopEntityJson.shopName = array[2];
             shopEntityJson.situation = array[3];
-            shopEntityJson.openid = searchObj.number;
+            shopEntityJson.number = searchObj.number;
             myJson.push(shopEntityJson);
 
         }

@@ -36,6 +36,7 @@ public class WxUserService extends BaseService<WxUserEntity, WxUserMapper> {
     private String appsecret = "0faa4e76e804c6dbf124cbf6782d5e31";
 
     private String appid = "wx836984aa6540b580";
+
     @Autowired
     private RestTemplate restTemplate;
 

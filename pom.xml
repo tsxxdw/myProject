@@ -50,6 +50,8 @@
         <testng>6.14.2</testng>
         <servlet-api>3.0-alpha-1</servlet-api>
         <fast-md5>2.7.1</fast-md5>
+        <spring-cloud-starter-netflix-eureka-server>2.1.3.RELEASE</spring-cloud-starter-netflix-eureka-server>
+   <spring-cloud-starter-bus-amqp>2.1.3.RELEASE</spring-cloud-starter-bus-amqp>
     </properties>
 
 
@@ -179,6 +181,19 @@
                 <artifactId>servlet-api</artifactId>
                 <version>${servlet-api}</version>
             </dependency>
+
+            <!--微服务修改-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+                <version>${spring-cloud-starter-netflix-eureka-server}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+                <version>${spring-cloud-starter-bus-amqp}</version>
+            </dependency>
+            <!--微服务修改-->
         </dependencies>
         <!--build标签描述了如何来编译及打包项目-->
     </dependencyManagement>

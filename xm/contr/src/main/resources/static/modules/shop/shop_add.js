@@ -98,7 +98,7 @@ layui.config({
 
         var arrayList = content.split(/[\n]/);
         for (var i = 0; i < arrayList.length; i++) {
-            var arrayOther = arrayList[i].trim().split(" ")
+            var arrayOther = arrayList[0].trim().split(/\s+/)
             var array = arrayOther.filter(function (s) {
                 return s && s.trim(); // 注：IE9(不包含IE9)以下的版本没有trim()方法
             });

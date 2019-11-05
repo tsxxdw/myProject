@@ -10,6 +10,7 @@
     <modules>
         <module>my-bean</module>
         <module>wechat-bean</module>
+        <module>alipay-bean</module>
     </modules>
     <parent>
         <groupId>tsxxdw</groupId>

@@ -1,6 +1,5 @@
 const app = getApp()
 var aaa=13
-var fileUtils = require('../../js/fileUtil.js');
 var networkRequest = require('../../js/networkRequest.js');
 var urlStr = app.globalData.domainname + '/user/smallProcedure'
 var userUrl = app.globalData.domainname + '/user';

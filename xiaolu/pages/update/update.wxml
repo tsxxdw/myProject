@@ -1,0 +1,52 @@
+<form bindsubmit="formSubmit">
+  <view class="weui-cells weui-cells_after-title">
+    <input style="display:none" name="id" value="{{data.id}}" />
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">店铺名称</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="shopName" placeholder="请输入店铺名称" value='{{data.shopName}}' />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">姓名</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="fullName" value="{{data.fullName}}" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">电话</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="phone" value="{{data.phone}}" />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">是否拨打</view>
+      </view>
+      <view class="weui-cell__bd">
+        <text wx:if="{{data.callStatus=='true' }}">是</text>
+        <text wx:else >否</text>
+        <input name="callStatus" style="display:none;" value="{{data.callStatus}}" />
+      </view>
+      <view class="weui-cell__ft">
+        <switch checked="{{ data.callStatus == 'true' ?'true':''}}" bindchange='switchChange' />
+      </view>
+    </view>
+    <view style="padding: 10px 15px">
+      <view>店铺情况</view>
+      <textarea name="situation" value="{{data.situation}}" class="fontColor1" style="margin-left:3%;font-size:12px;"></textarea>
+    </view>
+
+  </view>
+  <view style="position: absolute;bottom:0px;" class="btn-area">
+    <button type='primary' formType="submit">提交</button>
+  </view>
+</form>

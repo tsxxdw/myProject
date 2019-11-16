@@ -37,14 +37,17 @@ Page({
   onReady: function () {
 
   },
-  formSubmit: function (e) {
-   
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
 
-    var json = e.detail.value;
-    networkRequest.request(shopStr, "PUT", json, function (res) {
-         console.info(11);
-    })
+  
+  toUpdate: function (e) {
+   wx.navigateTo({
+     url: '/pages/update/update?id='+e.currentTarget.dataset.id,
+   })
+
+    // var json = e.detail.value;
+    // networkRequest.request(shopStr, "PUT", json, function (res) {
+    //      console.info(11);
+    // })
 
   },
   /**

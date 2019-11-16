@@ -3,6 +3,7 @@
     "pages/start/start",
     "pages/shopdetail/shopdetail",
     "pages/index/index",
+    "pages/update/update",
     "pages/mine/mine",
     "pages/logs/logs"
   ],

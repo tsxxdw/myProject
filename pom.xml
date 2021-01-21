@@ -35,7 +35,7 @@
         <bcprov-ext-jdk16>1.46</bcprov-ext-jdk16>
         <fastjson>1.2.49</fastjson>
         <junit>4.13-beta-3</junit>
-        <jackson-databind>2.9.9.2</jackson-databind>
+        <jackson-databind>2.9.10.7</jackson-databind>
         <snakeyaml>1.24</snakeyaml>
         <gson>2.8.5</gson>
         <mysql-connector-java>6.0.6</mysql-connector-java>
